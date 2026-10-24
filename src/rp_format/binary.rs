@@ -1,4 +1,4 @@
-//! Read Axure's binary object graph without loading or executing Axure code.
+//! Read the native binary object graph without loading or executing editor code.
 //!
 //! The schema is documented in `docs/native-format.md`. All lengths and table
 //! references are checked before allocation, and unknown tokens are errors.
@@ -62,17 +62,17 @@ impl Graph {
     ) -> Result<()> {
         ensure!(
             matches!(token, 3 | 5 | 8 | 17 | 20 | 21 | 22 | 29),
-            "Axure 字典键标记不受支持：{token}"
+            "原生字典键标记不受支持：{token}"
         );
         let node = self
             .objects
             .get(object_id)
-            .context("Axure 字典键类型对应的对象不存在")?;
+            .context("原生字典键类型对应的对象不存在")?;
         ensure!(
             node.properties
                 .pointer(pointer)
                 .is_some_and(Value::is_object),
-            "Axure 字典键类型对应的路径不是字典：{pointer}"
+            "原生字典键类型对应的路径不是字典：{pointer}"
         );
         self.dictionary_key_tokens
             .entry(object_id.to_owned())
@@ -88,12 +88,12 @@ impl Graph {
         let new_id = normalize_guid(new_id)?;
         ensure!(
             !self.objects.contains_key(&new_id),
-            "新的 Axure 对象 ID 已存在"
+            "新的原生对象 ID 已存在"
         );
         let node = source
             .objects
             .get(source_id)
-            .context("Axure 模板对象不存在")?
+            .context("原生模板对象不存在")?
             .clone();
         if let Some((source_encoding, record)) = source.encoding.as_ref().and_then(|encoding| {
             encoding
@@ -198,7 +198,7 @@ pub fn reference_id(value: &Value) -> Option<&str> {
 }
 
 pub fn parse(bytes: &[u8]) -> Result<Graph> {
-    ensure!(bytes.len() <= MAX_BYTES, "Axure 对象包超过 256 MiB 限制");
+    ensure!(bytes.len() <= MAX_BYTES, "原生对象包超过 256 MiB 限制");
     Reader {
         bytes,
         cursor: 0,
@@ -219,11 +219,11 @@ struct Reader<'a> {
 
 impl Reader<'_> {
     fn take(&mut self, len: usize) -> Result<&[u8]> {
-        let end = self.cursor.checked_add(len).context("Axure 长度溢出")?;
+        let end = self.cursor.checked_add(len).context("原生长度溢出")?;
         let value = self
             .bytes
             .get(self.cursor..end)
-            .with_context(|| format!("Axure 对象包在偏移 {} 处被截断", self.cursor))?;
+            .with_context(|| format!("原生对象包在偏移 {} 处被截断", self.cursor))?;
         self.cursor = end;
         Ok(value)
     }
@@ -238,17 +238,17 @@ impl Reader<'_> {
 
     fn count(&mut self) -> Result<usize> {
         let value = self.i32()?;
-        ensure!(value >= 0, "Axure 对象包包含负数长度");
+        ensure!(value >= 0, "原生对象包包含负数长度");
         let count = value as usize;
-        ensure!(count <= MAX_ITEMS, "Axure 对象包项目数量超过限制");
+        ensure!(count <= MAX_ITEMS, "原生对象包项目数量超过限制");
         Ok(count)
     }
 
     fn length(&mut self) -> Result<usize> {
         let value = self.i32()?;
-        ensure!(value >= 0, "Axure 对象包包含负数数据长度");
+        ensure!(value >= 0, "原生对象包包含负数数据长度");
         let len = value as usize;
-        ensure!(len <= MAX_BYTES, "Axure 对象包数据长度超过限制");
+        ensure!(len <= MAX_BYTES, "原生对象包数据长度超过限制");
         Ok(len)
     }
 
@@ -257,27 +257,27 @@ impl Reader<'_> {
         let token = self.i32()?;
         ensure!(
             token == expected,
-            "Axure 对象包偏移 {offset}：需要标记 {expected}，实际为 {token}"
+            "原生对象包偏移 {offset}：需要标记 {expected}，实际为 {token}"
         );
         Ok(())
     }
 
     fn string(&mut self) -> Result<Option<String>> {
         let id = self.i32()?;
-        ensure!(id >= 0, "Axure 字符串引用为负数");
+        ensure!(id >= 0, "原生字符串引用为负数");
         self.strings
             .get(id as usize)
             .cloned()
-            .with_context(|| format!("Axure 字符串引用 {id} 超出表范围"))
+            .with_context(|| format!("原生字符串引用 {id} 超出表范围"))
     }
 
     fn guid(&mut self) -> Result<String> {
         let id = self.i32()?;
-        ensure!(id >= 0, "Axure GUID 引用为负数");
+        ensure!(id >= 0, "原生 GUID 引用为负数");
         self.guids
             .get(id as usize)
             .cloned()
-            .with_context(|| format!("Axure GUID 引用 {id} 超出表范围"))
+            .with_context(|| format!("原生 GUID 引用 {id} 超出表范围"))
     }
 
     fn graph(mut self) -> Result<Graph> {
@@ -286,16 +286,16 @@ impl Reader<'_> {
         let data_version = self.i32()?;
         ensure!(
             data_version == 50001,
-            "暂不支持 Axure 6.0.1 之前的对象包格式（标记 {data_version}）"
+            "暂不支持 6.0.1 之前的原生对象包格式（标记 {data_version}）"
         );
         self.expect(31)?;
         let count = self.count()?;
-        ensure!(count <= self.bytes.len() / 4, "Axure 字符串表数量无效");
+        ensure!(count <= self.bytes.len() / 4, "原生字符串表数量无效");
         self.strings.reserve(count);
         for _ in 0..count {
             let len = self.length()?;
             let text = std::str::from_utf8(self.take(len)?)
-                .context("Axure 字符串表包含无效 UTF-8")?
+                .context("原生字符串表包含无效 UTF-8")?
                 .to_owned();
             self.strings.push(Some(text));
         }
@@ -303,7 +303,7 @@ impl Reader<'_> {
         let count = self.count()?;
         ensure!(
             count <= (self.bytes.len() - self.cursor) / 16,
-            "Axure GUID 表数量无效"
+            "原生 GUID 表数量无效"
         );
         self.guids.reserve(count);
         for _ in 0..count {
@@ -340,12 +340,12 @@ impl Reader<'_> {
             if token == 28 {
                 break;
             }
-            ensure!(token == 9, "Axure 对象定义标记无效：{token}");
+            ensure!(token == 9, "原生对象定义标记无效：{token}");
             let id = self.guid()?;
-            let kind = self.string()?.context("Axure 对象类型为空")?;
+            let kind = self.string()?.context("原生对象类型为空")?;
             let header_end = self.cursor;
             let (properties, value_layout) = self.value(0)?;
-            ensure!(properties.is_object(), "Axure 对象属性不是字典");
+            ensure!(properties.is_object(), "原生对象属性不是字典");
             object_order.push(id.clone());
             records.insert(
                 id.clone(),
@@ -357,15 +357,15 @@ impl Reader<'_> {
             );
             ensure!(
                 objects.insert(id, Node { kind, properties }).is_none(),
-                "Axure 对象 ID 重复"
+                "原生对象 ID 重复"
             );
-            ensure!(objects.len() <= MAX_ITEMS, "Axure 对象数量超过限制");
+            ensure!(objects.len() <= MAX_ITEMS, "原生对象数量超过限制");
         }
         ensure!(
             self.cursor == self.bytes.len(),
-            "Axure 对象包结束后存在未识别数据"
+            "原生对象包结束后存在未识别数据"
         );
-        ensure!(objects.contains_key(&root), "Axure 对象包缺少根对象");
+        ensure!(objects.contains_key(&root), "原生对象包缺少根对象");
         let encoding = Encoding {
             bytes: Arc::new(self.bytes.to_vec()),
             strings: self.strings,
@@ -387,11 +387,11 @@ impl Reader<'_> {
     }
 
     fn value(&mut self, depth: usize) -> Result<(Value, ValueLayout)> {
-        ensure!(depth < MAX_DEPTH, "Axure 对象包嵌套层数超过限制");
+        ensure!(depth < MAX_DEPTH, "原生对象包嵌套层数超过限制");
         self.values_read += 1;
         ensure!(
             self.values_read <= 4 * MAX_ITEMS,
-            "Axure 对象包值数量超过限制"
+            "原生对象包值数量超过限制"
         );
         let offset = self.cursor;
         let full_token = self.i32()?;
@@ -401,7 +401,7 @@ impl Reader<'_> {
                 let count = self.count()?;
                 ensure!(
                     count <= (self.bytes.len() - self.cursor) / 8,
-                    "Axure 字典长度无效"
+                    "原生字典长度无效"
                 );
                 let mut map = Map::new();
                 let mut entries = Vec::with_capacity(count);
@@ -419,7 +419,7 @@ impl Reader<'_> {
                     let (value, value_layout) = self.value(depth + 1)?;
                     ensure!(
                         map.insert(json_key.clone(), value).is_none(),
-                        "Axure 字典键重复"
+                        "原生字典键重复"
                     );
                     entries.push(DictionaryEntry {
                         json_key,
@@ -440,7 +440,7 @@ impl Reader<'_> {
                 let count = self.count()?;
                 ensure!(
                     count <= (self.bytes.len() - self.cursor) / 4,
-                    "Axure 列表长度无效"
+                    "原生列表长度无效"
                 );
                 let mut values = Vec::with_capacity(count);
                 let mut items = Vec::with_capacity(count);
@@ -484,7 +484,7 @@ impl Reader<'_> {
             8 => Ok(self.string()?.map(Value::String).unwrap_or(Value::Null)),
             25 => Ok((self.take(1)?[0] != 0).into()),
             29 => Ok(i64::from_le_bytes(self.array()?).into()),
-            _ => bail!("暂不支持 Axure 对象包标记 {token}（偏移 {offset}）"),
+            _ => bail!("暂不支持原生对象包标记 {token}（偏移 {offset}）"),
         };
         let value = value?;
         Ok((
@@ -497,7 +497,7 @@ impl Reader<'_> {
     }
 }
 
-/// Encode a graph back into Axure's native binary object package.
+/// Encode a graph back into its native binary object package.
 ///
 /// Parsed graphs retain original table indices, object/dictionary order,
 /// scalar types, token flags, typed keys, and nonfinite floating-point bits.
@@ -505,9 +505,9 @@ impl Reader<'_> {
 pub fn encode(graph: &Graph) -> Result<Vec<u8>> {
     ensure!(
         graph.objects.contains_key(&graph.root),
-        "Axure 对象包缺少根对象"
+        "原生对象包缺少根对象"
     );
-    ensure!(graph.objects.len() <= MAX_ITEMS, "Axure 对象数量超过限制");
+    ensure!(graph.objects.len() <= MAX_ITEMS, "原生对象数量超过限制");
     let mut writer = Writer::new(graph.encoding.as_ref());
     if let Some(source) = graph
         .encoding
@@ -545,7 +545,7 @@ pub fn encode(graph: &Graph) -> Result<Vec<u8>> {
     }
     for id in order {
         let node = &graph.objects[id];
-        ensure!(node.properties.is_object(), "Axure 对象属性不是字典");
+        ensure!(node.properties.is_object(), "原生对象属性不是字典");
         let record = graph.encoding.as_ref().and_then(|s| s.records.get(id));
         writer.key_hints = graph.dictionary_key_tokens.get(id);
         writer.pointer.clear();
@@ -575,7 +575,7 @@ pub fn encode(graph: &Graph) -> Result<Vec<u8>> {
     push_int(&mut output, 31);
     push_int(&mut output, checked_count(writer.strings.len() - 1)?);
     for text in writer.strings.iter().skip(1) {
-        let text = text.as_deref().context("Axure 字符串表条目为空")?;
+        let text = text.as_deref().context("原生字符串表条目为空")?;
         push_int(&mut output, checked_length(text.len())?);
         output.extend_from_slice(text.as_bytes());
     }
@@ -589,7 +589,7 @@ pub fn encode(graph: &Graph) -> Result<Vec<u8>> {
             .len()
             .checked_add(writer.data.len())
             .is_some_and(|len| len <= MAX_BYTES),
-        "Axure 对象包超过 256 MiB 限制"
+        "原生对象包超过 256 MiB 限制"
     );
     output.extend_from_slice(&writer.data);
     Ok(output)
@@ -634,7 +634,7 @@ fn rebase_layout(
             let mut bytes = source
                 .bytes
                 .get(span.clone())
-                .context("Axure 模板编码范围无效")?
+                .context("原生模板编码范围无效")?
                 .to_vec();
             for (offset, is_guid) in match token & 31 {
                 3 | 17 | 20 | 21 | 22 => vec![(4, true)],
@@ -645,15 +645,15 @@ fn rebase_layout(
                 let old_index = i32::from_le_bytes(
                     bytes
                         .get(offset..offset + 4)
-                        .context("Axure 模板表引用被截断")?
+                        .context("原生模板表引用被截断")?
                         .try_into()?,
                 );
-                let old_index = usize::try_from(old_index).context("Axure 模板表引用为负数")?;
+                let old_index = usize::try_from(old_index).context("原生模板表引用为负数")?;
                 let index = if is_guid {
                     let guid = source
                         .guids
                         .get(old_index)
-                        .context("Axure 模板 GUID 引用超出范围")?;
+                        .context("原生模板 GUID 引用超出范围")?;
                     if let Some(index) = target.guids.iter().position(|value| value == guid) {
                         index
                     } else {
@@ -665,7 +665,7 @@ fn rebase_layout(
                     let string = source
                         .strings
                         .get(old_index)
-                        .context("Axure 模板字符串引用超出范围")?;
+                        .context("原生模板字符串引用超出范围")?;
                     if let Some(index) = target.strings.iter().position(|value| value == string) {
                         index
                     } else {
@@ -681,7 +681,7 @@ fn rebase_layout(
                 start
                     .checked_add(bytes.len())
                     .is_some_and(|length| length <= MAX_BYTES),
-                "Axure 模板编码超过长度限制"
+                "原生模板编码超过长度限制"
             );
             Arc::make_mut(&mut target.bytes).extend_from_slice(&bytes);
             ValueLayout::Scalar {
@@ -693,12 +693,12 @@ fn rebase_layout(
 }
 
 fn checked_count(count: usize) -> Result<i32> {
-    ensure!(count <= MAX_ITEMS, "Axure 对象包项目数量超过限制");
+    ensure!(count <= MAX_ITEMS, "原生对象包项目数量超过限制");
     Ok(count as i32)
 }
 
 fn checked_length(len: usize) -> Result<i32> {
-    ensure!(len <= MAX_BYTES, "Axure 对象包数据长度超过限制");
+    ensure!(len <= MAX_BYTES, "原生对象包数据长度超过限制");
     Ok(len as i32)
 }
 
@@ -709,7 +709,7 @@ fn normalize_guid(guid: &str) -> Result<String> {
         .collect();
     ensure!(
         value.len() == 32 && value.bytes().all(|b| b.is_ascii_hexdigit()),
-        "Axure GUID 格式无效：{guid}"
+        "原生 GUID 格式无效：{guid}"
     );
     Ok(value.to_ascii_lowercase())
 }
@@ -718,7 +718,7 @@ fn guid_bytes(guid: &str) -> Result<[u8; 16]> {
     let guid = normalize_guid(guid)?;
     let mut canonical = [0_u8; 16];
     for (i, value) in canonical.iter_mut().enumerate() {
-        *value = u8::from_str_radix(&guid[i * 2..i * 2 + 2], 16).context("Axure GUID 格式无效")?;
+        *value = u8::from_str_radix(&guid[i * 2..i * 2 + 2], 16).context("原生 GUID 格式无效")?;
     }
     canonical[0..4].reverse();
     canonical[4..6].reverse();
@@ -806,16 +806,13 @@ impl<'a> Writer<'a> {
     }
 
     fn value(&mut self, value: &Value, layout: Option<&ValueLayout>, depth: usize) -> Result<()> {
-        ensure!(depth < MAX_DEPTH, "Axure 对象包嵌套层数超过限制");
+        ensure!(depth < MAX_DEPTH, "原生对象包嵌套层数超过限制");
         self.values_written += 1;
         ensure!(
             self.values_written <= 4 * MAX_ITEMS,
-            "Axure 对象包值数量超过限制"
+            "原生对象包值数量超过限制"
         );
-        ensure!(
-            self.data.len() <= MAX_BYTES,
-            "Axure 对象包超过 256 MiB 限制"
-        );
+        ensure!(self.data.len() <= MAX_BYTES, "原生对象包超过 256 MiB 限制");
         match layout {
             Some(ValueLayout::Dictionary { token, entries }) if value.is_object() => {
                 let map = value.as_object().unwrap();
@@ -912,9 +909,9 @@ impl<'a> Writer<'a> {
             let key = match token {
                 17 => json!({"$guid":normalize_guid(text)?}),
                 3 | 20 | 21 | 22 => json!({"$ref":normalize_guid(text)?,"$token":token}),
-                5 | 29 => Value::from(text.parse::<i64>().context("Axure 字典键不是有效整数")?),
+                5 | 29 => Value::from(text.parse::<i64>().context("原生字典键不是有效整数")?),
                 8 => Value::String(text.to_owned()),
-                _ => bail!("Axure 字典键标记不受支持：{token}"),
+                _ => bail!("原生字典键标记不受支持：{token}"),
             };
             return self.scalar(&key, token);
         }
@@ -1041,7 +1038,7 @@ impl<'a> Writer<'a> {
                 value
                     .get("$ref")
                     .and_then(Value::as_str)
-                    .context("Axure 对象引用为空")?,
+                    .context("原生对象引用为空")?,
             )?,
             16 | 19 => {
                 self.string(value.get("$type").and_then(Value::as_str))?;
@@ -1049,14 +1046,14 @@ impl<'a> Writer<'a> {
                     value
                         .get("$ref")
                         .and_then(Value::as_str)
-                        .context("Axure 包引用为空")?,
+                        .context("原生包引用为空")?,
                 )?;
             }
             17 => self.guid(
                 value
                     .get("$guid")
                     .and_then(Value::as_str)
-                    .context("Axure GUID 值为空")?,
+                    .context("原生 GUID 值为空")?,
             )?,
             4 => {
                 let bytes = base64::engine::general_purpose::STANDARD
@@ -1064,34 +1061,34 @@ impl<'a> Writer<'a> {
                         value
                             .get("$binary")
                             .and_then(Value::as_str)
-                            .context("Axure 二进制数据为空")?,
+                            .context("原生二进制数据为空")?,
                     )
-                    .context("Axure 二进制数据不是有效 Base64")?;
+                    .context("原生二进制数据不是有效 Base64")?;
                 self.int(checked_length(bytes.len())?);
                 self.data.extend_from_slice(&bytes);
             }
             5 => {
                 let number = exact_integer(value)?;
-                self.int(i32::try_from(number).context("Axure i32 值超出范围")?);
+                self.int(i32::try_from(number).context("原生 i32 值超出范围")?);
             }
             6 => {
-                let number = value.as_f64().context("Axure f64 值无效")?;
-                ensure!(number.is_finite(), "Axure f64 值不是有限数字");
+                let number = value.as_f64().context("原生 f64 值无效")?;
+                ensure!(number.is_finite(), "原生 f64 值不是有限数字");
                 self.data.extend_from_slice(&number.to_le_bytes());
             }
             7 => {
-                let number = value.as_f64().context("Axure f32 值无效")? as f32;
-                ensure!(number.is_finite(), "Axure f32 值超出范围");
+                let number = value.as_f64().context("原生 f32 值无效")? as f32;
+                ensure!(number.is_finite(), "原生 f32 值超出范围");
                 self.data.extend_from_slice(&number.to_le_bytes());
             }
             8 => self.string(value.as_str())?,
             25 => self
                 .data
-                .push(u8::from(value.as_bool().context("Axure 布尔值无效")?)),
+                .push(u8::from(value.as_bool().context("原生布尔值无效")?)),
             29 => self
                 .data
                 .extend_from_slice(&exact_integer(value)?.to_le_bytes()),
-            _ => bail!("不支持写入 Axure 标记 {}", token & 31),
+            _ => bail!("不支持写入原生标记 {}", token & 31),
         }
         Ok(())
     }
@@ -1127,7 +1124,7 @@ fn infer_scalar_token(value: &Value) -> Result<i32> {
         let token = value.get("$token").and_then(Value::as_i64).unwrap_or(3) as i32;
         ensure!(
             matches!(token & 31, 3 | 16 | 19 | 20 | 21 | 22),
-            "Axure 引用标记无效"
+            "原生引用标记无效"
         );
         return Ok(token);
     }
@@ -1139,7 +1136,7 @@ fn infer_scalar_token(value: &Value) -> Result<i32> {
             if i32::try_from(n).is_ok() { 5 } else { 29 }
         }
         Value::Number(_) => 6,
-        _ => bail!("无法编码 Axure 值"),
+        _ => bail!("无法编码原生值"),
     })
 }
 
@@ -1147,13 +1144,13 @@ fn exact_integer(value: &Value) -> Result<i64> {
     if let Some(number) = value.as_i64() {
         return Ok(number);
     }
-    let number = value.as_f64().context("Axure 整数值无效")?;
+    let number = value.as_f64().context("原生整数值无效")?;
     ensure!(
         number.is_finite()
             && number.fract() == 0.0
             && number >= i64::MIN as f64
             && number < -(i64::MIN as f64),
-        "Axure 整数值超出范围或包含小数"
+        "原生整数值超出范围或包含小数"
     );
     Ok(number as i64)
 }
@@ -1431,7 +1428,7 @@ mod tests {
     }
 
     #[test]
-    #[ignore = "Reads local Axure RP 11 shipped samples; run explicitly for native format validation"]
+    #[ignore = "Reads local RP 11 shipped samples; run explicitly for native format validation"]
     fn every_installed_axure_package_roundtrips_byte_exactly() {
         use super::super::container;
         let root = std::env::var_os("RPSHOP_AXURE_SAMPLE_ROOT")
@@ -1443,7 +1440,7 @@ mod tests {
             });
         assert!(
             root.is_dir(),
-            "Axure sample root missing: {}",
+            "Native sample root missing: {}",
             root.display()
         );
         fn offsets(node: &Value, result: &mut Vec<u64>) {

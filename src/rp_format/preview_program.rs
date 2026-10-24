@@ -8,6 +8,10 @@ use std::collections::{BTreeMap, BTreeSet};
 
 const EMPTY: &str = "00000000000000000000000000000000";
 
+fn display_type(kind: &str) -> &str {
+    kind.rsplit(':').next().unwrap_or(kind)
+}
+
 #[derive(Clone, Debug, Serialize)]
 pub struct SourceBinding {
     pub key: String,
@@ -218,7 +222,7 @@ fn literal(graph: &Graph, value: &Value, depth: usize) -> Result<String, String>
         .resolve(value)
         .ok_or_else(|| "表达式引用不存在".to_owned())?;
     if node.kind != "Axure:Expr:StringLiteral" {
-        return Err(format!("暂不执行表达式 {}", node.kind));
+        return Err(format!("暂不执行表达式 {}", display_type(&node.kind)));
     }
     if node.properties["variable-identifiers"]
         .as_array()
@@ -391,7 +395,7 @@ impl Compiler<'_> {
                     match self.action(owner, action) {
                         Ok(compiled) => actions.extend(compiled),
                         Err(reason) => actions.push(PreviewAction::Unsupported {
-                            kind: action.kind.clone(),
+                            kind: display_type(&action.kind).to_owned(),
                             reason,
                         }),
                     }
@@ -460,7 +464,7 @@ impl Compiler<'_> {
             .resolve(value)
             .ok_or_else(|| "目标元件路径不存在".to_owned())?;
         if path.kind != "Axure:DiagramObjectPath" {
-            return Err(format!("目标不是元件路径：{}", path.kind));
+            return Err(format!("目标不是元件路径：{}", display_type(&path.kind)));
         }
         let p = &path.properties;
         if !array(&p["rdo-path"]).is_empty() || !array(&p["repeater-path"]).is_empty() {
@@ -719,7 +723,7 @@ impl Compiler<'_> {
                 }
             }
             "Axure:InterationActionSetFunction" => return self.functions(owner, &p["action"], 0),
-            other => return Err(format!("暂不执行原生动作 {other}")),
+            other => return Err(format!("暂不执行原生动作 {}", display_type(other))),
         }])
     }
 
@@ -744,7 +748,7 @@ impl Compiler<'_> {
             return Ok(actions);
         }
         if node.kind != "Axure:Expr:FCall" {
-            return Err(format!("暂不执行函数 {}", node.kind));
+            return Err(format!("暂不执行函数 {}", display_type(&node.kind)));
         }
         let args = array(&node.properties["args"]);
         let function = node.properties["function-name"].as_str().unwrap_or("");

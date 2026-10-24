@@ -1,9 +1,8 @@
-# Axure RP 11 file import: observed format
+# RP 11 file import: observed format
 
-Investigation date: 2026-10-23. The source installation is
-`D:\Program Files (x86)\Axure\Axure RP 11` (assembly version
-11.0.0.4137). The investigation reads shipped sample files and static assembly
-metadata; it does not launch Axure or alter its installation.
+Investigation date: 2026-10-23. The source is a local RP 11 installation
+(assembly version 11.0.0.4137). The investigation reads shipped sample files and static assembly
+metadata; it does not launch the reference editor or alter its installation.
 
 ## Evidence and boundaries
 
@@ -11,8 +10,8 @@ REA `open_binary` rejected `DefaultSettings\Training\Quick Win.rp` because its
 custom file format is unsupported. This is a format limitation, not evidence
 that the file is encrypted or damaged.
 
-REA `inspect_managed_artifact` identified `AxureRP11.dll` as an x64 .NET 8
-assembly containing CIL and ReadyToRun code. Its SHA-256 is
+REA `inspect_managed_artifact` identified the main application assembly as an
+x64 .NET 8 assembly containing CIL and ReadyToRun code. Its SHA-256 is
 `1cc3801cb9ca79ef509b17be1deecc054419df8752bf0b52c808967e08ec9bd4`.
 Retained evidence: `ev_29095b34e892e52e044a84d47ea72477b4c58653026cf38c734c9b08bf867da7`,
 summary `ev_c190106decf7be150fd0f4061d743e3af1ce602630df875822651b768170884d`.
@@ -138,20 +137,22 @@ objects in the nine installed `.rp`/`.rplib` samples. For every package,
 Focused tests also change Unicode text and numeric fields, add object-reference
 dictionary keys, and copy templates between different package tables. They
 check the resulting values and retained scalar types after reopening. These
-are native format checks; the original Axure application was not executed to
+are native format checks; the original reference application was not executed to
 validate edited files through its UI.
 
 ## Useful object relationships
 
-`Axure:DesignDocument` supplies document data and the sitemap. A page package's
-root is `Axure:Page`; `diagram` references `Axure:Diagram`, whose
-`diagram-objects` list gives drawing order. Widgets reference `MyStyle`, an
-`Axure:Style` whose `PropList` entries contain numeric `DOAName` and `Value`.
+Object names in this section omit their namespace prefix.
+
+`DesignDocument` supplies document data and the sitemap. A page package's
+root is `Page`; `diagram` references `Diagram`, whose
+`diagram-objects` list gives drawing order. Widgets reference `MyStyle`, a
+`Style` whose `PropList` entries contain numeric `DOAName` and `Value`.
 Page-level `StyleCache` holds reusable style defaults. Widget text and labels
 may use `RichTextBlock` or `name-block` structures. Images are stored as binary
 data with references from styles and the document image map.
 
-`Axure:PanelState` packages appear as children of page packages in the outer
+`PanelState` packages appear as children of page packages in the outer
 directory. They have their own diagrams and widgets. These relationships must
 be resolved during conversion; treating every package as a page would expose
 configuration, style, and panel objects as spurious user pages.
@@ -162,7 +163,7 @@ contains `Path`, incoming `LowerHandle`, outgoing `HigherHandle`, and
 The optional Rust rasterizer preserves these curves, transparency, and holes
 as PNG images with bounded antialiasing. It uses even-odd contour filling and
 round stroke joins; those are importer rendering choices. Original path
-editability, specialized fill rules, gradient paints, and all Axure rendering
+editability, specialized fill rules, gradient paints, and all reference-editor rendering
 details are not guaranteed by this conversion.
 
 ## Sample coverage

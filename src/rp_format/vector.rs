@@ -1,4 +1,4 @@
-//! Rasterize imported normalized Axure vector contours for the image widget.
+//! Rasterize imported normalized native vector contours for the image widget.
 
 use std::io::Cursor;
 

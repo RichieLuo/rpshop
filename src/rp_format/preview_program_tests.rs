@@ -470,3 +470,29 @@ fn caller_selected_native_click_program_is_read_only_and_keeps_missing_links_exp
     );
     assert_eq!(std::fs::read(&path).unwrap(), original);
 }
+
+#[test]
+fn unsupported_preview_messages_use_neutral_type_names() {
+    for scenario in 0..4 {
+        let (mut graph, bindings) = fixture();
+        match scenario {
+            0 => {
+                graph.objects.get_mut("move").unwrap().kind =
+                    "Axure:InteractionUnknownAction".into()
+            }
+            1 => graph.objects.get_mut("x").unwrap().kind = "Axure:Expr:FCall".into(),
+            2 => graph.objects.get_mut("path").unwrap().kind = "Axure:UnexpectedPath".into(),
+            3 => {
+                let action = graph.objects.get_mut("move").unwrap();
+                action.kind = "Axure:InterationActionSetFunction".into();
+                action.properties = json!({"action":reference("x")});
+            }
+            _ => unreachable!(),
+        }
+        let result = compile(&graph, &bindings, &BTreeMap::new());
+        assert!(!result.events[0].cases[0].supported);
+        assert!(!result.diagnostics.is_empty());
+        let serialized = serde_json::to_string(&result).unwrap();
+        assert!(!serialized.to_lowercase().contains("axure"), "{serialized}");
+    }
+}

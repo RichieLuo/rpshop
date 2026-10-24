@@ -1,8 +1,7 @@
 //! Import the editable content of native RP projects and widget libraries.
 //!
-//! Native files are read locally, without invoking Axure or its account services.
 //! The editor presents RPShop's smaller model. Native saving patches edited
-//! fields and preserves untouched Axure objects and container parts.
+//! fields and preserves untouched native objects and container parts.
 
 pub mod binary;
 pub mod container;
@@ -431,7 +430,7 @@ fn load_packages(
     Ok(())
 }
 
-// Axure page copies can deliberately reuse object IDs in distinct packages.
+// Native page copies can deliberately reuse object IDs in distinct packages.
 // Scope only local object references in the editor's read graph; native graphs
 // retain their exact original IDs and binary provenance for saving.
 fn scope_package(graph: &Graph) -> Graph {
@@ -902,7 +901,7 @@ impl Converter<'_> {
             let start = output.len();
             for reference in array(&p["DiagramObjects"]) {
                 if let Some(child) = reference_id(reference) {
-                    // Axure groups keep child coordinates in the parent diagram.
+                    // Native groups keep child coordinates in the parent diagram.
                     self.widget(child, offset, hidden, output, ancestors, depth + 1)?;
                 }
             }

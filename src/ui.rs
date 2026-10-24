@@ -397,12 +397,16 @@ impl App {
                 _ => None,
             })
             .unwrap_or(if interaction_example { 1 } else { 0 });
-        let logo = image::load_from_memory(include_bytes!("../assets/branding/rpshop-logo.png"))
+        let logo = image::load_from_memory(include_bytes!("../assets/branding/rpshop-icon.png"))
             .ok()
             .map(|img| {
-                let img = img.into_rgba8();
+                // The header displays this at 38 logical pixels. Keep a prefiltered
+                // 2x texture so the GPU does not have to minify the full artwork.
+                let img = img
+                    .resize_exact(76, 76, image::imageops::FilterType::Lanczos3)
+                    .into_rgba8();
                 cc.egui_ctx.load_texture(
-                    "rpshop-logo",
+                    "rpshop-header-icon",
                     egui::ColorImage::from_rgba_unmultiplied(
                         [img.width() as usize, img.height() as usize],
                         &img,

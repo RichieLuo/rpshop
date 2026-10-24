@@ -109,7 +109,7 @@ try{
     const decode=value=>value.replaceAll('&lt;','<').replaceAll('&gt;','>').replaceAll('&amp;','&');
     const result=JSON.parse(decode(encoded));
     result.date=new Date().toISOString();
-    result.scope='Independent exported HTML controls and vector fill pixels in installed Edge headless; local fixture only. No Axure execution or full native/editor parity claim.';
+    result.scope='Independent exported HTML controls and vector fill pixels in installed Edge headless; local fixture only. No reference editor execution or full native/editor parity claim.';
     await writeFile(path.join(root,'docs/library-browser-qa.json'),JSON.stringify(result,null,2)+'\n');
     console.log(JSON.stringify(result,null,2));
     if(!result.passed)process.exitCode=1;

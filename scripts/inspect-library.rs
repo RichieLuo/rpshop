@@ -1,4 +1,4 @@
-//! Read-only catalog inspection of locally supplied Axure libraries.
+//! Read-only catalog inspection of locally supplied RP libraries.
 //! Compile against the workspace's rpshop and serde_json libraries.
 use rpshop::rp_format::{binary, container};
 use serde_json::{Value, json};

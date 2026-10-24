@@ -82,7 +82,7 @@
 
 ### 证据与版本范围
 
-以下完整 REA Evidence 记录保存在 [browser-qa-evidence.json](browser-qa-evidence.json)，包含声明动作、步骤状态、网络和控制台事件、DOM、可访问性快照，以及请求的 PNG 截图数据。该文件仅包含本次浏览器验收记录，不覆盖 Axure 的静态 REA 分析证据。
+以下完整 REA Evidence 记录保存在 [browser-qa-evidence.json](browser-qa-evidence.json)，包含声明动作、步骤状态、网络和控制台事件、DOM、可访问性快照，以及请求的 PNG 截图数据。该文件仅包含本次浏览器验收记录，不覆盖参考编辑器的静态 REA 分析证据。
 
 | 捕获 | Evidence ID | 范围 |
 |---|---|---|

@@ -1,14 +1,14 @@
-# 组件库与 Axure RP 11 对照
+# 组件库与 RP 11 对照
 
-调查日期：2026-10-24。目标是本机 `D:\Program Files (x86)\Axure\Axure RP 11` 安装副本。按原厂库的实际目录和组件类型核对 RPShop；所有新增预设、图标和渲染实现均由 RPShop 独立编写。
+调查日期：2026-10-24。目标是本机 RP 11 安装副本。按原厂库的实际目录和组件类型核对 RPShop；所有新增预设、图标和渲染实现均由 RPShop 独立编写。
 
 ## 证据与范围
 
-本轮通过 REA 静态分析已安装的播放器文件 `resources/scripts/axure/axQuery.std.js`。分析父证据为 `ev_9f92fd9a43d6dabe660687186b528db78cc28b412e6445bbd9a5b49298b00ff6`，摘要为 `ev_265bd305e5c35459697e96531c8b06daa37c14f508b96fc545be136e58d1ee32`。目录 SHA-256 为 `bb3938daef4dcfec7bf4fe7821673c987367f8b7b8fd4c9df4919e8c9da42e8f`。选择的文件成功解析，另外 48 个相关文件未进入这次分析；关系与语义覆盖为 partial，不能据此宣称整个播放器已经复原。
+本轮通过 REA 静态分析已安装播放器目录中的 `axQuery.std.js` 文件。分析父证据为 `ev_9f92fd9a43d6dabe660687186b528db78cc28b412e6445bbd9a5b49298b00ff6`，摘要为 `ev_265bd305e5c35459697e96531c8b06daa37c14f508b96fc545be136e58d1ee32`。目录 SHA-256 为 `bb3938daef4dcfec7bf4fe7821673c987367f8b7b8fd4c9df4919e8c9da42e8f`。选择的文件成功解析，另外 48 个相关文件未进入这次分析；关系与语义覆盖为 partial，不能据此宣称整个播放器已经复原。
 
-直接阅读该文件第 6–34 行可观察到 table、menuObject、repeater、dynamicPanel、textBox、textArea、listBox、comboBox、checkbox、radioButton、imageMapRegion、treeNodeObject、inlineFrame 等不同类型声明。这些是播放器的静态类型声明；没有执行 Axure 桌面应用或验证其全部交互。声明本身也不等于默认库中有一项一一对应的预设。
+直接阅读该文件第 6–34 行可观察到 table、menuObject、repeater、dynamicPanel、textBox、textArea、listBox、comboBox、checkbox、radioButton、imageMapRegion、treeNodeObject、inlineFrame 等不同类型声明。这些是播放器的静态类型声明；没有执行参考桌面应用或验证其全部交互。声明本身也不等于默认库中有一项一一对应的预设。
 
-`.rplib` 清单另由 RPShop 的只读容器/对象图解析器读取，**不属于 REA 反编译结果**。检查脚本为 [inspect-library.rs](../scripts/inspect-library.rs)，读取 `DesignDocument` 的 `PackageInfo` 页面、sitemap 分类，以及对应对象包中的 `Axure:DiagramObject:*` 类型。没有复制库中的图形、图片、样式或交互实现。完整目录在 [library-inventory.json](library-inventory.json)，图标库元数据在 [library-icons-inventory.json](library-icons-inventory.json)。
+`.rplib` 清单另由 RPShop 的只读容器/对象图解析器读取，**不属于 REA 反编译结果**。检查脚本为 [inspect-library.rs](../scripts/inspect-library.rs)，读取 `DesignDocument` 的 `PackageInfo` 页面、sitemap 分类，以及对应对象包中的 `DiagramObject` 系列类型（此处省略命名空间前缀）。没有复制库中的图形、图片、样式或交互实现。完整目录在 [library-inventory.json](library-inventory.json)，图标库元数据在 [library-icons-inventory.json](library-icons-inventory.json)。
 
 主程序集的既有观察仍有效：版本 `11.0.0.4137`，SHA-256 `1cc3801cb9ca79ef509b17be1deecc054419df8752bf0b52c808967e08ec9bd4`。REA managed members 检查受到 64 MiB 表示预算限制，不能给出完整桌面编辑器成员或行为；本轮没有把这个失败解释为组件不存在。
 
@@ -20,7 +20,7 @@
 | Sample form patterns | 48 | 包括 4 项 Instructions；其余也是复合示例，不等于基础控件类型数 |
 | Sample UI patterns | 15 | 包括 3 项 Instructions；含轮播、选项卡、分页、弹窗、可筛选表格等复合示例 |
 
-这些数字是该安装副本中的库页面数，不是所有 Axure 版本的全量能力数字。默认库与流程图库之间有重名项，不能简单相加后当作独立基础类型数。
+这些数字是该安装副本中的库页面数，不是所有参考编辑器版本的全量能力数字。默认库与流程图库之间有重名项，不能简单相加后当作独立基础类型数。
 
 ## Default 的 40 项逐项对照
 
@@ -28,7 +28,7 @@ RPShop 的目录分为基本元件、表单与菜单、标注、流程图、常�
 
 下表依据 `src/widget_library.rs` 的当前目录核对。标题、段落、便签等视觉预设复用基础类型；单选、文本域、下拉和列表使用各自的真实控件类型。组合预设可解组编辑，不具备原厂专用对象的数据模型。这里记录实现范围，运行与回归验证结果另见项目验证记录。
 
-| 分类 | Axure 库项 | RPShop 对应与边界 |
+| 分类 | 参考库项 | RPShop 对应与边界 |
 | --- | --- | --- |
 | Common | Box 1 | 矩形；可编辑填充、边框、文字 |
 | Common | Box 2 | “矩形 2”样式预设，使用独立设计的填充和边框 |
@@ -77,7 +77,7 @@ RPShop 的目录分为基本元件、表单与菜单、标注、流程图、常�
 
 本轮提供其中除 Snapshot 之外各项的静态造型对应；图片、三角形等条目与基本元件组共用，不为每个原厂库名新增底层类型。各造型都是独立绘制的示意路径，尚未验证与原厂图形逐像素一致。
 
-| Axure Flow 项目 | RPShop 对应静态预设 |
+| Flow 库项目 | RPShop 对应静态预设 |
 | --- | --- |
 | Rectangle、Rounded rectangle、Ellipse、Hexagon、Triangle、Image | 基本元件中的矩形、圆角矩形、椭圆、六边形、三角形和图片；流程组另有流程、开始/结束、连接点、准备等常见用途入口 |
 | Diamond、Parallelogram、Document、Database | 判断、数据、文档、数据库 |
@@ -96,7 +96,7 @@ RPShop 的目录分为基本元件、表单与菜单、标注、流程图、常�
 
 新表单保留真实类型；HTML 中分别使用文本输入、`textarea`、复选/单选输入和 `select`，SVG 仅导出其静态外观。下拉/列表的 `text` 逐行表示选项，当前为单选列表；单选互斥组在页面内生效，显式空组各自独立。原生文件保留其 `radio-group` 名称。
 
-自有导出 HTML 在本机 Edge 无头浏览器中通过 13 项检查，覆盖多行输入、单选互斥与跨页隔离、下拉/列表选择、设置文本动作、文本转义及重叠矢量填充像素。记录见 [library-browser-qa.json](library-browser-qa.json)，复查脚本为 [verify-library.mjs](../scripts/verify-library.mjs)。这是 RPShop 自有播放器的运行验证，没有执行 Axure，也不证明全部原生保存和编辑行为已对齐。
+自有导出 HTML 在本机 Edge 无头浏览器中通过 13 项检查，覆盖多行输入、单选互斥与跨页隔离、下拉/列表选择、设置文本动作、文本转义及重叠矢量填充像素。记录见 [library-browser-qa.json](library-browser-qa.json)，复查脚本为 [verify-library.mjs](../scripts/verify-library.mjs)。这是 RPShop 自有播放器的运行验证，没有执行参考编辑器，也不证明全部原生保存和编辑行为已对齐。
 
 原生导入区分 `RadioButton`、`TextArea`、`ComboBox` 与 `ListBox`，没有再统一降级成复选框或单行输入。在 `.rp` 工程中新增这四类表单时，当前文件需已有同类原生对象供模板复制；无模板会拒绝保存。`.rplib` 仍不支持新增库条目，已有表单可编辑并保存。独立 `.rpshop` 工程无此模板限制。现有基础容器不能新增写回成动态面板。表格、菜单和树组合写回也不会变成原厂的专用复合对象。
 
