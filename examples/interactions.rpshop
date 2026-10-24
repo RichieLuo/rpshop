@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "name": "交互创建示例",
+  "next_id": 20,
+  "pages": [
+    {
+      "id": 1,
+      "name": "交互工作台",
+      "width": 900,
+      "height": 620,
+      "canvas": "Fixed",
+      "background": "#FFFFFF",
+      "widgets": [
+        {
+          "id": 3,
+          "name": "运行状态",
+          "kind": "Text",
+          "x": 40,
+          "y": 35,
+          "width": 700,
+          "height": 45,
+          "rotation": 0,
+          "groups": [],
+          "vector_points": null,
+          "text": "点击按钮测试连续动作",
+          "fill": "#FFFFFF",
+          "stroke": "#BDBDCA",
+          "text_color": "#29303A",
+          "font_size": 18,
+          "text_layout": null,
+          "radius": 6,
+          "opacity": 1,
+          "hidden": false,
+          "locked": false,
+          "interaction": {
+            "action": "None",
+            "target_page": null,
+            "target_widget": null,
+            "value": ""
+          },
+          "image_data": null
+        },
+        {
+          "id": 4,
+          "name": "切换详情",
+          "kind": "Button",
+          "x": 40,
+          "y": 110,
+          "width": 180,
+          "height": 48,
+          "rotation": 0,
+          "groups": [],
+          "vector_points": null,
+          "text": "切换详情",
+          "fill": "#7553DE",
+          "stroke": "#BDBDCA",
+          "text_color": "#FFFFFF",
+          "font_size": 18,
+          "text_layout": null,
+          "radius": 6,
+          "opacity": 1,
+          "hidden": false,
+          "locked": false,
+          "interaction": {
+            "action": "None",
+            "target_page": null,
+            "target_widget": null,
+            "value": ""
+          },
+          "image_data": null
+        },
+        {
+          "id": 5,
+          "name": "详情区域",
+          "kind": "Rectangle",
+          "x": 40,
+          "y": 185,
+          "width": 600,
+          "height": 140,
+          "rotation": 0,
+          "groups": [],
+          "vector_points": null,
+          "text": "这里是详情区域",
+          "fill": "#FFFFFF",
+          "stroke": "#BDBDCA",
+          "text_color": "#29303A",
+          "font_size": 18,
+          "text_layout": null,
+          "radius": 6,
+          "opacity": 1,
+          "hidden": true,
+          "locked": false,
+          "interaction": {
+            "action": "None",
+            "target_page": null,
+            "target_widget": null,
+            "value": ""
+          },
+          "image_data": null
+        },
+        {
+          "id": 6,
+          "name": "打开第二页",
+          "kind": "Button",
+          "x": 250,
+          "y": 110,
+          "width": 180,
+          "height": 48,
+          "rotation": 0,
+          "groups": [],
+          "vector_points": null,
+          "text": "打开第二页",
+          "fill": "#7553DE",
+          "stroke": "#BDBDCA",
+          "text_color": "#FFFFFF",
+          "font_size": 18,
+          "text_layout": null,
+          "radius": 6,
+          "opacity": 1,
+          "hidden": false,
+          "locked": false,
+          "interaction": {
+            "action": "None",
+            "target_page": null,
+            "target_widget": null,
+            "value": ""
+          },
+          "image_data": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "第二页",
+      "width": 900,
+      "height": 620,
+      "canvas": "Fixed",
+      "background": "#FFFFFF",
+      "widgets": [
+        {
+          "id": 7,
+          "name": "第二页标题",
+          "kind": "Text",
+          "x": 40,
+          "y": 35,
+          "width": 600,
+          "height": 50,
+          "rotation": 0,
+          "groups": [],
+          "vector_points": null,
+          "text": "已跳转至第二页",
+          "fill": "#FFFFFF",
+          "stroke": "#BDBDCA",
+          "text_color": "#29303A",
+          "font_size": 18,
+          "text_layout": null,
+          "radius": 6,
+          "opacity": 1,
+          "hidden": false,
+          "locked": false,
+          "interaction": {
+            "action": "None",
+            "target_page": null,
+            "target_widget": null,
+            "value": ""
+          },
+          "image_data": null
+        },
+        {
+          "id": 8,
+          "name": "返回工作台",
+          "kind": "Button",
+          "x": 40,
+          "y": 110,
+          "width": 180,
+          "height": 48,
+          "rotation": 0,
+          "groups": [],
+          "vector_points": null,
+          "text": "返回工作台",
+          "fill": "#7553DE",
+          "stroke": "#BDBDCA",
+          "text_color": "#FFFFFF",
+          "font_size": 18,
+          "text_layout": null,
+          "radius": 6,
+          "opacity": 1,
+          "hidden": false,
+          "locked": false,
+          "interaction": {
+            "action": "None",
+            "target_page": null,
+            "target_widget": null,
+            "value": ""
+          },
+          "image_data": null
+        }
+      ]
+    }
+  ],
+  "interaction_events": [
+    {
+      "id": "72707368000000000000000000000001",
+      "page": 1,
+      "owner": null,
+      "trigger": "PageLoad",
+      "name": "初始化状态",
+      "actions": [
+        {
+          "action": "SetText",
+          "target_page": null,
+          "target_widget": 3,
+          "value": "页面已载入，可以点击切换详情"
+        }
+      ]
+    },
+    {
+      "id": "72707368000000000000000000000002",
+      "page": 1,
+      "owner": 4,
+      "trigger": "Click",
+      "name": "切换详情并更新文字",
+      "actions": [
+        {
+          "action": "ToggleVisibility",
+          "target_page": null,
+          "target_widget": 5,
+          "value": ""
+        },
+        {
+          "action": "SetText",
+          "target_page": null,
+          "target_widget": 3,
+          "value": "按钮连续动作已执行"
+        }
+      ]
+    },
+    {
+      "id": "72707368000000000000000000000003",
+      "page": 1,
+      "owner": 6,
+      "trigger": "Click",
+      "name": "打开第二页",
+      "actions": [
+        {
+          "action": "Navigate",
+          "target_page": 2,
+          "target_widget": null,
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "72707368000000000000000000000004",
+      "page": 2,
+      "owner": 8,
+      "trigger": "Click",
+      "name": "返回工作台",
+      "actions": [
+        {
+          "action": "Navigate",
+          "target_page": 1,
+          "target_widget": null,
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

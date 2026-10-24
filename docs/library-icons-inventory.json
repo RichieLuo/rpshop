@@ -1,0 +1,6519 @@
+{
+  "authority": "local-shipped-library-parsed-by-rpshop",
+  "libraries": [
+    {
+      "entries": [
+        {
+          "category": "Brand",
+          "id": "fbdea6c6057946338b5aa2bff14d4d31",
+          "name": "500px",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "44f3f36e8a724bfabaaa35e90acd635e",
+          "name": "Address Book",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c36c076990284c938de66d21f8fe0b86",
+          "name": "Address Book O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "20c4a716d4ec4d239a135453ef82a270",
+          "name": "Address Card",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f5ac45e06f01413984b7a37fef1ebc78",
+          "name": "Address Card O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8bc4c78f2ed04d71a3c9388707725fd3",
+          "name": "Adjust",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "21ee8c60045a4881a8e8c73b688872ec",
+          "name": "Adn",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "c0541d45441d4cbea9b65ed29f2b57d5",
+          "name": "Align Center",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "6ff2b2eed8f44bd0b3cebc7a6a07661e",
+          "name": "Align Justify",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "34ad313e23544529a1d461f7f1d9e3a4",
+          "name": "Align Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "f99fda07fb004d089702fa43186e67b6",
+          "name": "Align Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "58c5efb99c1142978197994cf1baba55",
+          "name": "Amazon",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "b1138ee0a6dc4f4782702231a530ddb0",
+          "name": "Ambulance",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "f1d41e674f0f422f8ccfec6cf5dc3435",
+          "name": "Ambulance",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "a7a2067b747e4cfa9ca90a3d07ede26b",
+          "name": "American Sign Language Interpreting",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "867e9134f8584dceaf5ca67a465c99a6",
+          "name": "American Sign Language Interpreting",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3331eb99a4c0435097a90a683fc34862",
+          "name": "Anchor",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "f1181c7d779b45b1a72aac348cecf7b1",
+          "name": "Android",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "38bb4719ad4e4564bfd06db53599e366",
+          "name": "Angellist",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "7a971e3ce0194b01ad90a87c594f7733",
+          "name": "Angle Double Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "134c981277bf4335a8c1431f5d3fa342",
+          "name": "Angle Double Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "7ddc19b0b5a242d78b6bb98f382aa0e9",
+          "name": "Angle Double Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "02bef83c3b444b80a3e1c1589cb4e120",
+          "name": "Angle Double Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "a3bf26c896cf42629b94c943fb0b4083",
+          "name": "Angle Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "7833a30b41d0470c95260fbea2ab2650",
+          "name": "Angle Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "630eaafe361c44b3bda9ac9720b6e8f8",
+          "name": "Angle Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "013825ae53324862b46f53b336adc5c7",
+          "name": "Angle Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "18d2049caed44989a9d319f6bda09e83",
+          "name": "Apple",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "599ba9b2a28e4f9f941a846bcabf6e63",
+          "name": "Archive",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "dc0ae30642d54f65bfe8a19ad3e94a9c",
+          "name": "Area Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Chart",
+          "id": "1e6f62eca7464b0bbf82a89f4f4d0626",
+          "name": "Area Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "88e946fd47ba43bcb3346c228c9b3c01",
+          "name": "Arrow Circle Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "b20050d2aefe4eac8de020303a74adbc",
+          "name": "Arrow Circle Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "2bee0f0e8b4e4658bd572b4834c8001c",
+          "name": "Arrow Circle O Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "af42dddae8324e14a7759cfb7796d8c6",
+          "name": "Arrow Circle O Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "f2e268a644c344b488234d7bb048cada",
+          "name": "Arrow Circle O Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "a7f709a816b14a1db47625ed45094d19",
+          "name": "Arrow Circle O Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "31c45fef55bd4580a34a0fa3fe198a62",
+          "name": "Arrow Circle Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "0d2ef0c2bf1b4ebd91a58ffc92f7e55b",
+          "name": "Arrow Circle Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "20eff396b79641eeb5c8c7b09461b58a",
+          "name": "Arrow Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "820fa97cd8fe4928ba370ca6aeaaf687",
+          "name": "Arrow Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "bf6ca885099c423bb747720dcc057a9f",
+          "name": "Arrow Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "f5622583fd7b4b79b713f2c530e4dd37",
+          "name": "Arrow Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "629946d8bcd84513ace64058e5c838ac",
+          "name": "Arrows",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "433be0d6011d448781a5d690ccfaf725",
+          "name": "Arrows",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "fc336d05fd314b5fa2b9b45c1783dee7",
+          "name": "Arrows Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "27a3db039dbf442c8baa1b616f83bd58",
+          "name": "Arrows Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "646c251d143e47b688401baab615404a",
+          "name": "Arrows H",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "0ea8407c492a474f876da942555b24ee",
+          "name": "Arrows H",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "145fef7677164ca0bc743a665833e4ff",
+          "name": "Arrows V",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e0abe5f3120a495fb741eeb96678a454",
+          "name": "Arrows V",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "2ee9c4e43096447886b16493ae175ea3",
+          "name": "Asl Interpreting",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8ffdd54977cc417f8e8ece874f7bca0d",
+          "name": "Asl Interpreting",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7f8dc02861fa472aa91e79d9eb024ff9",
+          "name": "Assistive Listening Systems",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "4ea3d55d16494a77ba022acf048762f5",
+          "name": "Assistive Listening Systems",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5530d62c607a4750a4f632e5dfca9889",
+          "name": "Asterisk",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c004700261684beabceb9e6990e0552c",
+          "name": "At",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "fb1a1de5240140748049a67cdaba55f6",
+          "name": "Audio Description",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9d2fb2c627e84ca4b5ca205d85598574",
+          "name": "Audio Description",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "4042023dbcc84f38bb0dcebda8117f5d",
+          "name": "Automobile",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f6d143c68f5a4b16bfc9e9c4aa6551c7",
+          "name": "Automobile",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "626faf2b06e14a2e894e68e82afbbb57",
+          "name": "Backward",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "13a764611893488785992af3f4a3e8a0",
+          "name": "Balance Scale",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "de77950065fc4c8483c14649b1d7156d",
+          "name": "Ban",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "58a5b9d075fa4a62ace0fb3371749002",
+          "name": "Bandcamp",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "249b387d52254918a7f8a2ebbbfab030",
+          "name": "Bank",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Chart",
+          "id": "62236f2086834b599bb2831fdc76e60c",
+          "name": "Bar Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "55d3fafc3d6e4f679968bda76dff6131",
+          "name": "Bar Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "327cdc080e2245268085423ce842be9a",
+          "name": "Bar Chart O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Chart",
+          "id": "1c5f50fedba84357958fbf95f463af4a",
+          "name": "Bar Chart O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "dc317d00f0ce479f9f63cedca51563e2",
+          "name": "Barcode",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cd85a062d2a84f4fa4644e358c5df574",
+          "name": "Bars",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "887eee08985d41c1b3d54aae589523f4",
+          "name": "Bath",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3aad370b35834c1da3d2c71fcca42768",
+          "name": "Bathtub",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1ed55d6858c24328bcb80486212d5de5",
+          "name": "Battery",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5daba4c7486646d4ba3d759544db1ba7",
+          "name": "Battery 0",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "95ed10fef5174f668481d43691ebf0d3",
+          "name": "Battery 1",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0daac31355f24891af22a22c7d065462",
+          "name": "Battery 2",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c5b759319b6c46c8ae2bb68250d102f1",
+          "name": "Battery 3",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "924993de80a241508dfe372230f2466e",
+          "name": "Battery 4",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5521da95ede04ab7846ad35cf48287b2",
+          "name": "Battery Empty",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "38119d46c3614352b2db41e7d2487bc8",
+          "name": "Battery Full",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "75dbe0f8e3c84cb6a98e00379dde9c72",
+          "name": "Battery Half",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "60e53a5620a5428d8033e453f163e0ad",
+          "name": "Battery Quarter",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "16048fa0e6ef4393bfbb47a0db399d46",
+          "name": "Battery Three Quarters",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "02c8f814f543433c8223df6c18ab067a",
+          "name": "Bed",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "30acb166b041476fbefe45f43f225c0c",
+          "name": "Beer",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "7fcabca77b0d48808236f2da7bad5034",
+          "name": "Behance",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "8f53ba487ff64453b50ac1a8a22c1f37",
+          "name": "Behance Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f15f4045aa1340b5a4740624137d1a38",
+          "name": "Bell",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "152bafa850a246dd966bf9b095039ba7",
+          "name": "Bell O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4f2ca332fc4d4a5bb8b7a18a069c1dc4",
+          "name": "Bell Slash",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fa831117ae984e44aa5976217a1a32fe",
+          "name": "Bell Slash O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8e5c9c9cf90343f580b8c2ea7230594f",
+          "name": "Bicycle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "d928821d1e034d0d9c1eb6bea0637d0e",
+          "name": "Bicycle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f0de49885db04200b87cf92389d8d04a",
+          "name": "Binoculars",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "97ca0747c0ea449dbe28036423d21873",
+          "name": "Birthday Cake",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "eb928da31758442da2427d27edbfd750",
+          "name": "Bitbucket",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ac5a259ae79e411d8d7e6dc37766005d",
+          "name": "Bitbucket Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2ced2d5d5c984a698266cfbf6c06f012",
+          "name": "Bitcoin",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "1bbd42ea99134d928c07ace77f08cbe6",
+          "name": "Bitcoin",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "7ada369e65c64fd0a5ddbe36b3255679",
+          "name": "Black Tie",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d15162c5dcb843e48d6f077e40890946",
+          "name": "Blind",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "1e48f31eb96d4ae4948330fcbaaae0b1",
+          "name": "Blind",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "05bd242fcb8843e5a87549f9df60c9b7",
+          "name": "Bluetooth",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "64f925bc1d154dddbade500d1ff13e74",
+          "name": "Bluetooth",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "7f3f2ac59cfb4786b1263e541261936a",
+          "name": "Bluetooth B",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b7cc99c1ba634f85a4013e1c909cdd83",
+          "name": "Bluetooth B",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "be10b18334174a9d9885b18dd7c37d98",
+          "name": "Bold",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a9b589e89c1d4b118a55b08f3045733d",
+          "name": "Bolt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6e4a68edfd3045acb2494dd76d108487",
+          "name": "Bomb",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4a9474499fa047ebadbc47367ebbd3a7",
+          "name": "Book",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "64c927ac1f7349b49308188b09cf8196",
+          "name": "Bookmark",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "61fd5749266a42469a896ae4ddd336b5",
+          "name": "Bookmark O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "6f1b5bd7eb344d708dc72fd870480341",
+          "name": "Braille",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2313eb6c91c643dcb47a1f668d4480ce",
+          "name": "Braille",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3e9d552ebaa14e25b54d47918b51917f",
+          "name": "Briefcase",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "8e3cce0fcb024ec68cedca91e650b1b8",
+          "name": "Btc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "57b2f17262dd4f47a69ec8a7907aecb9",
+          "name": "Btc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "945c14dc941c4dd69436f83c1f845e3c",
+          "name": "Bug",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7ae22b77140943b6a12684a97745f0d4",
+          "name": "Building",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "552ddd6215414dabbc6b5a0c00606135",
+          "name": "Building O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "36d33e19880443ca880bc4ea3b852c3b",
+          "name": "Bullhorn",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1bf27e67978048099a27519106de0ce6",
+          "name": "Bullseye",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "bd887e92513f4fecb1dfe25f5fc30d29",
+          "name": "Bus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "45a839ebe7984305bf5cb8142b2d1556",
+          "name": "Bus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c7928817604544c99d6235b44c9dcc3d",
+          "name": "Buysellads",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "2af69c0ca38b418a86b0327b7908439c",
+          "name": "Cab",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1a13258b0b3a4c44bd077684ee99ff08",
+          "name": "Cab",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "829c4c7c3f4748bfa44a62469e3d4e5b",
+          "name": "Calculator",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "08edd8fc09134e039f485ddc1173a1eb",
+          "name": "Calendar",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7d8de2b54c4c4d049f13a1995c7fb384",
+          "name": "Calendar Check O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cc465c2452f541aa9e16d9c20bb36cd6",
+          "name": "Calendar Minus O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "46a728ed010348f3a362f82413367609",
+          "name": "Calendar O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a5ad4b181db34df599c84cd8713120db",
+          "name": "Calendar Plus O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4ae77b1820b6402f9947af35070fff22",
+          "name": "Calendar Times O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "52cd2c11ed3b4bdea5e9d5d9214ef6cd",
+          "name": "Camera",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "952e2e8e13274d959e77ae3128e3b31c",
+          "name": "Camera Retro",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "205e8cddd12440ab9a75387a99df3f25",
+          "name": "Car",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "3846799b89d4419c8e26884004f3b8da",
+          "name": "Car",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "2a9454735536441391e16f438928fde4",
+          "name": "Caret Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "4a5277e7291f4a59a47a941bc37df353",
+          "name": "Caret Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "222c7e16d58f476181996f4128b5f4a1",
+          "name": "Caret Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "12ad0401bea842ed8de669ad95c423f7",
+          "name": "Caret Square O Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "7d2ff2e6483d4c7595326cb2860fe6f3",
+          "name": "Caret Square O Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6d1bccfcea4e4d16926c313feabb7e66",
+          "name": "Caret Square O Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "44dbdc0347fc412e8be7e08e8ca8df09",
+          "name": "Caret Square O Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4b3e15eadaf341a8beec0bcf40ff7d4f",
+          "name": "Caret Square O Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "7b9c9386c0da41edad548f07d9212528",
+          "name": "Caret Square O Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "c84e61ab5b024bdc9178cf8410f1da8d",
+          "name": "Caret Square O Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "272a7533d197434a836cb545649b0ad1",
+          "name": "Caret Square O Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "973380cb821e49c8a2ace2d151d65813",
+          "name": "Caret Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9428547de0ef424596a306146e7f5ab3",
+          "name": "Cart Arrow Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "428fef21e8894568bbd78f332015bb59",
+          "name": "Cart Plus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4aeb125ad95f48e0bd21cb0ddab174b9",
+          "name": "Cc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "22fd9c445a84405197b2ba2589fdf581",
+          "name": "Cc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ddb17df41cac487fa39538632ef0a468",
+          "name": "Cc Amex",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "f5edbaa4f3354852b58604d4daa41fe1",
+          "name": "Cc Amex",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "bbf7dbac927d4eb4b241c889d579e341",
+          "name": "Cc Diners Club",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "32926d3b59bd4f538304ea1279c318cb",
+          "name": "Cc Diners Club",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "7dfc9fc4f8fc4178b81b18974a411af4",
+          "name": "Cc Discover",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "fa2b88d5efe8446695620e5087de78ca",
+          "name": "Cc Discover",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "cf2c65d30cf449118c25c30dd877b029",
+          "name": "Cc Jcb",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "67cbdb2335724f598a6e8d73b090aafc",
+          "name": "Cc Jcb",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "3d7260fa019d417ca0623819fe8d7f08",
+          "name": "Cc Mastercard",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "241155676337421d97c791a6080e1ff6",
+          "name": "Cc Mastercard",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2ab45de5e72848acb4c0eaa1af46827b",
+          "name": "Cc Paypal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "a39d56608b914c70b08546edc84e0fe7",
+          "name": "Cc Paypal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "21aef0dada944bfdadb83274dcf8d433",
+          "name": "Cc Stripe",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2b251154959d4a69a52fb52a171025cd",
+          "name": "Cc Stripe",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "e67ebb9e41084a87b58e27adce42130f",
+          "name": "Cc Visa",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "4063fe4c5f734292a406460c67bc289b",
+          "name": "Cc Visa",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7345bdea004f4c0da94b14a6eb093faa",
+          "name": "Certificate",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "b71bb653fd2a486bbb9abd2969f2f4e0",
+          "name": "Chain",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "e2b9244c1b2e46ab9fecd08055d042b4",
+          "name": "Chain Broken",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "423509eda4a64158927f7b5116f02d9f",
+          "name": "Check",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7290a136d6f5486197a5e86353670b8c",
+          "name": "Check Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b32cd061397d4f9ab34d01765ac30efa",
+          "name": "Check Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "f6ce0bf261a64668966d4dd6e3616ffe",
+          "name": "Check Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fe222d3f2a844096b4a46d70b08bbeb9",
+          "name": "Check Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3030d8b4a6c642c3b32443f43f678e24",
+          "name": "Check Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "6e34ab661a33487b94fa51404a303d49",
+          "name": "Check Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "feea7b7e330a4d0185048747c60b18cd",
+          "name": "Chevron Circle Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "dfa7270fbb48422ba30f30b2bd3aab4b",
+          "name": "Chevron Circle Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "056cbcca0c064fa7bea8b37df880dd61",
+          "name": "Chevron Circle Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "1152b668fd0f461c828f8d1af0b938f1",
+          "name": "Chevron Circle Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "0ba078297fe1460b84a29aa8f05a98eb",
+          "name": "Chevron Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "4cba83f28b17466bbab82f33392e83e1",
+          "name": "Chevron Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "eb144219cba648ad8ecdc6691e926184",
+          "name": "Chevron Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "8f8102e6bf954082a8e43c40b71efe19",
+          "name": "Chevron Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7bdb64b75e254a28a67913dc8e0decc0",
+          "name": "Child",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e74c31f74adf4091a3edcb56fa6b4150",
+          "name": "Chrome",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5dfd649e031c45f7bfc3eb66bad48f58",
+          "name": "Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "c4a3d0e4b1654599bf5dcb310be5cac7",
+          "name": "Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fdc82477d0fb4fd087fabc9a42b451dd",
+          "name": "Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "6bf8fd26a957414e9a95300a40d14e02",
+          "name": "Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7e5228f48d594fc89518e4809601ca19",
+          "name": "Circle O Notch",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Spinner",
+          "id": "5bf7337e59cf49fb9c215ede23b42a05",
+          "name": "Circle O Notch",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ec475f5ff9f3449792f3552c12c1a18b",
+          "name": "Circle Thin",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "1ec24af3ce84440bb1170227d4621f74",
+          "name": "Clipboard",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0cdec4a7c3484f9d84a2b2b9c61ca20d",
+          "name": "Clock O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ad01946c8d014588b1cb9ea8b58d3849",
+          "name": "Clone",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "040cc93cc28a41208806fb40df5e8fae",
+          "name": "Close",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0bdf58c14f09494895bb133efab20ce1",
+          "name": "Cloud",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cfd4e27f8a16444aa984a81622a9ae57",
+          "name": "Cloud Download",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d17291a56fea45d2aca9fe434633a166",
+          "name": "Cloud Upload",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "ff77f27532c3441aa37f2bc803de3b5d",
+          "name": "Cny",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6f15e0492946439d920a0cd85608554c",
+          "name": "Code",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "56629ade9a8c48bfac8fec13a0e018c4",
+          "name": "Code Fork",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "edec597c75494c648cd265edfae171fa",
+          "name": "Codepen",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "889bd4a388b64cb6bc7026512e5e65e0",
+          "name": "Codiepie",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "747548da6ff34bfda5e94bf4745bd80b",
+          "name": "Coffee",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c16a74cba5c04b54977e13f4af69be4b",
+          "name": "Cog",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Spinner",
+          "id": "081fa1e2683d46ecadb86f28c5b1c919",
+          "name": "Cog",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fc0d18e19c514228af51c653f88e96d3",
+          "name": "Cogs",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "ac0e77ed756c41a2a9943f52d3811ed0",
+          "name": "Columns",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "04703e917b0248b1860dd39eaff44ae7",
+          "name": "Comment",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9d4d401f502c44ce959a2d2ad45c7271",
+          "name": "Comment O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "dab31f36a7c540dfa92e117879a03756",
+          "name": "Commenting",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "029187a89273432aad13a3db3f72ae27",
+          "name": "Commenting O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "678c69bb472b4efd8c45f3628882de86",
+          "name": "Comments",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2d526ab62b6a420096a1aed1abb1304f",
+          "name": "Comments O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2d4dfeda6a8b49a688dac186ab02937a",
+          "name": "Compass",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "ab5dd53a844a45a0a440d3ab71de190e",
+          "name": "Compress",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "dc03884ca38f42eaad181b1725e5e29b",
+          "name": "Connectdevelop",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "bcd8c2ceef5b46428b98d684bc84a18e",
+          "name": "Contao",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "0d234b8ae6d64254bb1c881c9ad49b3d",
+          "name": "Copy",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3853e0799d534daeb8a17dbfb848b03f",
+          "name": "Copyright",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "10144977fa824151a9077960eb9128ed",
+          "name": "Creative Commons",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ca07cd65e81b421c9ea8b88e350c0752",
+          "name": "Credit Card",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "0eefb7cb8e4e4e5385521cead9107b31",
+          "name": "Credit Card",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3d83e0416a104f1c836efadb707fd499",
+          "name": "Credit Card Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "43b5e86b269445eeb13f711d2db9a688",
+          "name": "Credit Card Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "25f11eba04d84c4c8b019ee464784bc5",
+          "name": "Crop",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c04168413a75451bb7a1c441ce6ed665",
+          "name": "Crosshairs",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "49d8fe0816904711a3df01caebf6b1ba",
+          "name": "Css3",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ad041c8eb25143a7a36053c77a3db692",
+          "name": "Cube",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "bd96ca890af3454aa5fcd685dcd033a7",
+          "name": "Cubes",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "ae8f8091ff0e4985a185f224f0f82d7c",
+          "name": "Cut",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9d37e4342499429eaf43d668d512a540",
+          "name": "Cutlery",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a1a39ffb787f40a0a0aa5da5308e0974",
+          "name": "Dashboard",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "26fc9d136289495d8875b4561b26141c",
+          "name": "Dashcube",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e108bea3342741d0971b5d747da2bed4",
+          "name": "Database",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "464b8fb784ee47629e9cbd85e203c9f1",
+          "name": "Deaf",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "805c29c362b5416ebcbc0cfb497b8977",
+          "name": "Deaf",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "7eb2550f494846f1bfee62da9370a4cc",
+          "name": "Deafness",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e7594fdeac8e43a2bf1ea58aa6f83a70",
+          "name": "Deafness",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "85beb1843656499aa137ddb935c19621",
+          "name": "Dedent",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "cb75ca09c7064bc3abcad99535e4c211",
+          "name": "Delicious",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6fdace74aae442beb7edff8f4eef5414",
+          "name": "Desktop",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "fbb922affa704246b6e514bc22c651c3",
+          "name": "Deviantart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f209c9cde6f54fb6bf2e9eb84b584b35",
+          "name": "Diamond",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ca09c61ea7474d4e90001d74c7e3eddc",
+          "name": "Digg",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "354d96b5b80a4b6c9694947c9affcf4f",
+          "name": "Dollar",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0e12236a46404fe7bb70f3c221cafe87",
+          "name": "Dot Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "2ee4a44141af499c8d931465774e84ba",
+          "name": "Dot Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f7164751b7074c1c8dc9639243ecd72a",
+          "name": "Download",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "260a1f10bcf045e797a0215bdc1e5eaa",
+          "name": "Dribbble",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "91e276132e6346a39fdb5b3dfb70b4d9",
+          "name": "Drivers License",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d595e9203e574daa93bdc22a95f90c5f",
+          "name": "Drivers License O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "668f82e1e03442499311f2cd6dc50caf",
+          "name": "Dropbox",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "4784dcd9f1ec4e79a93d359e0ef0b55e",
+          "name": "Drupal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c19924ecf4944c75b79ee59d53fa4876",
+          "name": "Edge",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d7adbc35fd7c454a9b01734824b96a39",
+          "name": "Edit",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "cef64323510647508e7e09f8f4362332",
+          "name": "Eercast",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "41680ce4d0b74183abbbe9093eb7330d",
+          "name": "Eject",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b8edfe79f2e34fd9975233a234aec128",
+          "name": "Ellipsis H",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cc70cc19994c4bbe9c1267a128c71a41",
+          "name": "Ellipsis V",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "3cc9535afe0a4523a1c8031157961f04",
+          "name": "Empire",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "23275d5206c94547be8a31129b6d2f28",
+          "name": "Envelope",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "bdd54c4f50af4745936e7a1aeba5fe8a",
+          "name": "Envelope O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b3cd5030c30f4f30a1ea278283ebc298",
+          "name": "Envelope Open",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8d5e87f4c5e248c0b3b76dcc1f224204",
+          "name": "Envelope Open O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f14ff0db62c84f1c884a59e9e4ad231d",
+          "name": "Envelope Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "04786761d69740d1a32203df73c2949a",
+          "name": "Envira",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3800a34141b24bf79a92d4a49211916b",
+          "name": "Eraser",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "59b5ffd3c04c47d9a3213f3a1b97cd8d",
+          "name": "Eraser",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "648da62550c244829ff8a65098b14bbd",
+          "name": "Etsy",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "3f2ac9be41f2489e8ab5359b870f4a7b",
+          "name": "Eur",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "37ab978dc39e45dead9e253b440494fc",
+          "name": "Euro",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9120d5d894764d29950e88a6d050f166",
+          "name": "Exchange",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "9ee644ffe5e34f558e790b037fbf7254",
+          "name": "Exchange",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e78ad85e6297486ebbadec0067d562ae",
+          "name": "Exclamation",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ac84f27305a04ea29acf77ae3541b762",
+          "name": "Exclamation Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4ad1571b1aa94689acf1ed414099fd0d",
+          "name": "Exclamation Triangle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "23fdf7b4bca3429e83c63857f4eda145",
+          "name": "Expand",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "4bc6e16c79bc4bf28144e94dd4a5c4d6",
+          "name": "Expeditedssl",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "507a43e5500f4a56b95d71b1240ad084",
+          "name": "External Link",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f7dd2ecdf9be460f87b0c9f420a20ed9",
+          "name": "External Link Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "859e585b369c4371865d9d04b3620f40",
+          "name": "Eye",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f8954c6b80fa4a92a166a0e95fad22d9",
+          "name": "Eye Slash",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f50520bc6c4945b6b64208329a8528af",
+          "name": "Eyedropper",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "25a8bafb20eb48c392c8d55243699900",
+          "name": "Fa",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "01a2346048f44947ab248effbb230df9",
+          "name": "Facebook",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "4f61fac78c5a4794b89c3b7e2e355d57",
+          "name": "Facebook F",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "a0012f7aebc24541817427ea936ba595",
+          "name": "Facebook Official",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "835172de93fa4b4fb4bb46dd011b576e",
+          "name": "Facebook Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "3d4541cad225480a831e27cde4336abc",
+          "name": "Fast Backward",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "881993e458724c67926680ecdd1f884e",
+          "name": "Fast Forward",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "81d3750ea6364361aa7888fb2c61afef",
+          "name": "Fax",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9acd04300bf3420a8b8e55947b67e939",
+          "name": "Feed",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b7b3feebb5ea4cce85628e7c60de1d35",
+          "name": "Female",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "fdf1f714644f4674bf431cfc6a63f814",
+          "name": "Fighter Jet",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "de5b792562d949ec9d3bbce7bf40413f",
+          "name": "Fighter Jet",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "c835cfa076e14a83b77599b9f9450698",
+          "name": "File",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "98e70a32e8b34162bc53a2f5bd6a2bc6",
+          "name": "File",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "9133a61527cc44399fe7b049e8e5dee5",
+          "name": "File Archive O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "67ead0821b134b8b94b640332161ca04",
+          "name": "File Archive O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "9cc7fdf601c941cda8f58867ea2bb277",
+          "name": "File Audio O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1af0fb02e35f47eca9c04a5e149f94ce",
+          "name": "File Audio O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "07563708bc684c268a251db2643d75ad",
+          "name": "File Code O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "a31267a7f4cf4173864a0a7473960652",
+          "name": "File Code O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ccddd52c2b8b42bbb475854f8179b595",
+          "name": "File Excel O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "489eddf4c0a5484f91531ee6859ed46f",
+          "name": "File Excel O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "b071ff74ec404cada1fbb56307912cde",
+          "name": "File Image O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "55038dd7929340e3ab4efe48205b40f1",
+          "name": "File Image O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "f9332af0ccf04644b1fe83535465a3ed",
+          "name": "File Movie O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f6a504bb28b94149b54bbe9698d83f32",
+          "name": "File Movie O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "d2add6c4fc3e4bb4b87e96a2fcfcd599",
+          "name": "File O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "b2ce5c82d149465082f5d253a04d03ef",
+          "name": "File O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "6db701da0c254d34b1e4bf33d605c823",
+          "name": "File Pdf O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9a337d5e1d034c1ebd192d5cff23b60f",
+          "name": "File Pdf O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fe52ffd83399493fa2c5524a35126b94",
+          "name": "File Photo O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "17d11f2d8eb24894908a3a37792692bf",
+          "name": "File Photo O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a283e96cbcdd407f8fb5b4cb09a713b8",
+          "name": "File Picture O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "934db6208ee94613ab2f9ed477f6d6aa",
+          "name": "File Picture O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "baa5793aed4242d0abb537388afa40fe",
+          "name": "File Powerpoint O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "d782f7a77a92496491aefb5a32f1a4e0",
+          "name": "File Powerpoint O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "4c55dc14561b45d9ac6883efec786494",
+          "name": "File Sound O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "88a33a6c6bec4a6299361b5a2500bdcb",
+          "name": "File Sound O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "11836b45af99445d8e2e30d55c0dd8f4",
+          "name": "File Text",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "37f37093fcf74273b2de98dc49281a7b",
+          "name": "File Text",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "86562e637dad434dbf6a9ce1fd821459",
+          "name": "File Text O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "d4d978ccdc444eeea5050ac74044cb8a",
+          "name": "File Text O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "45556418d8e8470ca28ab2a16f298fe6",
+          "name": "File Video O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "cce56b71340e4e58bde795a4c07be166",
+          "name": "File Video O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "9ded304c51ec4564b54dcadb660a7892",
+          "name": "File Word O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "87b86cfc761e45f8b9eba1a8a7803495",
+          "name": "File Word O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "File type",
+          "id": "926fca5179504b1b9b903767df8f019a",
+          "name": "File Zip O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6a27108274d741079c299008425efcb5",
+          "name": "File Zip O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "a618de16c9044838a7a98e59368a208b",
+          "name": "Files O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "05b013fad3424082b63fce80c9cb556e",
+          "name": "Film",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d5ea137e79f24c84b62e206724a52219",
+          "name": "Filter",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "605265879b284fba9487e37d2bc36ac9",
+          "name": "Fire",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7db82c98a3df46d4852c197815525b28",
+          "name": "Fire Extinguisher",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c5eb8675bfb841f9bb71e5728f73da15",
+          "name": "Firefox",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c5dd1442d3ee4bbf9506d7010567f797",
+          "name": "First Order",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "81be29c54f5a4bd0ac62080d73654962",
+          "name": "Flag",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9a38aa7dbbeb4c36868acfcbf8030b16",
+          "name": "Flag Checkered",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b294ab23a3d94e17a9923cddb90f9c32",
+          "name": "Flag O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "28826e92193a4edcaaf619116128765c",
+          "name": "Flash",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "23e7bb01d7a64a7fbb1f9c6614e43600",
+          "name": "Flask",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "0dece29a443b4edd82e8fea9db96cbe7",
+          "name": "Flickr",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "a829f744c00f4219a58646069dde07af",
+          "name": "Floppy O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "02cf47ea328d4f1484fd030cec69ff2a",
+          "name": "Folder",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cd5925888b6541f6b1a0906d1066be75",
+          "name": "Folder O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "629eaf4fd9ac475a8480bcfe2187c4ae",
+          "name": "Folder Open",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a6831f05ef574f8b8dfb516d4352163c",
+          "name": "Folder Open O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "c7e0757c2c9c4a4183f1619ed1b26c67",
+          "name": "Font",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "7131536226b94003a113529ff7486701",
+          "name": "Font Awesome",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "dd261e5f9075493292bf88831b720ab1",
+          "name": "Fonticons",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c76221595775433f8a6fa557b40ec530",
+          "name": "Fort Awesome",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "cab9e5b7790d478ba515a031d73c6f93",
+          "name": "Forumbee",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "991cfa0f6f3f49429e729dd9196a2bc6",
+          "name": "Forward",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "a23c18dff75045dbab120631919884ea",
+          "name": "Foursquare",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "a954007ced854fb3862679d7fa3b9b34",
+          "name": "Free Code Camp",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "690986932c14450b8324308693e80e8c",
+          "name": "Frown O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "040e04b8faf34f8b86fe4e173d566002",
+          "name": "Futbol O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "acb069239f3a47e7b7954c8e06738c9b",
+          "name": "Gamepad",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8bf42e292ce9433abb405e6e2669ec1d",
+          "name": "Gavel",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "6c5f294b516942fe801736099e0ad46b",
+          "name": "Gbp",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "516b67c9542d4cae8edde42742d50381",
+          "name": "Ge",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ac7232c3c03d42a6a6ef5ca9e727d219",
+          "name": "Gear",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Spinner",
+          "id": "b7223977524c40ed970ddece5d5b214a",
+          "name": "Gear",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b6bf087644604f12bd051bbcd0c5506e",
+          "name": "Gears",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "7853b1f1b3704ad68d55970c1f3cdd2a",
+          "name": "Genderless",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "8f2f07bfd89a447db0b94164ce023088",
+          "name": "Get Pocket",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "6d5b9069eeb64aa9b4b3b48e9152234c",
+          "name": "Gg",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "7bbcd429c0fb43b78979d4445243e5ab",
+          "name": "Gg",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "8c54f8eb8d90400bacaff7f0b3446ed0",
+          "name": "Gg Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "36548c18a97845c4a61d4d1a58467b57",
+          "name": "Gg Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "16411b132a134888b273463e607030ba",
+          "name": "Gift",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "9ac321ef6d1049a0bbdc2ac49400264f",
+          "name": "Git",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "02f6588529d54e8f8c63415fd699a609",
+          "name": "Git Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "19d14348d6ac4e6dbab550b8a6b30ec1",
+          "name": "Github",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "31b910521e934c87a4ec45eb28127ad4",
+          "name": "Github Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "cb05209b39104df7aad71f02b8928d0c",
+          "name": "Github Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "aa4318153fc84bbb84a3943e74d7491d",
+          "name": "Gitlab",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "fe1465b68958404daff5b66cdf565a59",
+          "name": "Gittip",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "604fe9a91bc846dea13fbe903b12b39d",
+          "name": "Glass",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "84355b1fded84684877d75bf1d7df3be",
+          "name": "Glide",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "95a3e7fe35ef4c73a0a1645ef0a01351",
+          "name": "Glide G",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a26ce47df1d04a98bf06099c9b87370e",
+          "name": "Globe",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c8b9e48329894ecba4ec697614cd5f04",
+          "name": "Google",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "0804cdb6cdd5487aa98ecf9ac97c2ba9",
+          "name": "Google Plus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "5c0d5d136c9a444c970c06b3c0fba75d",
+          "name": "Google Plus Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "901e84c704a54dd6867bb139c79a5702",
+          "name": "Google Plus Official",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "bdd299fba4e54d3b9b609a80c78fccec",
+          "name": "Google Plus Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "6443a50bdf7e4cafb7cba9d51ee4ea4f",
+          "name": "Google Wallet",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "414459d6049340388e8c5bcefe303078",
+          "name": "Google Wallet",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c8f89288a9a346b6ab6375b8809ea019",
+          "name": "Graduation Cap",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "0324b5bf055b4fc29651ea88d9889a26",
+          "name": "Gratipay",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c55974b8e7c341ce99d2843b63b8384d",
+          "name": "Grav",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d4e999c82ed74a60a1418df4c86c2196",
+          "name": "Group",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "e8d8839e89bb4500af52968e7ef5ddd5",
+          "name": "H Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "85991dc31ea54180a73a8d78ef09bf8f",
+          "name": "Hacker News",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0d53c1bc490e4cdaaa1792420f35ceb1",
+          "name": "Hand Grab O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "ed055c21dc81411f9e5beb2499efedc4",
+          "name": "Hand Grab O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "480c1b1ea5984f098f6c38b4f90436b6",
+          "name": "Hand Lizard O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c6baef68b362460baf68a7c5ce355079",
+          "name": "Hand Lizard O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "58b237294d2c4bd39452a6bbfc1408de",
+          "name": "Hand O Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "e006667a89a24567a74dc60de011274e",
+          "name": "Hand O Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "43492f61dddc4475aae37ca8b3d375b1",
+          "name": "Hand O Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "2adda1b7ca3247699def8c6ba0544f8a",
+          "name": "Hand O Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "783e09e886d647529ba954d58eca9e33",
+          "name": "Hand O Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "0670eced70a947c2a07afeab51f14463",
+          "name": "Hand O Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "2240806ed70e42de94613c18e676cf9c",
+          "name": "Hand O Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "060124e2853646f4a0933549019d6e05",
+          "name": "Hand O Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "b03f4b077c8f48ae9969ec8df60c8b06",
+          "name": "Hand Paper O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fc7f58fb9310400ebc845b0ec2359526",
+          "name": "Hand Paper O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e6077878a92049c798cbd5d31708aef4",
+          "name": "Hand Peace O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "64e78c1397154f2d99330eac3c7e9903",
+          "name": "Hand Peace O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "9c8546a4029e4456970c0f1797504bc1",
+          "name": "Hand Pointer O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b6f22aed385a48929977b99834cc9525",
+          "name": "Hand Pointer O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "de1fd57ae6e74e3a8d84bcb2852dfac0",
+          "name": "Hand Rock O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "4f72e6755de64e05ab4fc657da2da9b3",
+          "name": "Hand Rock O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "47c216e9899f4711acf5adfcfa8c55b3",
+          "name": "Hand Scissors O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a9aaaf1fedb54ee59d3848012941392a",
+          "name": "Hand Scissors O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4053931a2f714b1e97f862a416359ad6",
+          "name": "Hand Spock O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "1b82a976fb24417888ec0c710205e554",
+          "name": "Hand Spock O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8fc8add48de3443c9748e2fc8c461e20",
+          "name": "Hand Stop O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "2e0c772f949047d494a4bbe3ca7700e1",
+          "name": "Hand Stop O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e19bb3c71fb94e5ab0d7dc87c08b3be3",
+          "name": "Handshake O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b18768263a9e4912af08626f5ee1c4f8",
+          "name": "Hard Of Hearing",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "f5ea9bc3a1e646f7be99321cffef13fa",
+          "name": "Hard Of Hearing",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "289846b6418745c1b4ff1e2055fe8c21",
+          "name": "Hashtag",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "951c7f7dddeb44d9946124d9b38f6336",
+          "name": "Hdd O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "eaacd8bb872246aa9c456ee43c97911c",
+          "name": "Header",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7e6e4906792e438f854278ae88880063",
+          "name": "Headphones",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "18e74f7b242a42ba94422dc4dd526b36",
+          "name": "Heart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "e175527e10694b64ac5e74d940f330ed",
+          "name": "Heart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "aa163f6b23ac4601950ed22e1dfe0fc4",
+          "name": "Heart O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "1c0aa133e8d144a48965bbff0151888d",
+          "name": "Heart O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "7771f0d495b84052815fa9df760c9276",
+          "name": "Heartbeat",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8f433bf3c7e34bd9bf79a93e599e79e3",
+          "name": "Heartbeat",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4cc0a359b0a044b3bbf59372c7f6be6d",
+          "name": "History",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7ad917db3472466da4d943e5133d2b3a",
+          "name": "Home",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "ed87ceb61d45490b9c7028eb4764a414",
+          "name": "Hospital O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "48840774f53149eeae80fd03221c9b8a",
+          "name": "Hotel",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "deac3dbd3a4d4e8981a9b752ea4d1f14",
+          "name": "Hourglass",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b0be5491dcbe4f8cbd7bfbbfcd96cfbf",
+          "name": "Hourglass 1",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b92d3fe2bca64614a3b9adaf44bb1d0e",
+          "name": "Hourglass 2",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1347add573634f8a90be73d75ab8ec1a",
+          "name": "Hourglass 3",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "69fb2e702098450e998124c86f2d91d1",
+          "name": "Hourglass End",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4d6c1916f0034772ba7c6fbb079bff7b",
+          "name": "Hourglass Half",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b510a45ea4dc4cd6a8ca8968e9629aa3",
+          "name": "Hourglass O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c0a2bfd3fbf9487dbc8c8ace6c8a9ecf",
+          "name": "Hourglass Start",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "25548ca20e9242af9956cd320488844c",
+          "name": "Houzz",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e01828f0a9614548a07f9a1a3c740120",
+          "name": "Html5",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ff0750cbcc064c2d90f455fedda684b3",
+          "name": "I Cursor",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2528f12df893448688fba2f76c549e01",
+          "name": "Id Badge",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4bef2abdc9b147b989599971ca334347",
+          "name": "Id Card",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0b5a01f67acf4bfbb608c316dddc63e1",
+          "name": "Id Card O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "27f7fd470fbf4799b56ef1c1bcc7df6a",
+          "name": "Ils",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "16e819f6da4f41208ba50ee157adb413",
+          "name": "Image",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "b6c3308fc4d54231b31c32edb1aeb86b",
+          "name": "Imdb",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "224991db25764634b20bb4ea603dd6ed",
+          "name": "Inbox",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "806f5b6ad2454060bf3411b524e45d64",
+          "name": "Indent",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "502fae8520d74f3cb8bc03fc48a372c4",
+          "name": "Industry",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ae23befd2391403992e60f3330527d70",
+          "name": "Info",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "478552a2c8af43b3a0a7c5b55fcc9605",
+          "name": "Info Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "d6f72508a9e740b0b943894d58f140ed",
+          "name": "Inr",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "4195eb75bb594b80b9d52e634bac73ef",
+          "name": "Instagram",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8777588275b441e8a0e2c82781ca91fe",
+          "name": "Institution",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "6f05c0fdde1f44969662a1b8dc247521",
+          "name": "Internet Explorer",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "3a37a561d8ed4f63a0fc13c42806fe9f",
+          "name": "Intersex",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "744384c313ee4f52834cceb8d0d29d15",
+          "name": "Ioxhost",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "e2f543d104704f70961f369c7bc2be93",
+          "name": "Italic",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "646339f2200f4f1da1649e29f8b15959",
+          "name": "Joomla",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "4e2f21f4a33743d9b493b18a9acdedaa",
+          "name": "Jpy",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "a70c42d8938340d5a0f3bb11ea9b43bf",
+          "name": "Jsfiddle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "da7a84c2d925496d8085743ffe5e4192",
+          "name": "Key",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f2e51d4854ae48569ad8358ab518e1cc",
+          "name": "Keyboard O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "553a461f034640cd8f0be7fa85e47769",
+          "name": "Krw",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ebfa1052f91f414382f551e813f0210d",
+          "name": "Language",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "35bc6f1e3cd24a71b789b3a9b804deea",
+          "name": "Laptop",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "6cff40b9a420402aa9691bf4a66c31d6",
+          "name": "Lastfm",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "f9511d2da2e245c280e1b20ca8249597",
+          "name": "Lastfm Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b327175038ad4c4883414c5c9cfd7df4",
+          "name": "Leaf",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "5efa2d71e720401cac3351e4e17787fa",
+          "name": "Leanpub",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "11eb7f2a2f1148c9bcdfb7f6c5e93993",
+          "name": "Legal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6916e3cce83d40e4a744ad7b5e430174",
+          "name": "Lemon O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "eb2ea79ba822480281fc13b9507c8254",
+          "name": "Level Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ac5d4d096496476099a0835b59f9aa16",
+          "name": "Level Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7e318a5012d0467793ea1bd8055c374c",
+          "name": "Life Bouy",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "bfcc9b33cfa241b4ad2a3331d8eca691",
+          "name": "Life Buoy",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a55ebe7be4364dccb93167ae3460d6b5",
+          "name": "Life Ring",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cd8551afa55a4a65a620d7f6b494189f",
+          "name": "Life Saver",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "20878fe7a53347eba66554813e3e25ed",
+          "name": "Lightbulb O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "75fc703355794e179ae7929ccb7b37dd",
+          "name": "Line Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Chart",
+          "id": "fecde6b8841d4bd59d600cf9b9c4f867",
+          "name": "Line Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "6d5014372e4346c2a4b296a951653c33",
+          "name": "Link",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "fba60940caab49f88ee5cce1dafe4f5f",
+          "name": "Linkedin",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e77e5f5a9bfa454c903f3bfa5fc0ce54",
+          "name": "Linkedin Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "f4649f38877b4bb39aa31432a40809d0",
+          "name": "Linode",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ffab51e0b1204086896e9db06be6a9c0",
+          "name": "Linux",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "94f92646014c4fc8add8c9d553fc6a74",
+          "name": "List",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "28d0f117affc4858b0ffcf64a95267c0",
+          "name": "List Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "b217ef7a0a13459c89284038dd2e3c2b",
+          "name": "List Ol",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "2cd77f0e2d2f4f4c902e16a6baf07d5b",
+          "name": "List Ul",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e5472e71244d4726a318750fb786b636",
+          "name": "Location Arrow",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "063b1f607ab64ef5b63f6de0c77c6494",
+          "name": "Lock",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "f721fc7bcc414badb3d3721bbf55651d",
+          "name": "Long Arrow Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "d091094ecee94588813b0aff7df0e13d",
+          "name": "Long Arrow Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "67aa1e261e534eaa8d70885296a38a4c",
+          "name": "Long Arrow Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "1282485907964b3ba3364fd37b023e16",
+          "name": "Long Arrow Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "131de1a9971b4c10b79e452723657a6f",
+          "name": "Low Vision",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a7191d6cf738408c9ab887b9590f1c0e",
+          "name": "Low Vision",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4ba705269f3e4687bac1704f6044e99f",
+          "name": "Magic",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5a3600a2701447e09feb9b9e2eccd54b",
+          "name": "Magnet",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8df2c2d9de644d71b406c7c365de8d3b",
+          "name": "Mail Forward",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6fc7c3584c9044f7838b52b5d3818097",
+          "name": "Mail Reply",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3f0973fb7ec24cd18533487fb76ab95a",
+          "name": "Mail Reply All",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a6f0b041423b46f3828c52a1af4b930b",
+          "name": "Male",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8990ab006e6e4b119f26c74fe59ce8da",
+          "name": "Map",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6bccfe7c43694b84b6995d7df2b1fd6c",
+          "name": "Map Marker",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9c79df55fd4a47f78c4bf634eec2e0ce",
+          "name": "Map O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d67ca093ff1f4ae9afda785d176a2d86",
+          "name": "Map Pin",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "579e32f0efe2422c9f3fec588aec368c",
+          "name": "Map Signs",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "f1270655fdf34be09908bd348787787a",
+          "name": "Mars",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "dd8ef886f0c441a6a3da3e8833f05b0b",
+          "name": "Mars Double",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "cab6dc08a3b344e6bfa3978873f7e984",
+          "name": "Mars Stroke",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "d4d7fe4ed8774947b88e79e5f26ebace",
+          "name": "Mars Stroke H",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "d93038921e4642d4acb8bdc6031f2421",
+          "name": "Mars Stroke V",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "3feb4541d9bf4c44a951ad02f97f3b93",
+          "name": "Maxcdn",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ffd3dd6ec97e4075966374c2d9d4191c",
+          "name": "Meanpath",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "cdbf39eca16a439eaae81e8a457ea684",
+          "name": "Medium",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "f5a2250ad7a744fbae90e8024d769d98",
+          "name": "Medkit",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2ee67955935a4623827eea2561d5325d",
+          "name": "Meetup",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5876743e265545e6b468367bfb2cbfdf",
+          "name": "Meh O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "5e5ecd07444846d7a8af0f9f77cf7057",
+          "name": "Mercury",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5fc2a4766bff4cb38a16b9a77b424066",
+          "name": "Microchip",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "47502c084b8d4e6dbc9745573f086eba",
+          "name": "Microphone",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0cd8b9a1b1114cd5bffd76cd0b812aea",
+          "name": "Microphone Slash",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "110edd7069644896bbb8d555581c103a",
+          "name": "Minus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a7d2520ac8224ea9a46de44f056cf308",
+          "name": "Minus Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "69ad1aa4713d4f4cade2ba2ee66a4137",
+          "name": "Minus Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7eda6ec3eafa4de0a92e1de8dc8a666c",
+          "name": "Minus Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "53f2681382cf4c7d83a01066f5d2c486",
+          "name": "Minus Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3397a95876cb4000a43df2249ec61d5f",
+          "name": "Minus Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ef5ea0a6339a40c492fc4cee27f6febb",
+          "name": "Mixcloud",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "94a0ff6bbe47496295a0ee8e2be4828c",
+          "name": "Mobile",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4f8b638f50ee4f199ae0ca0b5f2e1314",
+          "name": "Mobile Phone",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "78fd37a7ac4948fdbfccdde248ca570a",
+          "name": "Modx",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "cdf97406031c45d2a2189e41fd882f67",
+          "name": "Money",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "603623d414c846c497924cc757b8d59c",
+          "name": "Money",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7adb399e225e4b2d96d727fa64e8da45",
+          "name": "Moon O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9bb5d00b8b27404c8cf0e44775466b20",
+          "name": "Mortar Board",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "344dfefd9cbc46579e534d4b5bf20cdb",
+          "name": "Motorcycle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "014b5c8d41234de7b41882ebbdb13081",
+          "name": "Motorcycle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "030a2ab270ff4f30a85a4b70fadfaf1c",
+          "name": "Mouse Pointer",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3f2cea1494104b359e054e51c7e39546",
+          "name": "Music",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e1951e2da2114f8680180e2635baa62b",
+          "name": "Navicon",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "64e84a90cae344c9aa7645ed375c3325",
+          "name": "Neuter",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "45490f9a49534fbf804dd7129c9911a8",
+          "name": "Newspaper O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4121971e8edd4171a3ab8b7c3c237761",
+          "name": "Object Group",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "36848e594ddc40f38acacb0d7f5706bb",
+          "name": "Object Ungroup",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "c2d1a39f9bdf4ff394ecfee76221e450",
+          "name": "Odnoklassniki",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "7c40a88632ee472ca816e815d67edb64",
+          "name": "Odnoklassniki Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "9c654f4c68f343d2b01aa1e26361a0fb",
+          "name": "Opencart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ef9218116c7b4e349b852a7f89ac8602",
+          "name": "Openid",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "adeb53a2e3c942019f178a0d91b77a0f",
+          "name": "Opera",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "f795ecf2ebea44d282ee298f949a87fd",
+          "name": "Optin Monster",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "cba5f9c8ce6b4c7ba0c735cf941f795d",
+          "name": "Outdent",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "77d2911689f44dcbba6c52acb944057e",
+          "name": "Pagelines",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4d6a55d504844cfb9aaaccd02f6eb289",
+          "name": "Paint Brush",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0f19cc94323b4caba1b0781c6897089e",
+          "name": "Paper Plane",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f7f8f0468b774b599d0aeab7dc4bcf76",
+          "name": "Paper Plane O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "2378f0043fc64c2e9df525dca2f6f13b",
+          "name": "Paperclip",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "e76c4d0b5fff4a6491f5d1ce97a96d61",
+          "name": "Paragraph",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "f446735b9e934fd68435a75a55456678",
+          "name": "Paste",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "278df8cb86ab424b88bba2328c463b39",
+          "name": "Pause",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "ff0706826ec6485691e0b0ca34b50490",
+          "name": "Pause Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "945350923d1a411289efad6361437715",
+          "name": "Pause Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "aba75f86f257421388a6bfa6e727ad1c",
+          "name": "Paw",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Payment",
+          "id": "aad661fb46724532986621087fd6f579",
+          "name": "Paypal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "4895a86e02114ca8950a60171e05900c",
+          "name": "Paypal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b7bdf265ec564c518839320281bae858",
+          "name": "Pencil",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d3022be2f48549839c89df023dfbbf70",
+          "name": "Pencil Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "57bef6decac246a4b1e131a98ca38d01",
+          "name": "Pencil Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2f84377ea24d40c1b8efd7af683b7154",
+          "name": "Percent",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "62e4c97662c94bcaa5cd4f76e100a669",
+          "name": "Phone",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b5d8ccfd82f843bc8443b565f171d7bf",
+          "name": "Phone Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "45f509bdb9fc45188d359469224f821d",
+          "name": "Photo",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "700f5a0e418c4a688d65f3d77d5ef42d",
+          "name": "Picture O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "732ad675fca24d3980e5bbb5ad68a93b",
+          "name": "Pie Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Chart",
+          "id": "2d55f6135e3c4270ae2257d47033de11",
+          "name": "Pie Chart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "686987868cef4050a0fcf0fb681630f0",
+          "name": "Pied Piper",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "6e746b1cd3b64009926d8f49567079d4",
+          "name": "Pied Piper Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "bfdb28a231804a56b6ac37c09cd14776",
+          "name": "Pied Piper Pp",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "63d1b5552f094340b783022464f3f457",
+          "name": "Pinterest",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "041f63ad2d53461ca8bda4454996fc84",
+          "name": "Pinterest P",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e70eeb3ba6774e9e9f112aa577901d5a",
+          "name": "Pinterest Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "edbd196d7f52482da023acbcbd7898f0",
+          "name": "Plane",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "9b6a21e016044324817b4bba84671a21",
+          "name": "Plane",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "637dee5d29564c1f84657b6df8859c3c",
+          "name": "Play",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "0b18f998f7804e2fac22beb2247885c0",
+          "name": "Play Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "a50c5d6dcf9f4821a6d3a838c3126b04",
+          "name": "Play Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "de29579f9072452c8a0b9dd5c069476f",
+          "name": "Plug",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4e89a2a8730f49e7ae73daefe2d1bbd0",
+          "name": "Plus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f64d8ad2edde4cf8abec9a64924b418b",
+          "name": "Plus Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "f074eb59a05647c7b61520995bf0ccf7",
+          "name": "Plus Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "f23314368ba24955be2f166fddeafd11",
+          "name": "Plus Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d284c95c49f645958cae9cd38fe2b66b",
+          "name": "Plus Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3f7196874c5c42acb41ee953d934ec07",
+          "name": "Plus Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "260612f50438453cae9752ab43123ad3",
+          "name": "Plus Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "af898711bb4d4536a487b7bcc4136da6",
+          "name": "Podcast",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6e1d41c485cc45ebafb98937e22c5749",
+          "name": "Power Off",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0d630b4226dc4d4180452c0bdd43eb49",
+          "name": "Print",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "07a551918c864a0b9751a6b56997ac61",
+          "name": "Product Hunt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5ac0e2893fdc46c78df57f8f10a3e3e0",
+          "name": "Puzzle Piece",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "0b6fbd80c1874490b794cc217be65a64",
+          "name": "Qq",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f15e4d57167e4cccab214e7fb717c7f7",
+          "name": "Qrcode",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1c12612bec234e4fbeb809705814e540",
+          "name": "Question",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3b2f243f36354156a263a3c2e4b1c574",
+          "name": "Question Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "8be44732a36f4142aacd6e5169e82602",
+          "name": "Question Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "dabb05f1d4ea4ca79d31570f5ef5f4ec",
+          "name": "Question Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "5c946380b98a4fb3a5d23a66e28ba09d",
+          "name": "Quora",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b747d0048d774404a185c9812b433329",
+          "name": "Quote Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8c377fabac5949cf83bba90a777b1961",
+          "name": "Quote Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "872cfe3264ec4625a6dfbf64061227ba",
+          "name": "Ra",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e01862f3ceba4f4bbdcab1e0d857f288",
+          "name": "Random",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "7edf29f249fc44c8be83ac9d5d0b14b8",
+          "name": "Random",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "da8f9854a93844b790508a6c5ec7fc64",
+          "name": "Ravelry",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "73f6148a789946d4bcf61bad270e53ff",
+          "name": "Rebel",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7c8b132b622b464eab96f4541949730f",
+          "name": "Recycle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "dfea0e3e1b4f41288394549544a50fdd",
+          "name": "Reddit",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "1bd1122066e341d5bd63875f1103d97c",
+          "name": "Reddit Alien",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "b3cc0994b84341bcbcc1606660efdc2e",
+          "name": "Reddit Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "515fcae74f2b49738771179223c0c08f",
+          "name": "Refresh",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Spinner",
+          "id": "fd7f419b898a411ab8b5ef380938bf51",
+          "name": "Refresh",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6ab5dc30f87a4c10a87051cd9043b2de",
+          "name": "Registered",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0847e43cb2e34ec190af432bf870f461",
+          "name": "Remove",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "475b7f2d6d994aaaaa046cc70774803f",
+          "name": "Renren",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9db21cbfa6524c3da19672df24b7eccb",
+          "name": "Reorder",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "6e380c72c42b46679b37408c38915c04",
+          "name": "Repeat",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ceacc00f50b14761922be6ea510106b6",
+          "name": "Reply",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ea212199e011470b9ead9b72c80c503b",
+          "name": "Reply All",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ae23162d4c844b0db7c5a81183ff059e",
+          "name": "Resistance",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4e8c959fb36f43cf8d86f6a1b061b92e",
+          "name": "Retweet",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "a7ff8f5c8dcc48b89168691cceec1310",
+          "name": "Rmb",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c5253be87f564ff6af28ac27981aef2b",
+          "name": "Road",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "09ff4dec7e0c43ab9cf5d3df4d981154",
+          "name": "Rocket",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "b022674c62e44f8f8763a654dc73d6ac",
+          "name": "Rocket",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "def832646fe649c3be8e18641b653e8c",
+          "name": "Rotate Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "a375a8629969425fa2c2388e7242faae",
+          "name": "Rotate Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "f40e459873a649248411fd272cc79a4f",
+          "name": "Rouble",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0dfb975726c143b6b559065359898f6d",
+          "name": "Rss",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5a14b53cd2dd4ad882c2db4a78a3280c",
+          "name": "Rss Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "c8820cef19814562955562a0d7ca3533",
+          "name": "Rub",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "31c27eed804541f5a50c60ebd63bc9aa",
+          "name": "Ruble",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "d16332630c864484b3c8d7581c73f492",
+          "name": "Rupee",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "abd10e5c36404ee8836fdf4dfa36436d",
+          "name": "S15",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "f1fa2524061348d2b0700debe8ff616b",
+          "name": "Safari",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "ae190f50aceb4ca9a2faf87921ae9199",
+          "name": "Save",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "10357edc9d8b450ebe7138e806acd0be",
+          "name": "Scissors",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "861a73b88e124240b53994285c3495e7",
+          "name": "Scribd",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "56d4209c0b7f4079b8e340fc6b11cb05",
+          "name": "Search",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a19a51af5d0041e3af17dcaf0aeb1a8b",
+          "name": "Search Minus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "846803ea328040cba92f0d374aa904e6",
+          "name": "Search Plus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ed58edfa28b94851805b5f32872867d5",
+          "name": "Sellsy",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3c19793bc9884c6ba5483382a474544a",
+          "name": "Send",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "262c3ee712764d1cb1ec7f248f764efc",
+          "name": "Send O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6c7ecca57afd4c728169ca5624db4b34",
+          "name": "Server",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "edc7fa1bad4d4aebb1dc212251a1830b",
+          "name": "Share",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9ddb847cd67942e4b380d9142cd117de",
+          "name": "Share Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "5ce320ad09714a8eb64fb3895c2fd338",
+          "name": "Share Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ddef23206a9246b08bc7571282cf93a0",
+          "name": "Share Alt Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "acc5c1b757524c5c818e9ca1e35f7c9a",
+          "name": "Share Alt Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a9cbda689fa740f2ac024ae96ffd6faa",
+          "name": "Share Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9d889a7e3a3048df8766f4f4408e516d",
+          "name": "Share Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "2cec53d4e1ad4f9db0e67844f6e70436",
+          "name": "Shekel",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "9f5e2b71f38a40b794864b7acae6a6ba",
+          "name": "Sheqel",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fb1848b17dda46ae854c16b73dc95e80",
+          "name": "Shield",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "c9accad5f9ac497e8a4b768fa2949c40",
+          "name": "Ship",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6ff82cf7e23446c5b7a060d717a0fb67",
+          "name": "Ship",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2a896c7fa1f547358054f1ae82d767bc",
+          "name": "Shirtsinbulk",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "52c4d73dbdca4c65b784f9e851aa756a",
+          "name": "Shopping Bag",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "bed2a3512d894729bd177688d8b9049e",
+          "name": "Shopping Basket",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d810564dc14d48f29730e47746a79a8b",
+          "name": "Shopping Cart",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c9a4b193be854c858a71b6d431b86c1f",
+          "name": "Shower",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1954f64735844554b077efc4c65e025f",
+          "name": "Sign In",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "e16f8f99cb7942ffa6ecbc1368858c59",
+          "name": "Sign Language",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8c888e46dfaf4bee85432bd3cbdf0553",
+          "name": "Sign Language",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "29014d50398045af829076a992cef875",
+          "name": "Sign Out",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f0e2bcd6385946d98d4aa9a42ab769aa",
+          "name": "Signal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3fde5a4cc8c84e72bd7d4a90c02e38da",
+          "name": "Signing",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "6e279ffe17c94e2d9d6300212213faf2",
+          "name": "Signing",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "9ddd66f242b6467ab348db0d8a07aa14",
+          "name": "Simplybuilt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "75cd4317159a4d289c1358d8543dbfaa",
+          "name": "Sitemap",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2f32e13b007d476ca082562aead809dc",
+          "name": "Skyatlas",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "b1441a3220e04fa1bb0ba91aa59a7bdc",
+          "name": "Skype",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2f689127165e431da8acad1fe3ff714c",
+          "name": "Slack",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d45299ff4a414947a8eed73240f0a2cb",
+          "name": "Sliders",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "7f580a8c69f14e07a2b3f1d50e89a1f5",
+          "name": "Slideshare",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1b9783ad9e5e4138a12a6fea044b16ee",
+          "name": "Smile O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "0502d4e024124f5ca6912e1608898877",
+          "name": "Snapchat",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e62e7580f8e9457e9b99b533d710b36a",
+          "name": "Snapchat Ghost",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "d77bd6b8848e4e3f94b86bb4b51310bc",
+          "name": "Snapchat Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "73eecf5e4d6248319032097d241c23b3",
+          "name": "Snowflake O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "974857b92e6c489984820e73b9a19cda",
+          "name": "Soccer Ball O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8124aaa1fe774ddb93b7f6e92bd39d51",
+          "name": "Sort",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8669a47028d94a37b0d821a6d217bd06",
+          "name": "Sort Alpha Asc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "acc25f2ce30b449e8248ae79a610d620",
+          "name": "Sort Alpha Desc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "35a5a71195a34175b2c2e12e3ecde64b",
+          "name": "Sort Amount Asc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "69525cb84b2949ebb1c63d67e749bb23",
+          "name": "Sort Amount Desc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8245b047868a481ea1c9156dc0fa29ec",
+          "name": "Sort Asc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f0dcaed1702c45eab068b7f396eda618",
+          "name": "Sort Desc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7a5dcdc5bf61429b864ecd2b886b436a",
+          "name": "Sort Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9e041df94e3a42b0ba26778da3ed8e8c",
+          "name": "Sort Numeric Asc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "af2ed05d6db1411cbf384ed7ad1069c4",
+          "name": "Sort Numeric Desc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "39f0281134fa43f7a0186bac8e923f14",
+          "name": "Sort Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "26b8f9e58d424f32ab09528c57c8d6e9",
+          "name": "Soundcloud",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "7ee9b1ea59a14f02b4e8b0f987c197b6",
+          "name": "Space Shuttle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c3d8a3d8c9a8472dbe876983d3a5fad5",
+          "name": "Space Shuttle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ddc35b5c53da4971aeafcf5f29a71949",
+          "name": "Spinner",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Spinner",
+          "id": "f2c798cb5c784029a32b22dbe84389f6",
+          "name": "Spinner",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "857587bcefb1487fae447d6f1ccd7b97",
+          "name": "Spoon",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e03c558e3a42409d95d9e090ded18c48",
+          "name": "Spotify",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ca7ceb81b57d48c1a328a7f89755f301",
+          "name": "Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "7b51c76cf25a4f22a0ea1f577517ea25",
+          "name": "Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "479c0de615164e588da61681ec8c7562",
+          "name": "Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Form control",
+          "id": "e1b6044b0d7540358b5fc235ac168972",
+          "name": "Square O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ec0ca31cc3d544d6b615d99392d76d2b",
+          "name": "Stack Exchange",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "7147cbf706484756a69ec0d365430706",
+          "name": "Stack Overflow",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "629a2ebe23f54cb4911e2e60f75fe38e",
+          "name": "Star",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f12ca9d5d8a24d4cbf75730f3b906f4f",
+          "name": "Star Half",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0df96acdd5f5492196a842261daab900",
+          "name": "Star Half Empty",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c4cf557e024340d6ad88e132df01438f",
+          "name": "Star Half Full",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "dadafaf8dcb243c18b2d61b23df7b6a0",
+          "name": "Star Half O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e538dc60b4a948ed9ff645865734302f",
+          "name": "Star O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "8c2c06a5f9e74b80ab716c745de73a96",
+          "name": "Steam",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "f65bc6fe19384b429fddb6a46673b82f",
+          "name": "Steam Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "f517c8d22651486796eeb0abf6f33954",
+          "name": "Step Backward",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "7584891f38b44b1194a078b43442e9cd",
+          "name": "Step Forward",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "7fe20d82953940a795faf33588544f84",
+          "name": "Stethoscope",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b3b3857d4edb4f518ffd3d93d0f7b861",
+          "name": "Sticky Note",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6a26d88549c647168d0b1eb5c841ebfd",
+          "name": "Sticky Note O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "ff8277db55af4a30950cbc42046d9142",
+          "name": "Stop",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "0481ee081914462ea24216e43fef8ded",
+          "name": "Stop Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "8bc5dac453ee49768e44f53f36e081d2",
+          "name": "Stop Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "5657e112205b4301a122078fd59f627c",
+          "name": "Street View",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "3a845fadd3a744c5a0728196b630e825",
+          "name": "Strikethrough",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ac491192edca46c0bf675637051c0bb0",
+          "name": "Stumbleupon",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e07fdcdd84ba4261899210d8393968cd",
+          "name": "Stumbleupon Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "217e96875f014cb184469071df946cc8",
+          "name": "Subscript",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "241b0ae8a07d463d97e8311160b9d084",
+          "name": "Subway",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "c8a13250633f4131b6daccd30ad3cbe5",
+          "name": "Suitcase",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ba6aa1588de242aba75388b74fe62264",
+          "name": "Sun O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "d39837e3d4b04aedb96187bd42a2fbe1",
+          "name": "Superpowers",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "2d9f4b6284c74f1e9be3efd4e7441b1a",
+          "name": "Superscript",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "13710dd0387849a49519ba6feeabae21",
+          "name": "Support",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "afce9bcd57a44ffa876a0cc7da7e9283",
+          "name": "Table",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b10d006cc6af4d8b8d33fc8a20331eac",
+          "name": "Tablet",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "faf0b1d746254e82b5e044e677bea9c3",
+          "name": "Tachometer",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "59823b829f0d4cfb92ab44ce79a1da28",
+          "name": "Tag",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "f409ffcbe46c44a69bf9af3cef957cd1",
+          "name": "Tags",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8699af0a458c4a75985dbb3667d0bdeb",
+          "name": "Tasks",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "9c986792a5e24744a73872c43d62bbb6",
+          "name": "Taxi",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4cd5efba8a784f748c30423eee6fa72f",
+          "name": "Taxi",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "5cd6e0a0da2c438fb714f4c67f1f2f87",
+          "name": "Telegram",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2b814b17d81b4dab8d7a5b2252773f29",
+          "name": "Television",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "48a2fe7f2ac54122a3dcd07202b7e287",
+          "name": "Tencent Weibo",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4a877fb2ecda4b599c475d32fa792e77",
+          "name": "Terminal",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "7fffcfbb44864a34b1d751ab1b19de14",
+          "name": "Text Height",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "3aecfdaf445b485fa49215639649e836",
+          "name": "Text Width",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "c36897e33b274ddca1059c72f54f71d4",
+          "name": "Th",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "9ec3b98f71e745f1b558572db0d1350c",
+          "name": "Th Large",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "161c410e95bc4325a214238676acde2c",
+          "name": "Th List",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "42d4e7e712404b18908b59eb44c5b2e0",
+          "name": "Themeisle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1a26935940fb4b14bf621460ec3d8b24",
+          "name": "Thermometer",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "588f43f73aa74539bbfdb4f6eedd643b",
+          "name": "Thermometer 0",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "86d8c76176f24a4ca49042822f23d71b",
+          "name": "Thermometer 1",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "17de34481ab345ed91d17bca5d6d96d2",
+          "name": "Thermometer 2",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "92d78159cd9249cd840d1590e42f8cb6",
+          "name": "Thermometer 3",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "6bc51754f9d14acca8241f3bd573dac9",
+          "name": "Thermometer 4",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2fdcf32952a74cb78d6a87aa172b0ca6",
+          "name": "Thermometer Empty",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "109624f38056457ea46adc5ec6dbc4d1",
+          "name": "Thermometer Full",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "597e7ab9a26147c3a4ffc670a978111f",
+          "name": "Thermometer Half",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "b795e722932c41558c0dddfbd8a15c86",
+          "name": "Thermometer Quarter",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a200085338084994b31789ea394bded4",
+          "name": "Thermometer Three Quarters",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "05e8f023a8ea413c8cdc7b99cb9cdc6a",
+          "name": "Thumb Tack",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "c82e5ee071eb4d2588c36aefd8757103",
+          "name": "Thumbs Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "212fed17151f47f183a12eb6b82ffe54",
+          "name": "Thumbs Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "824b4fac009a4dd6b08c5399a9f50296",
+          "name": "Thumbs O Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1c42962c3b1c4217bad2577f1c51dcd3",
+          "name": "Thumbs O Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3b5f62e353d9423a87b2ca5e4ff6fe06",
+          "name": "Thumbs O Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "74cf997e4d9542a7824bd8e77c216588",
+          "name": "Thumbs O Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Hand",
+          "id": "089b748b64a14b2a8fba862030acd077",
+          "name": "Thumbs Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a9aebcdfeebc4cbbb637bc0ccebc3237",
+          "name": "Thumbs Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "27c6fc8d0cff4014a0d37bc6934884d6",
+          "name": "Ticket",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "543916f382474cf89d9604bea65d71e4",
+          "name": "Times",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ad79ec917ac4446d966f4b967c77c664",
+          "name": "Times Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ee879e01efda40ceb25534167e14a698",
+          "name": "Times Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "67f6c7a455bf4dd98fc7e61f8c6eb29f",
+          "name": "Times Rectangle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "007b7889cb93470ba57ecb86645ce0fc",
+          "name": "Times Rectangle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cee866e9c33442adafc72158a6548342",
+          "name": "Tint",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "31488fe90fb14593a807eba4634b41bc",
+          "name": "Toggle Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "edf3efd484ef463996e0ca054fd4b968",
+          "name": "Toggle Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "21368debcac44e6aa432fddec9a655bd",
+          "name": "Toggle Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "0cea224e79b841468f5ac2bbf5398b3b",
+          "name": "Toggle Left",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a8da6be680f542d8958a8924aa79fc00",
+          "name": "Toggle Off",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a45e9317bf704bb58da9a265bfc78ec7",
+          "name": "Toggle On",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4abf36bb4c80436e98e02c40b4fe2708",
+          "name": "Toggle Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "9e2cdd7b22ec4446a6d6081098545d83",
+          "name": "Toggle Right",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d1d7f9f0ed484d6fabfc986c7773ed84",
+          "name": "Toggle Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Directional",
+          "id": "386fdb98041d4ec7b6faae14a9583d0a",
+          "name": "Toggle Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "31d1897a0f75400fa7454e207ab1106f",
+          "name": "Trademark",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "bbad616cbd574424b849a4a7507d26a6",
+          "name": "Train",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "130023bbbcd647acb382bac999406ff3",
+          "name": "Transgender",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "a8ca970e50764853932c56391efaa716",
+          "name": "Transgender Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "7a4fde99b3994764aab167e4b1cad457",
+          "name": "Trash",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2fd375be1e7541babed17fe909dea3d7",
+          "name": "Trash O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1585812d8a424f1a86fbcad19fb2bcf5",
+          "name": "Tree",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "523e661741c04d10a3e77e3753429420",
+          "name": "Trello",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "a5c30718cef541c2afc0cecd414079ea",
+          "name": "Tripadvisor",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "34c996fe28924f6493307fd685cab924",
+          "name": "Trophy",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "29b24fdff86a4a47ac6111d399dde2ff",
+          "name": "Truck",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "76cdc2729626454d884d3b10fa4bc615",
+          "name": "Truck",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "fd61f726cbfe4adca066473dd9efbff8",
+          "name": "Try",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e543197331a24fbeb70f943960155bae",
+          "name": "Tty",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "c9498f613fc64771bb81c0639aeb3d56",
+          "name": "Tty",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e79bcec2634a4f578825592ad75d36ee",
+          "name": "Tumblr",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e811dac2ae954fec93e42c7ebf0f951f",
+          "name": "Tumblr Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "ba3e06d79be74d36ad699f4788dcc697",
+          "name": "Turkish Lira",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8973ed9a31bd43dd8464ce4caf0219fa",
+          "name": "Tv",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "485b4d14b1c74b359a370c336feaca7a",
+          "name": "Twitch",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "50088f8665934cdf9b111e92fb0da101",
+          "name": "Twitter",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "09224bd64138448ea76830c5b538c43e",
+          "name": "Twitter Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "bd3236578b7d4181b45630aee60aaa2b",
+          "name": "Umbrella",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "bd3d76e9d3004181b14e56e1d06c283f",
+          "name": "Underline",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "22f373e4006b4d63ad06afe1a80257c6",
+          "name": "Undo",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "4e031fd8180b4adabd39b1c520a2c113",
+          "name": "Universal Access",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e6a2e54959e44f58bf992b85ad672049",
+          "name": "Universal Access",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "33085b608bfb4fa2a52bb35d07ce7c23",
+          "name": "University",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Text editor",
+          "id": "374bbd7e3d384b048e222975abac2f5c",
+          "name": "Unlink",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "815daedb1a1949b7ab5d03a07238fec4",
+          "name": "Unlock",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "01ecf462d05d474ca78e3e8248b527f6",
+          "name": "Unlock Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "0ab2efe9906e4cd1b5d03c9710aca522",
+          "name": "Unsorted",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fe9a650c0e2d40deb0b9e8a530dc0bd0",
+          "name": "Upload",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "1bb975b70c724d1f959e669fc9fce5fc",
+          "name": "Usb",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "557d7471a9054214a7e3b378f89e171d",
+          "name": "Usd",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a6867ffa88a04be481736526930bb14f",
+          "name": "User",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "ff501cb1797046f785a4235b86054832",
+          "name": "User Circle",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "696847e8b0114238a394c0204847e6c1",
+          "name": "User Circle O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "4cae9ebff4444b9ea1b4840d83d86e9f",
+          "name": "User Md",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4aff7b5ef1884f33b7ecb74dada0aa81",
+          "name": "User O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "51b571e24c13452f875111bad490d596",
+          "name": "User Plus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8a59a93902714190b1328fad8365e266",
+          "name": "User Secret",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e2420806540b457e95d209ee1e671d66",
+          "name": "User Times",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "539997cdd6874f84bf2c99f4c997ce94",
+          "name": "Users",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "764f110492ec439e87009f028bee634c",
+          "name": "Vcard",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "a97cdaafbb904aaea7f2c9fadd8bc722",
+          "name": "Vcard O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "577a2f40562649c797f937af924ce843",
+          "name": "Venus",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "f8b410f23ed249f3930edb656d6d0469",
+          "name": "Venus Double",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Gender",
+          "id": "2b8b47561dcf4742a89065cc40db489f",
+          "name": "Venus Mars",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "95bcf31bd3674e69b0b71fc1353c16b3",
+          "name": "Viacoin",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "06d5e76962d641c48ced74588bc24ea4",
+          "name": "Viadeo",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "fea7b8b45b044813a13805aee1daf423",
+          "name": "Viadeo Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "479c4e03432442aebb17970817982260",
+          "name": "Video Camera",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "02d2f81a2b944c78bc1adb295060ec86",
+          "name": "Vimeo",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "fe859a407d964819b36c0b90ee7c2a09",
+          "name": "Vimeo Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "da362459c2fb45589673213495ebb921",
+          "name": "Vine",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "5f461d13c14a43978a97bc6d075a5b71",
+          "name": "Vk",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "39c4877a68084f54adb0606dc1acd01e",
+          "name": "Volume Control Phone",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "58e90aab288d4ec39f14f00b8a246a66",
+          "name": "Volume Control Phone",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "9112ee7491d647aa928a46de84f15a44",
+          "name": "Volume Down",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3e6f241ae1254688b25dbc861ecdc3eb",
+          "name": "Volume Off",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "3a51303e7bc044809b523e898fb3b6c9",
+          "name": "Volume Up",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "fda39abc7f8f451eb6ef9d3713bf3eb4",
+          "name": "Warning",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "97986582a9dc4db98a4043ef3601a18a",
+          "name": "Wechat",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "48ae59078ba9419c84d781a3ab475dcd",
+          "name": "Weibo",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "e6bf9062926a4201bac2919667ef5bb9",
+          "name": "Weixin",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "bfc94889a2a0428d946e0b2981f10598",
+          "name": "Whatsapp",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "4e9d71d99aae4e7a827fc760d3988a48",
+          "name": "Wheelchair",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "5a57da9924e24f478ce5d1742ea390be",
+          "name": "Wheelchair",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "0e1ca0f5c215418195c58881aabf2c15",
+          "name": "Wheelchair",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "e7aeb04ee44a4e1191df671975222188",
+          "name": "Wheelchair",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Medical",
+          "id": "1824ab99240842f9b6d463bea976c251",
+          "name": "Wheelchair Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Accessibility",
+          "id": "780ff9d0539248fc8755bd51e8d962fe",
+          "name": "Wheelchair Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "2273243347524eddaeb424da838f2ee9",
+          "name": "Wheelchair Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Transportation",
+          "id": "e720436e669248f9a6eec7c7dce5bf62",
+          "name": "Wheelchair Alt",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "8aae2f7255fb4fa1838c4b559d61afc7",
+          "name": "Wifi",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "a78694038f884d19a2ff0eb296c02528",
+          "name": "Wikipedia W",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "54408538147d42cbb0a93e9c436df854",
+          "name": "Window Close",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "e56cdb5ce24e4e5988846ab6ce328f55",
+          "name": "Window Close O",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "cd79475779ee4473909de845aedda9a5",
+          "name": "Window Maximize",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "d1904182cda64c7abf8f85eba3d07e23",
+          "name": "Window Minimize",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "1c2670e99af04633a091d8e1b5039366",
+          "name": "Window Restore",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "55ae5c255944492faa768c222b778057",
+          "name": "Windows",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "723d9632ef5445aa997812ad8f041fa1",
+          "name": "Won",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2a777bc9d72343de87159cb479949271",
+          "name": "Wordpress",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "655d6ed4a29c452a9fcf22aec641a843",
+          "name": "Wpbeginner",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "93400c7f14c14f3db3cb0a9d3f14ad01",
+          "name": "Wpexplorer",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "6b5a25d73c614b2ba990adb58fc9d037",
+          "name": "Wpforms",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Web application",
+          "id": "023966db8ab44e0087b70e895dae9fdb",
+          "name": "Wrench",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "ab366c12c27247b99df77a2809588b08",
+          "name": "Xing",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "844fb6cb5ed647f39c1af956dc9fb901",
+          "name": "Xing Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "80b7881fed6a41ffa01e2900f65948af",
+          "name": "Y Combinator",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "902a087067e04297bb2c0b857d32ca5c",
+          "name": "Y Combinator Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "821367a85399475191ef75060a750a3c",
+          "name": "Yahoo",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "49629aaaa90c40ada68da92ce24ffe97",
+          "name": "Yc",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "0f3d592bfe1145e7bfa90bab63d2fa69",
+          "name": "Yc Square",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "2615e4356a714366aa6420809e15d80d",
+          "name": "Yelp",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Currency",
+          "id": "d4da5ef605b64416879341805a23fec5",
+          "name": "Yen",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "86f0fd9f18ba4f529033b51f2e68fd61",
+          "name": "Yoast",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "83a134975a2a4296a2b571cc4c89add1",
+          "name": "Youtube",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "0d1f7ef698ce42b885caaa517bdcb786",
+          "name": "Youtube Play",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Video player",
+          "id": "c7e695fcdb39480393d39aac3a0a707d",
+          "name": "Youtube Play",
+          "object_kinds": {},
+          "shape_types": {}
+        },
+        {
+          "category": "Brand",
+          "id": "3f3418e2127f4b89bfacb1905b5aa119",
+          "name": "Youtube Square",
+          "object_kinds": {},
+          "shape_types": {}
+        }
+      ],
+      "entry_count": 920,
+      "folders": [
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Video player"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Accessibility"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "File type"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Web application"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Text editor"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Directional"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Gender"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Brand"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Hand"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Transportation"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Medical"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Chart"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Payment"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Spinner"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Currency"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Form control"
+        }
+      ],
+      "path": "D:\\Program Files (x86)\\Axure\\Axure RP 11\\DefaultSettings\\Libraries\\Icons.rplib",
+      "version": 11
+    }
+  ],
+  "runtime_observed": false
+}

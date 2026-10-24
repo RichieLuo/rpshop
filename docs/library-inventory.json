@@ -1,0 +1,1489 @@
+{
+  "authority": "local-shipped-library-parsed-by-rpshop",
+  "libraries": [
+    {
+      "entries": [
+        {
+          "category": "Common",
+          "id": "ddf7f83502bc4b6ca3af9f2f45543073",
+          "name": "Box 1",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "d95dc8d81ebd4cdab8d0261b5a8cd82a",
+          "name": "Box 2",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "5d4f1d1d66eb42eb9f095ea7d492c73e",
+          "name": "Box 3",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "cec955773a80421ba5e6b66844e05666",
+          "name": "Button",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Forms",
+          "id": "f5eb6c5d4fd041d48f2d93f23c5a8d32",
+          "name": "Checkbox",
+          "object_kinds": {
+            "Axure:DiagramObject:Checkbox": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "dba2c35a591a4d6589fa2c3e9cc30a9b",
+          "name": "Circle marker",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Menus and table",
+          "id": "09eed44f62374bfa9f92b9d48fa1a032",
+          "name": "Classic menu - horizontal",
+          "object_kinds": {
+            "Axure:DiagramObject:MenuObject": 1,
+            "Axure:DiagramObject:Table": 1,
+            "Axure:DiagramObject:TableCell": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Menus and table",
+          "id": "77d375ae4dab4effb11972d149f69a46",
+          "name": "Classic menu - vertical",
+          "object_kinds": {
+            "Axure:DiagramObject:MenuObject": 1,
+            "Axure:DiagramObject:Table": 1,
+            "Axure:DiagramObject:TableCell": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Menus and table",
+          "id": "556a42319a0a476c8e81f2d6da0ada41",
+          "name": "Classic table",
+          "object_kinds": {
+            "Axure:DiagramObject:Table": 1,
+            "Axure:DiagramObject:TableCell": 9
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "91312960087e4948aca20be45d97440f",
+          "name": "Drop marker",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Forms",
+          "id": "8c4041f1cb444371b508df7141bb27cf",
+          "name": "Droplist",
+          "object_kinds": {
+            "Axure:DiagramObject:ComboBox": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Dynamic",
+          "id": "89449ee06d534bf1b50f2405ed987a36",
+          "name": "Dynamic panel",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "b03be8f331a44681af88fcd04b65d4f5",
+          "name": "Ellipse",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "d07dcb21cfa54b91814868a7c6cad6de",
+          "name": "Heading 1",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "e8e03c600aa84d19a6085e084fb6affc",
+          "name": "Heading 2",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "c6bc458f54514197be923ebecaef9540",
+          "name": "Heading 3",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "24edbbd5a4354c77b0e7bf30769c7252",
+          "name": "Horizontal arrow",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "fb5f878fae6e40d6bb8971fdaf7ee69c",
+          "name": "Horizontal line",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Dynamic",
+          "id": "44890aa965e641b99efa22170be5db80",
+          "name": "Hot spot",
+          "object_kinds": {
+            "Axure:DiagramObject:ImageMapRegion": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "097300dffb9245a29aebacfe43bde0bf",
+          "name": "Image",
+          "object_kinds": {
+            "Axure:DiagramObject:ImageBox": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Dynamic",
+          "id": "3c3e2cd305e946b3b27144b535aafc99",
+          "name": "Inline frame",
+          "object_kinds": {
+            "Axure:DiagramObject:InlineFrame": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "26c49e520d474e4f8c2b6e1bddbde2d1",
+          "name": "Label",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "33c44bbbdd714f31bfd61c1a41a2ae5e",
+          "name": "Link button",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Forms",
+          "id": "6dca5ec504594fceae76df3b794d0626",
+          "name": "List box",
+          "object_kinds": {
+            "Axure:DiagramObject:ListBox": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "274b0c198f5d487f84292efcb8d63906",
+          "name": "Paragraph",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "b148937850a8492b889db2ee9ac5f48a",
+          "name": "Placeholder",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "1288af91e18c4d2eb5bcb80344480804",
+          "name": "Primary button",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Forms",
+          "id": "1661553b21d64561b7205c5d4edbdc0f",
+          "name": "Radio button",
+          "object_kinds": {
+            "Axure:DiagramObject:RadioButton": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Dynamic",
+          "id": "c5e4f5330a7a4beab9e0c4d6ae097486",
+          "name": "Repeater - card",
+          "object_kinds": {
+            "Axure:DiagramObject:ImageBox": 1,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Dynamic",
+          "id": "51731aceeba44bd89cb6863da9c0ed88",
+          "name": "Repeater - table",
+          "object_kinds": {
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Dynamic",
+          "id": "20239ac1e6704cdf8d6029add4cfe97b",
+          "name": "Snapshot",
+          "object_kinds": {
+            "Axure:DiagramObject:Screenshot": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "36c2002954b54b97b14662a24587dbf9",
+          "name": "Sticky 1",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "404770b031bb4393b923a141d84dba9b",
+          "name": "Sticky 2",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "0002bdc99c6b4cf3b16c647764e3b305",
+          "name": "Sticky 3",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "341a6e27789448e2af606a234848f1bf",
+          "name": "Sticky 4",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Forms",
+          "id": "9f7d5f6c9ed14312b3112e36a1604eff",
+          "name": "Text area",
+          "object_kinds": {
+            "Axure:DiagramObject:TextArea": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Forms",
+          "id": "2c6a5f9d7d6142e68635379d0f69a96b",
+          "name": "Text field",
+          "object_kinds": {
+            "Axure:DiagramObject:TextBox": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Menus and table",
+          "id": "90a0737fc2d74911b0b27573a1b35a40",
+          "name": "Tree",
+          "object_kinds": {
+            "Axure:DiagramObject:ImageBox": 8,
+            "Axure:DiagramObject:TreeNodeObject": 5,
+            "Axure:DiagramObject:VectorShape": 4
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Markup",
+          "id": "7f0995dc656048148a4a1d6b88bd6c06",
+          "name": "Vertical arrow",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Common",
+          "id": "a490b7fa5d9a4fc18aa98cc5518cf1ee",
+          "name": "Vertical line",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        }
+      ],
+      "entry_count": 40,
+      "folders": [
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Dynamic"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Menus and table"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Forms"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Common"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Markup"
+        }
+      ],
+      "path": "D:\\Program Files (x86)\\Axure\\Axure RP 11\\DefaultSettings\\Libraries\\Default.rplib",
+      "version": 11
+    },
+    {
+      "entries": [
+        {
+          "category": "",
+          "id": "f1c9bddf79ec492f8ab4fd275922f95e",
+          "name": "Actor",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "085e8398fc154ad184bddd1a3d30cc70",
+          "name": "Beveled rectangle",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "119a67cc719a4bef9390ef61f89685a9",
+          "name": "Bracket",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "4d6f83dc6f404d50997598ddc126b0c0",
+          "name": "Collate",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "386a4f6a9ebf42ec90011ba41eb6644e",
+          "name": "Database",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "a54b78fa63b74288806a69616ceff901",
+          "name": "Delay",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "0ab8fa396a6846509e20b799cb72bf32",
+          "name": "Diamond",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "0f68b5f83843479bbbeb2e478405fe76",
+          "name": "Display",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "0701e95fe140422dafcaa2175249708b",
+          "name": "Document",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "1fb7a270d26e4c83b1f65c906d302926",
+          "name": "Ellipse",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "c849804a5a9c409ebb90e2be88251d31",
+          "name": "File",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "8afd51ae11f146bd8e4b82da4cadc1c0",
+          "name": "Hexagon",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "5e6acf5bdc134f638d12c5033d2debef",
+          "name": "Image",
+          "object_kinds": {
+            "Axure:DiagramObject:ImageBox": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "53fcdc5c5ccf4bba996da33f9fcf6d38",
+          "name": "Internal storage (RAM)",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "9098cb7991a945d9bbb028f548effc08",
+          "name": "Keying",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "92476d9294a046d287418b0e2bca600a",
+          "name": "Logical or",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "29ea04806b044c249910455af1f6c0aa",
+          "name": "Magnetic tape",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "f26aa69a2fb445fe8133b68bc6edab95",
+          "name": "Manual input",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "b11826e3576f4257b44f2f2de1aa1c43",
+          "name": "Multi-document",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "6eef505f19bc44779a84216efb7e4227",
+          "name": "Off page connector",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "be3815451f704a9a85687351061447ad",
+          "name": "Offline storage",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "dff40d5ecb1945d89f87edf565784e9c",
+          "name": "Parallelogram",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "a530e9030fed4b4782a6c94dee177dc5",
+          "name": "Punched card",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "63a4c1c91e8b4b76b8df6fcac0b50957",
+          "name": "Punched tape",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "88067f2414654c84838d3e0076094199",
+          "name": "Rectangle",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "f9c0e0fd70714037ae54ec40a4170210",
+          "name": "Rounded rectangle",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "4be2bd76c0364c3d813c880bb0f33cae",
+          "name": "Semicircle",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "3928d8ec20d04ad48d6a134eabe6d7db",
+          "name": "Snapshot",
+          "object_kinds": {
+            "Axure:DiagramObject:Screenshot": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "f190127e8c0a493a91fab109e68bcfe3",
+          "name": "Sort",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "193a46976db24ad7bddf7fe58d2013f6",
+          "name": "Stacked file",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "82af8b4ef1894674a97fac92f58952cd",
+          "name": "Stacked rectangle",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "d0e35547421d40b68f282b199400b528",
+          "name": "Stacked rounded",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "1fad429572cb47d0bf5344e501c86958",
+          "name": "Stored data",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "4a256a8b7c3f41fab020b3c7c69821fc",
+          "name": "Subroutine/Predefined process",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "4dc932a8e03547abb1304d1852d8e81c",
+          "name": "Summing junction",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "c0af980dab7b49eba4e63229e00e9c47",
+          "name": "Trapezoid",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "",
+          "id": "e525d0d6143b457fb5dbfbc36d818ed9",
+          "name": "Triangle",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        }
+      ],
+      "entry_count": 37,
+      "folders": [],
+      "path": "D:\\Program Files (x86)\\Axure\\Axure RP 11\\DefaultSettings\\Libraries\\Flow.rplib",
+      "version": 11
+    },
+    {
+      "entries": [
+        {
+          "category": "Miscellaneous",
+          "id": "2b1ee0efd7d948d686f25e855681301c",
+          "name": "Accordion",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "d685661062cc4dca9f56b054c3b9e9e6",
+          "name": "Button group filled",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "6502ae053ecc499ea9f15238102d015c",
+          "name": "Button group raised",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 4
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Miscellaneous",
+          "id": "2489016f8aaa4629be08e839e24f65df",
+          "name": "Card selection group",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 4,
+            "Axure:DiagramObject:VectorShape": 10
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "2bebd47451fc421bb7fc84297178d8cf",
+          "name": "Checkbox group (styled)",
+          "object_kinds": {
+            "Axure:DiagramObject:Checkbox": 3,
+            "Axure:DiagramObject:Layer": 4,
+            "Axure:DiagramObject:VectorShape": 4
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Miscellaneous",
+          "id": "741834a1effb4146a4e8afea036df39c",
+          "name": "Chips",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Miscellaneous",
+          "id": "e1a18681430e41c7824f5324c542fa8e",
+          "name": "Color picker",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:VectorShape": 6
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "d769a1bb062d46ae9140ccafe936455e",
+          "name": "Credit card form",
+          "object_kinds": {
+            "Axure:DiagramObject:ComboBox": 2,
+            "Axure:DiagramObject:Layer": 3,
+            "Axure:DiagramObject:TextBox": 4,
+            "Axure:DiagramObject:VectorShape": 15
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "0913f1d8cedb48dbb2e8fd7bae9f639e",
+          "name": "Date picker",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "2bbaf8b2b54f452e910481de097f7502",
+          "name": "Favorite",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Miscellaneous",
+          "id": "684b472c8d9b43d6ae7e454749596a63",
+          "name": "Field multiplier",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:TextBox": 2,
+            "Axure:DiagramObject:VectorShape": 5
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "e431d4e34cde405fb5cf40a9c1f69e2e",
+          "name": "Filled",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "b316efc1aeaf4a7cb9edb1c5aad40072",
+          "name": "Floating action",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "adf7057ad83e4804a84ba2b5ad3ce251",
+          "name": "Icon animated",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "0581800951de42b9b1e81ec3aa427dfa",
+          "name": "Input stepper 1",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 4,
+            "Axure:DiagramObject:VectorShape": 6
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "99057e3e887e4f8fa9f62f4e8b25ea52",
+          "name": "Input stepper 2",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 3,
+            "Axure:DiagramObject:VectorShape": 5
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "c598ff6cf4ba459cbef032f0cd4048f7",
+          "name": "Instructions",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 11,
+            "Axure:DiagramObject:VectorShape": 52
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Miscellaneous",
+          "id": "b3e7e9d52abc4ff08e65a0f16e143f53",
+          "name": "Instructions",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 2,
+            "Axure:DiagramObject:Layer": 9,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:TextBox": 2,
+            "Axure:DiagramObject:VectorShape": 42
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "c356742c685a47b0b1a9b4abc4dd2ad8",
+          "name": "Instructions",
+          "object_kinds": {
+            "Axure:DiagramObject:Checkbox": 1,
+            "Axure:DiagramObject:ComboBox": 9,
+            "Axure:DiagramObject:DynamicPanel": 4,
+            "Axure:DiagramObject:Layer": 10,
+            "Axure:DiagramObject:TextArea": 1,
+            "Axure:DiagramObject:TextBox": 20,
+            "Axure:DiagramObject:VectorShape": 85
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "9f2226d0f29c47a8b104b1293e29b97d",
+          "name": "Instructions",
+          "object_kinds": {
+            "Axure:DiagramObject:Checkbox": 3,
+            "Axure:DiagramObject:DynamicPanel": 8,
+            "Axure:DiagramObject:ImageBox": 1,
+            "Axure:DiagramObject:Layer": 39,
+            "Axure:DiagramObject:RadioButton": 3,
+            "Axure:DiagramObject:Repeater": 3,
+            "Axure:DiagramObject:TextArea": 1,
+            "Axure:DiagramObject:TextBox": 9,
+            "Axure:DiagramObject:VectorShape": 103
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "de11147bc29a4d70a8c8ab2847b94cb4",
+          "name": "Leading icon",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "1d715ddb96944665808076dd28491d7d",
+          "name": "Like",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "6babbc95867745f19eb774a10579faf7",
+          "name": "Multi-step checkout form",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "3c2646980f234466a3343cb834c7a21b",
+          "name": "Multiselect",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "f5b0a0c3fe1f4d5caa941d9485c0528c",
+          "name": "Outlined",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "784fffad1a36482594f6f965760990d6",
+          "name": "Personal information form",
+          "object_kinds": {
+            "Axure:DiagramObject:ComboBox": 2,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:TextBox": 10,
+            "Axure:DiagramObject:VectorShape": 16
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "ffff71f674364987a4aa80eef2e134a1",
+          "name": "Predictive search",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 3,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 4
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "a4e7cb579d2d46b2b33c95af8c2a7fa9",
+          "name": "Predictive search (thumbnails)",
+          "object_kinds": {
+            "Axure:DiagramObject:ImageBox": 1,
+            "Axure:DiagramObject:Layer": 4,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 4
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "e75bf1b9234d40d9bb3c2f8a4ece4689",
+          "name": "Product feedback form",
+          "object_kinds": {
+            "Axure:DiagramObject:ComboBox": 1,
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 3,
+            "Axure:DiagramObject:TextArea": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 23
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "62bfa3753b3a427395585ded03ed252e",
+          "name": "Radio button group (styled)",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 4,
+            "Axure:DiagramObject:RadioButton": 3,
+            "Axure:DiagramObject:VectorShape": 4
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "3bd52135e51b483fbdd1f10b3d49026c",
+          "name": "Read-only / editable form",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "7a4f596111ec489b94533436e3827e03",
+          "name": "Search input",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "3f329da93f1f42eb8f844a5895e03441",
+          "name": "Shipping & billing form",
+          "object_kinds": {
+            "Axure:DiagramObject:Checkbox": 1,
+            "Axure:DiagramObject:ComboBox": 4,
+            "Axure:DiagramObject:Layer": 3,
+            "Axure:DiagramObject:TextBox": 9,
+            "Axure:DiagramObject:VectorShape": 13
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Example forms",
+          "id": "e5560d0ec7c441a98aa00091737122c0",
+          "name": "Sign in / sign up form",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "e60b879dcd664f83b848b6f88263b0a3",
+          "name": "Slider (continuous)",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 6
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "ea34298060ce43b1beefe6300b0348f4",
+          "name": "Slider (range)",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 2,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:VectorShape": 7
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "860b65c70a0340879353ce550d80dd2c",
+          "name": "Split",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 3,
+            "Axure:DiagramObject:VectorShape": 7
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "564f6075a6b841df9d86776dc1e8488b",
+          "name": "Switch 1",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "0b1f3e5ff702402e99f4e00fcde9d3b6",
+          "name": "Switch 2",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "2e1785521a1a417f80456013b3fae1ba",
+          "name": "Text",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "b4986ab91ed94619b744e641a1cfb0a2",
+          "name": "Text animated",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "1dd62d24bc27417299d6601edc4cceae",
+          "name": "Text area & character count",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:TextArea": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "434a6863288944e1aac85ef2ca119122",
+          "name": "Text field & floating label (filled)",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "c5cf2a53a1dc477fa22eb30450074366",
+          "name": "Text field & floating label (outlined)",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "a416f5d241d049c9b5cbb17d5c6b57fa",
+          "name": "Text field & labels (filled)",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "2d0123155a4c471f87bd6bc2f5933db5",
+          "name": "Text field & labels (outlined)",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Inputs",
+          "id": "9a71bac8a6bf4e1fa6a9ee089e07a934",
+          "name": "Time picker",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Buttons",
+          "id": "d6160e6bca3a49fea2de31d17f1fba94",
+          "name": "Trailing icon",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        }
+      ],
+      "entry_count": 48,
+      "folders": [
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Inputs"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Buttons"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Miscellaneous"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Example forms"
+        }
+      ],
+      "path": "D:\\Program Files (x86)\\Axure\\Axure RP 11\\DefaultSettings\\Libraries\\Sample form patterns.rplib",
+      "version": 11
+    },
+    {
+      "entries": [
+        {
+          "category": "Content",
+          "id": "0ff48c5302e243619e825845e9ef51f3",
+          "name": "Card",
+          "object_kinds": {
+            "Axure:DiagramObject:ImageBox": 1,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:VectorShape": 5
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Containers",
+          "id": "2817ca465f1f4384b72bf3d88194a0e4",
+          "name": "Carousel",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 2,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Content",
+          "id": "f5e371c8616f481ca120c505d1bb59ee",
+          "name": "Chart",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 6
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Content",
+          "id": "27f59a68aaf249d298b4edbb44f8e2ae",
+          "name": "Instructions",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Hyperlink": 1,
+            "Axure:DiagramObject:ImageBox": 1,
+            "Axure:DiagramObject:Layer": 11,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 56
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Containers",
+          "id": "2ee0202230444926bd9ce1062631b4c8",
+          "name": "Instructions",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 4,
+            "Axure:DiagramObject:Layer": 5,
+            "Axure:DiagramObject:VectorShape": 20
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Navigation",
+          "id": "5c6f3b90e33443189fa470be22096bbc",
+          "name": "Instructions",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:ImageBox": 1,
+            "Axure:DiagramObject:Layer": 11,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 37
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Content",
+          "id": "4d4b15a019754649b2e63d5d7577f323",
+          "name": "Loading spinner",
+          "object_kinds": {
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Navigation",
+          "id": "4ec1784201ae44eca8fab86afb5f7cf1",
+          "name": "Navigation bar",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:ImageBox": 1,
+            "Axure:DiagramObject:Layer": 3,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 10
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Navigation",
+          "id": "801ad6ebb9474cc99a449f8528756544",
+          "name": "Pagination",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 5
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Content",
+          "id": "5ed1f48e76ec4492a98d75e234dea282",
+          "name": "Popup",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 1
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Containers",
+          "id": "e8dd783b2191410cb6e682d3f700ce8f",
+          "name": "Slideshow",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:VectorShape": 5
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Navigation",
+          "id": "6881ba8b98974feb8ba4bf4d89c9b422",
+          "name": "Steps",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 7,
+            "Axure:DiagramObject:VectorShape": 12
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Content",
+          "id": "e034502c6e0a40c08deb6474f4b4445f",
+          "name": "Table with sort & filter",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 12,
+            "Axure:DiagramObject:Repeater": 1,
+            "Axure:DiagramObject:TextBox": 1,
+            "Axure:DiagramObject:VectorShape": 22
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Containers",
+          "id": "032631c6723e4f159c2af2748b34c572",
+          "name": "Tabs",
+          "object_kinds": {
+            "Axure:DiagramObject:DynamicPanel": 1,
+            "Axure:DiagramObject:Layer": 2,
+            "Axure:DiagramObject:VectorShape": 3
+          },
+          "shape_types": {}
+        },
+        {
+          "category": "Content",
+          "id": "589718d9d43446419083a7d2e7b824c5",
+          "name": "Tooltip",
+          "object_kinds": {
+            "Axure:DiagramObject:Layer": 1,
+            "Axure:DiagramObject:VectorShape": 2
+          },
+          "shape_types": {}
+        }
+      ],
+      "entry_count": 15,
+      "folders": [
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Containers"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Navigation"
+        },
+        {
+          "kind": "Axure:MasterTreeFolder",
+          "name": "Content"
+        }
+      ],
+      "path": "D:\\Program Files (x86)\\Axure\\Axure RP 11\\DefaultSettings\\Libraries\\Sample UI patterns.rplib",
+      "version": 11
+    }
+  ],
+  "runtime_observed": false
+}

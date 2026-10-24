@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+  <title>RPShop</title>
+  <desc>Original purple prototype panels forming an RP monogram with a mint cursor on a pale lavender plate.</desc>
+  <rect x="64" y="64" width="896" height="896" rx="184" fill="#F0EAFD"/>
+  <path d="M458 178H640C791 178 880 267 880 405C880 545 790 630 643 630H542L672 834H554L424 624V526H636C727 526 781 483 781 404C781 325 727 274 636 274H458V178Z" fill="#6129E8"/>
+  <rect x="208" y="188" width="272" height="274" rx="32" fill="#F0EAFD" stroke="#6129E8" stroke-width="20"/>
+  <g fill="#6129E8">
+    <circle cx="255" cy="232" r="13"/>
+    <circle cx="295" cy="232" r="13"/>
+    <circle cx="335" cy="232" r="13"/>
+  </g>
+  <rect x="238" y="276" width="222" height="142" rx="8" stroke="#AD8DF0" stroke-width="12"/>
+  <path d="M242 280L456 414M456 280L242 414" stroke="#AD8DF0" stroke-width="12" stroke-linecap="round"/>
+  <rect x="208" y="486" width="198" height="338" rx="32" fill="#F0EAFD" stroke="#6129E8" stroke-width="20"/>
+  <g fill="#6129E8">
+    <circle cx="253" cy="527" r="12"/>
+    <circle cx="289" cy="527" r="12"/>
+    <circle cx="325" cy="527" r="12"/>
+  </g>
+  <circle cx="305" cy="638" r="62" fill="#AD8DF0"/>
+  <path d="M250 727H361M250 762H361" stroke="#AD8DF0" stroke-width="16" stroke-linecap="round"/>
+  <path d="M447 357H687C709 357 726 374 726 396V510C726 540 703 559 675 559H501C464 559 436 583 415 611V389C415 371 429 357 447 357Z" fill="#F0EAFD" stroke="#6129E8" stroke-width="18" stroke-linejoin="round"/>
+  <g fill="#6129E8">
+    <circle cx="458" cy="397" r="11"/>
+    <circle cx="492" cy="397" r="11"/>
+    <circle cx="526" cy="397" r="11"/>
+  </g>
+  <rect x="448" y="433" width="96" height="92" rx="9" fill="#AD8DF0"/>
+  <path d="M573 439H674M573 474H674M573 509H649" stroke="#AD8DF0" stroke-width="15" stroke-linecap="round"/>
+  <path d="M660 660C652 656 643 664 646 674L694 830C697 841 711 843 718 834L740 801L776 843C781 849 789 849 795 844L822 821C828 816 829 807 824 801L790 760L833 748C845 745 846 729 835 724L660 660Z" fill="#A3F5BF" stroke="#5422CF" stroke-width="18" stroke-linejoin="round"/>
+</svg>

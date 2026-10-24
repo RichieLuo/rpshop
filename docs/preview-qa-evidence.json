@@ -1,0 +1,3024 @@
+{
+  "format": "rpshop.preview-browser-qa.v1",
+  "version": "0.4.2",
+  "date": "2026-10-23",
+  "scope": "Independent, locally authored player fixture served by the current debug build. This is implementation QA, not a runtime capture of another product. No customer project content is included.",
+  "evidence_id": "ev_5b96f351b0c8433bac5a79fece5c321a3948383f54abed3eaa267bd1f3ec7507",
+  "provider": {
+    "id": "rea-playwright-browser-scenario",
+    "name": "REA Playwright browser scenario capture provider",
+    "version": "1"
+  },
+  "predicate_type": "rea.browser-scenario-capture",
+  "operation": "capture_browser_scenario",
+  "parameters": {
+    "browser": {
+      "mode": "launch",
+      "executable_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "headless": true
+    },
+    "start_url": {
+      "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-999999&key=id-2",
+      "query": []
+    },
+    "environment": {
+      "viewport": {
+        "width": 1200,
+        "height": 700,
+        "device_scale_factor": 1
+      },
+      "locale": "zh-CN",
+      "timezone": "UTC",
+      "color_scheme": "light",
+      "reduced_motion": "reduce",
+      "service_workers": "block"
+    },
+    "actions": [
+      {
+        "step_id": "beta-start",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-2:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "pages-open",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-picker"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "collapse-tree",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#collapse-all"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "widen-tree-keyboard",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#nav-splitter"
+        },
+        "key": "ArrowRight"
+      },
+      {
+        "step_id": "tree-width-230",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#nav-splitter[aria-valuenow='230']"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "restore-tree-width",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#nav-splitter"
+        },
+        "key": "ArrowLeft"
+      },
+      {
+        "step_id": "beta-collapsed",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": ".tree-label[data-page-id='2']"
+        },
+        "state": "hidden"
+      },
+      {
+        "step_id": "expand-tree",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#expand-all"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "nested-shown",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": ".tree-label[data-page-id='81']"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "search-nested",
+        "timeout_ms": 5000,
+        "action": "fill",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-search"
+        },
+        "value": {
+          "source": "literal",
+          "value": "Nested"
+        }
+      },
+      {
+        "step_id": "nested-result",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": ".tree-label[data-page-id='81']"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "alpha-filtered",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": ".tree-label[data-page-id='1']"
+        },
+        "state": "hidden"
+      },
+      {
+        "step_id": "open-nested-result",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": ".tree-label[data-page-id='81']"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "nested-active",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-81:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "clear-search",
+        "timeout_ms": 5000,
+        "action": "fill",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-search"
+        },
+        "value": {
+          "source": "literal",
+          "value": ""
+        }
+      },
+      {
+        "step_id": "keyboard-previous-beta",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-picker"
+        },
+        "key": ","
+      },
+      {
+        "step_id": "beta-after-comma",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-2:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "keyboard-previous-gamma",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-picker"
+        },
+        "key": ","
+      },
+      {
+        "step_id": "gamma-after-comma",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-80:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "keyboard-next-beta",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-picker"
+        },
+        "key": "."
+      },
+      {
+        "step_id": "beta-after-dot",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-2:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "focus-search",
+        "timeout_ms": 5000,
+        "action": "fill",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-search"
+        },
+        "value": {
+          "source": "literal",
+          "value": ""
+        }
+      },
+      {
+        "step_id": "dot-in-search",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-search"
+        },
+        "key": "."
+      },
+      {
+        "step_id": "search-does-not-navigate",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-2:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "search-clear-again",
+        "timeout_ms": 5000,
+        "action": "fill",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-search"
+        },
+        "value": {
+          "source": "literal",
+          "value": ""
+        }
+      },
+      {
+        "step_id": "open-alpha",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": ".tree-label[data-page-id='1']"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "alpha-for-actions",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-1:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "set-text",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-91"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "text-changed",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-90:has-text('Changed')"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "hide-title",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-92"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "title-hidden",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-90"
+        },
+        "state": "hidden"
+      },
+      {
+        "step_id": "restore-title",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-92"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "title-restored",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-90"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "form-input",
+        "timeout_ms": 5000,
+        "action": "fill",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-94 input"
+        },
+        "value": {
+          "source": "literal",
+          "value": "Browser input"
+        }
+      },
+      {
+        "step_id": "dot-in-input",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-94 input"
+        },
+        "key": "."
+      },
+      {
+        "step_id": "input-does-not-navigate",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-1:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "checkbox-check",
+        "timeout_ms": 5000,
+        "action": "check",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-95 input"
+        }
+      },
+      {
+        "step_id": "checkbox-action",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-90:has-text('Checked')"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "checkbox-uncheck",
+        "timeout_ms": 5000,
+        "action": "uncheck",
+        "locator": {
+          "kind": "css",
+          "selector": "#w-95 input"
+        }
+      },
+      {
+        "step_id": "alpha-next-gamma",
+        "timeout_ms": 5000,
+        "action": "press",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-picker"
+        },
+        "key": "."
+      },
+      {
+        "step_id": "dfs-order-gamma",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-80:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "history-back-alpha",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#history-back"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "history-alpha",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-1:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "history-forward-gamma",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#history-forward"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "history-gamma",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-80:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "gamma-next-beta",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#next-page"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "beta-for-scale",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-2:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "fit-width",
+        "timeout_ms": 5000,
+        "action": "select_option",
+        "locator": {
+          "kind": "css",
+          "selector": "#zoom"
+        },
+        "value": {
+          "source": "literal",
+          "value": "fit-width"
+        }
+      },
+      {
+        "step_id": "fit-width-value",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#viewport[data-scale='1.225']"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "fit-page",
+        "timeout_ms": 5000,
+        "action": "select_option",
+        "locator": {
+          "kind": "css",
+          "selector": "#zoom"
+        },
+        "value": {
+          "source": "literal",
+          "value": "fit-page"
+        }
+      },
+      {
+        "step_id": "fit-page-value",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#viewport[data-scale='1.1066666666666667']"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "exact-seventy-five",
+        "timeout_ms": 5000,
+        "action": "select_option",
+        "locator": {
+          "kind": "css",
+          "selector": "#zoom"
+        },
+        "value": {
+          "source": "literal",
+          "value": "75"
+        }
+      },
+      {
+        "step_id": "exact-scale",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#viewport[data-scale='0.75']"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "hotspots-on",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#hotspots"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "hotspots-class",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "body.show-hotspots"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "hide-player",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#hide-player"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "toolbar-hidden",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#player-toolbar"
+        },
+        "state": "hidden"
+      },
+      {
+        "step_id": "restore-visible",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#restore-player"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "restore-player",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#restore-player"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "toolbar-returned",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#player-toolbar"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "nav-returned",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#player-nav"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "refresh-player",
+        "timeout_ms": 5000,
+        "action": "click",
+        "locator": {
+          "kind": "css",
+          "selector": "#reload"
+        },
+        "button": "left",
+        "click_count": 1
+      },
+      {
+        "step_id": "refresh-current",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-2:not([hidden])"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "refresh-scale",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#viewport[data-scale='0.75']"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "refresh-hotspots",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "body.show-hotspots"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "refresh-tree",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#player-nav"
+        },
+        "state": "visible"
+      },
+      {
+        "step_id": "valid-wrong-id-key-priority",
+        "timeout_ms": 5000,
+        "action": "goto",
+        "destination": {
+          "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-1&nav=1&zoom=75&hotspots=1",
+          "query": []
+        },
+        "wait_until": "load"
+      },
+      {
+        "step_id": "stable-key-alpha",
+        "timeout_ms": 5000,
+        "action": "wait_for",
+        "locator": {
+          "kind": "css",
+          "selector": "#page-1:not([hidden])"
+        },
+        "state": "visible"
+      }
+    ],
+    "storage": {
+      "cookies": [],
+      "local_storage": [],
+      "session_storage": []
+    },
+    "secrets": [],
+    "capture": {
+      "after_each_step": [
+        "url"
+      ],
+      "at_end": [
+        "dom",
+        "accessibility",
+        "screenshot",
+        "url",
+        "history"
+      ],
+      "events": [
+        "console",
+        "page-errors",
+        "network"
+      ],
+      "network": {
+        "request_body": false,
+        "response_body": false,
+        "header_values": false
+      },
+      "limits": {
+        "max_events": 10000,
+        "max_event_allocation_bytes": 4194304,
+        "max_total_event_allocation_bytes": 16777216,
+        "max_network_transactions": 1024,
+        "max_network_body_bytes": 65536,
+        "max_network_body_allocation_bytes": 1048576,
+        "max_network_header_allocation_bytes": 1048576,
+        "max_network_metadata_allocation_bytes": 1048576
+      }
+    },
+    "scenario_sha256": "399d9be5d6f2ab6d59efc33117534459a1be09dbefdd8741e5756e745adadbfa"
+  },
+  "browser": {
+    "mode": "launch",
+    "process_ownership": "provider-owned",
+    "cleanup": "terminated-owned-process",
+    "product": "Chromium",
+    "version": "154.0.4258.53"
+  },
+  "completeness": {
+    "status": "complete",
+    "equality_eligible": true,
+    "missing_sections": [],
+    "truncated_sections": []
+  },
+  "summary": {
+    "declared_actions": 68,
+    "scenario_start_steps": 1,
+    "total_steps": 69,
+    "completed_steps": 69,
+    "failed_steps": 0,
+    "external_network_requests": 0,
+    "page_errors": 0,
+    "console_events": 0,
+    "network_document_requests": 2,
+    "network_document_responses": 2,
+    "network_statuses": [
+      200,
+      200
+    ],
+    "capture_event_dropped": 0
+  },
+  "groups": [
+    {
+      "name": "Initial logical page, tree, splitter, search",
+      "first_step": 1,
+      "last_step": 15,
+      "declared_actions": 15,
+      "all_completed": true
+    },
+    {
+      "name": "Depth-first navigation and search input focus",
+      "first_step": 16,
+      "last_step": 27,
+      "declared_actions": 12,
+      "all_completed": true
+    },
+    {
+      "name": "Widget actions and native form controls",
+      "first_step": 28,
+      "last_step": 39,
+      "declared_actions": 12,
+      "all_completed": true
+    },
+    {
+      "name": "Linear page order and browser history",
+      "first_step": 40,
+      "last_step": 47,
+      "declared_actions": 8,
+      "all_completed": true
+    },
+    {
+      "name": "Fit width / fit page / exact scale / hotspots",
+      "first_step": 48,
+      "last_step": 55,
+      "declared_actions": 8,
+      "all_completed": true
+    },
+    {
+      "name": "Hide and restore player",
+      "first_step": 56,
+      "last_step": 61,
+      "declared_actions": 6,
+      "all_completed": true
+    },
+    {
+      "name": "Refresh state persistence",
+      "first_step": 62,
+      "last_step": 66,
+      "declared_actions": 5,
+      "all_completed": true
+    },
+    {
+      "name": "Stable key overrides valid wrong numeric ID",
+      "first_step": 67,
+      "last_step": 68,
+      "declared_actions": 2,
+      "all_completed": true
+    }
+  ],
+  "stable_key_cases": [
+    {
+      "start_hash": "#page-999999&key=id-2",
+      "expected_page_id": 2,
+      "actual_assertion_step": "beta-start"
+    },
+    {
+      "start_hash": "#page-2&key=id-1&nav=1&zoom=75&hotspots=1",
+      "expected_page_id": 1,
+      "actual_assertion_step": "stable-key-alpha"
+    }
+  ],
+  "scale_cases": {
+    "viewport": {
+      "width": 1200,
+      "height": 700
+    },
+    "page_fixed_size": {
+      "width": 800,
+      "height": 600
+    },
+    "sidebar_width": 220,
+    "fit_width": 1.225,
+    "fit_page": 1.1066666666666667,
+    "exact_scale": 0.75
+  },
+  "steps": [
+    {
+      "step_index": 0,
+      "step_id": "scenario_start",
+      "action": "goto_start",
+      "elapsed_ms": 601,
+      "before_url": {
+        "url": "about:blank",
+        "origin": null,
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 1,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 1,
+      "step_id": "beta-start",
+      "action": "wait_for",
+      "elapsed_ms": 49,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 2,
+      "step_id": "pages-open",
+      "action": "click",
+      "elapsed_ms": 151,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 3,
+      "step_id": "collapse-tree",
+      "action": "click",
+      "elapsed_ms": 38,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 4,
+      "step_id": "widen-tree-keyboard",
+      "action": "press",
+      "elapsed_ms": 16,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&navwidth=230",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 5,
+      "step_id": "tree-width-230",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&navwidth=230",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&navwidth=230",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 6,
+      "step_id": "restore-tree-width",
+      "action": "press",
+      "elapsed_ms": 14,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&navwidth=230",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 7,
+      "step_id": "beta-collapsed",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 8,
+      "step_id": "expand-tree",
+      "action": "click",
+      "elapsed_ms": 32,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 9,
+      "step_id": "nested-shown",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 10,
+      "step_id": "search-nested",
+      "action": "fill",
+      "elapsed_ms": 7,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 11,
+      "step_id": "nested-result",
+      "action": "wait_for",
+      "elapsed_ms": 4,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 12,
+      "step_id": "alpha-filtered",
+      "action": "wait_for",
+      "elapsed_ms": 2,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 13,
+      "step_id": "open-nested-result",
+      "action": "click",
+      "elapsed_ms": 52,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-81&key=id-81&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 14,
+      "step_id": "nested-active",
+      "action": "wait_for",
+      "elapsed_ms": 8,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-81&key=id-81&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-81&key=id-81&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 15,
+      "step_id": "clear-search",
+      "action": "fill",
+      "elapsed_ms": 9,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-81&key=id-81&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-81&key=id-81&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 16,
+      "step_id": "keyboard-previous-beta",
+      "action": "press",
+      "elapsed_ms": 18,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-81&key=id-81&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 17,
+      "step_id": "beta-after-comma",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 18,
+      "step_id": "keyboard-previous-gamma",
+      "action": "press",
+      "elapsed_ms": 14,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 19,
+      "step_id": "gamma-after-comma",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 20,
+      "step_id": "keyboard-next-beta",
+      "action": "press",
+      "elapsed_ms": 15,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 21,
+      "step_id": "beta-after-dot",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 22,
+      "step_id": "focus-search",
+      "action": "fill",
+      "elapsed_ms": 6,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 23,
+      "step_id": "dot-in-search",
+      "action": "press",
+      "elapsed_ms": 6,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 24,
+      "step_id": "search-does-not-navigate",
+      "action": "wait_for",
+      "elapsed_ms": 2,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 25,
+      "step_id": "search-clear-again",
+      "action": "fill",
+      "elapsed_ms": 6,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 26,
+      "step_id": "open-alpha",
+      "action": "click",
+      "elapsed_ms": 45,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 27,
+      "step_id": "alpha-for-actions",
+      "action": "wait_for",
+      "elapsed_ms": 4,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 28,
+      "step_id": "set-text",
+      "action": "click",
+      "elapsed_ms": 35,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 29,
+      "step_id": "text-changed",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 30,
+      "step_id": "hide-title",
+      "action": "click",
+      "elapsed_ms": 30,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 31,
+      "step_id": "title-hidden",
+      "action": "wait_for",
+      "elapsed_ms": 2,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 32,
+      "step_id": "restore-title",
+      "action": "click",
+      "elapsed_ms": 32,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 33,
+      "step_id": "title-restored",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 34,
+      "step_id": "form-input",
+      "action": "fill",
+      "elapsed_ms": 6,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 35,
+      "step_id": "dot-in-input",
+      "action": "press",
+      "elapsed_ms": 6,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 36,
+      "step_id": "input-does-not-navigate",
+      "action": "wait_for",
+      "elapsed_ms": 2,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 37,
+      "step_id": "checkbox-check",
+      "action": "check",
+      "elapsed_ms": 35,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 38,
+      "step_id": "checkbox-action",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 39,
+      "step_id": "checkbox-uncheck",
+      "action": "uncheck",
+      "elapsed_ms": 28,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 40,
+      "step_id": "alpha-next-gamma",
+      "action": "press",
+      "elapsed_ms": 19,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 41,
+      "step_id": "dfs-order-gamma",
+      "action": "wait_for",
+      "elapsed_ms": 5,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 42,
+      "step_id": "history-back-alpha",
+      "action": "click",
+      "elapsed_ms": 35,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 43,
+      "step_id": "history-alpha",
+      "action": "wait_for",
+      "elapsed_ms": 7,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 44,
+      "step_id": "history-forward-gamma",
+      "action": "click",
+      "elapsed_ms": 43,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 45,
+      "step_id": "history-gamma",
+      "action": "wait_for",
+      "elapsed_ms": 6,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 46,
+      "step_id": "gamma-next-beta",
+      "action": "click",
+      "elapsed_ms": 40,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-80&key=id-80&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 47,
+      "step_id": "beta-for-scale",
+      "action": "wait_for",
+      "elapsed_ms": 2,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 48,
+      "step_id": "fit-width",
+      "action": "select_option",
+      "elapsed_ms": 14,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-width",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 49,
+      "step_id": "fit-width-value",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-width",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-width",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 50,
+      "step_id": "fit-page",
+      "action": "select_option",
+      "elapsed_ms": 12,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-width",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-page",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 51,
+      "step_id": "fit-page-value",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-page",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-page",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 52,
+      "step_id": "exact-seventy-five",
+      "action": "select_option",
+      "elapsed_ms": 8,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=fit-page",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 53,
+      "step_id": "exact-scale",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 54,
+      "step_id": "hotspots-on",
+      "action": "click",
+      "elapsed_ms": 34,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 55,
+      "step_id": "hotspots-class",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 56,
+      "step_id": "hide-player",
+      "action": "click",
+      "elapsed_ms": 36,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1&player=0",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 57,
+      "step_id": "toolbar-hidden",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1&player=0",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1&player=0",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 58,
+      "step_id": "restore-visible",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1&player=0",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1&player=0",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 59,
+      "step_id": "restore-player",
+      "action": "click",
+      "elapsed_ms": 42,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1&player=0",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 60,
+      "step_id": "toolbar-returned",
+      "action": "wait_for",
+      "elapsed_ms": 3,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 61,
+      "step_id": "nav-returned",
+      "action": "wait_for",
+      "elapsed_ms": 4,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 3,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 62,
+      "step_id": "refresh-player",
+      "action": "click",
+      "elapsed_ms": 70,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 4,
+      "event_sequence_end": 6,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 63,
+      "step_id": "refresh-current",
+      "action": "wait_for",
+      "elapsed_ms": 20,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 7,
+      "event_sequence_end": 6,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 64,
+      "step_id": "refresh-scale",
+      "action": "wait_for",
+      "elapsed_ms": 4,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 7,
+      "event_sequence_end": 6,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 65,
+      "step_id": "refresh-hotspots",
+      "action": "wait_for",
+      "elapsed_ms": 6,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 7,
+      "event_sequence_end": 6,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 66,
+      "step_id": "refresh-tree",
+      "action": "wait_for",
+      "elapsed_ms": 4,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 7,
+      "event_sequence_end": 6,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 67,
+      "step_id": "valid-wrong-id-key-priority",
+      "action": "goto",
+      "elapsed_ms": 14,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-2&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-1&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 7,
+      "event_sequence_end": 6,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "step_index": 68,
+      "step_id": "stable-key-alpha",
+      "action": "wait_for",
+      "elapsed_ms": 96,
+      "before_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-2&key=id-1&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "after_url": {
+        "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/#page-1&key=id-1&nav=1&zoom=75&hotspots=1",
+        "origin": "http://127.0.0.1:55154",
+        "query_parameter_names": [],
+        "redacted": false
+      },
+      "event_sequence_start": 7,
+      "event_sequence_end": 6,
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "status": "completed",
+      "error": null
+    }
+  ],
+  "events": {
+    "retained": 6,
+    "dropped": 0,
+    "items": [
+      {
+        "sequence": 1,
+        "step_index": 0,
+        "transaction_id": "request-1",
+        "redirected_from_transaction_id": null,
+        "redirected_from_transaction_state": "root",
+        "method": "GET",
+        "url": {
+          "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/",
+          "origin": "http://127.0.0.1:55154",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "resource_type": "document",
+        "header_names": [
+          "accept-language",
+          "sec-ch-ua",
+          "sec-ch-ua-mobile",
+          "sec-ch-ua-platform",
+          "upgrade-insecure-requests",
+          "user-agent"
+        ],
+        "kind": "request",
+        "status": null,
+        "failure": null
+      },
+      {
+        "sequence": 2,
+        "step_index": 0,
+        "transaction_id": "request-1",
+        "redirected_from_transaction_id": null,
+        "redirected_from_transaction_state": "root",
+        "method": "GET",
+        "url": {
+          "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/",
+          "origin": "http://127.0.0.1:55154",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "resource_type": "document",
+        "header_names": [
+          "cache-control",
+          "connection",
+          "content-length",
+          "content-security-policy",
+          "content-type",
+          "referrer-policy",
+          "x-content-type-options"
+        ],
+        "kind": "response",
+        "status": 200,
+        "failure": null
+      },
+      {
+        "sequence": 3,
+        "step_index": 0,
+        "transaction_id": "request-1",
+        "redirected_from_transaction_id": null,
+        "redirected_from_transaction_state": "root",
+        "method": "GET",
+        "url": {
+          "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/",
+          "origin": "http://127.0.0.1:55154",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "resource_type": "document",
+        "header_names": [
+          "accept-language",
+          "sec-ch-ua",
+          "sec-ch-ua-mobile",
+          "sec-ch-ua-platform",
+          "upgrade-insecure-requests",
+          "user-agent"
+        ],
+        "kind": "request-finished",
+        "status": null,
+        "failure": null
+      },
+      {
+        "sequence": 4,
+        "step_index": 62,
+        "transaction_id": "request-2",
+        "redirected_from_transaction_id": null,
+        "redirected_from_transaction_state": "root",
+        "method": "GET",
+        "url": {
+          "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/",
+          "origin": "http://127.0.0.1:55154",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "resource_type": "document",
+        "header_names": [
+          "accept-language",
+          "sec-ch-ua",
+          "sec-ch-ua-mobile",
+          "sec-ch-ua-platform",
+          "upgrade-insecure-requests",
+          "user-agent"
+        ],
+        "kind": "request",
+        "status": null,
+        "failure": null
+      },
+      {
+        "sequence": 5,
+        "step_index": 62,
+        "transaction_id": "request-2",
+        "redirected_from_transaction_id": null,
+        "redirected_from_transaction_state": "root",
+        "method": "GET",
+        "url": {
+          "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/",
+          "origin": "http://127.0.0.1:55154",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "resource_type": "document",
+        "header_names": [
+          "cache-control",
+          "connection",
+          "content-length",
+          "content-security-policy",
+          "content-type",
+          "referrer-policy",
+          "x-content-type-options"
+        ],
+        "kind": "response",
+        "status": 200,
+        "failure": null
+      },
+      {
+        "sequence": 6,
+        "step_index": 62,
+        "transaction_id": "request-2",
+        "redirected_from_transaction_id": null,
+        "redirected_from_transaction_state": "root",
+        "method": "GET",
+        "url": {
+          "url": "http://127.0.0.1:55154/00777769a75c27d9867c03fe1667df65/",
+          "origin": "http://127.0.0.1:55154",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "resource_type": "document",
+        "header_names": [
+          "accept-language",
+          "sec-ch-ua",
+          "sec-ch-ua-mobile",
+          "sec-ch-ua-platform",
+          "upgrade-insecure-requests",
+          "user-agent"
+        ],
+        "kind": "request-finished",
+        "status": null,
+        "failure": null
+      }
+    ],
+    "omissions": {
+      "by_kind": [],
+      "network_transactions": [],
+      "network_transaction_range": null
+    }
+  },
+  "screenshot": {
+    "path": "screenshots/preview.png",
+    "sha256": "cf46e8db75ecb5f151cea52a9953106cf020fcc0712ff8d69b35c08d548171da",
+    "bytes": 19101,
+    "media_type": "image/png"
+  },
+  "source_evidence": [],
+  "limitations": [
+    "No claim of complete compatibility with native advanced interactions, adaptive views, dynamic panels, variables or rich-text wrapping.",
+    "Only recorded actions and assertions are covered; runtime behavior of the reference program was not tested.",
+    "The local preview host was stopped after capture; the recorded URL is ephemeral."
+  ]
+}

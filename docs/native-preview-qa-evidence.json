@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "release": "0.5.0",
+  "date": "2026-10-23",
+  "scope": "Controlled replay of the independent local implementation using independently authored projects only.",
+  "source_data_included": false,
+  "original_reference_executed": false,
+  "scenarios": [
+    {
+      "id": "native-links-final",
+      "scope": "Independent two-page native fixture: frame and top-page navigation, frame-local return, native SetText in both contexts.",
+      "evidence_id": "ev_800add2cc402101f3abd232402819204da8140b7363b69b22ea461f65f1aa176",
+      "passed": true,
+      "declared_actions": 15,
+      "steps_including_initial_navigation": 16,
+      "actions_by_type": {
+        "wait_for": 9,
+        "click": 6
+      },
+      "completed_step_names": [
+        "scenario_start",
+        "alpha-start",
+        "load-frame",
+        "frame-beta",
+        "frame-native-set-text",
+        "frame-text-updated",
+        "outer-page-unchanged",
+        "frame-current-back",
+        "frame-alpha-return",
+        "top-open-beta",
+        "top-beta",
+        "top-beta-content",
+        "top-native-set-text",
+        "top-text-updated",
+        "top-return-alpha",
+        "top-alpha-return"
+      ],
+      "browser": {
+        "product": "Chromium",
+        "version": "154.0.4258.53",
+        "headless": true
+      },
+      "complete": true,
+      "events_dropped": 0,
+      "page_errors": 0,
+      "console_messages": 0,
+      "network": {
+        "loopback_document_requests": 1,
+        "response_statuses": [
+          200
+        ],
+        "external_requests": 0
+      }
+    },
+    {
+      "id": "native-saved-final",
+      "scope": "Independently authored events saved into a native project and reopened: page-load text, click text followed by visibility toggle.",
+      "evidence_id": "ev_e599cc6cc5153bfd525eacb030b4d2116cfdfed8146d1f50d5a03f8aa0cdb3e1",
+      "passed": true,
+      "declared_actions": 7,
+      "steps_including_initial_navigation": 8,
+      "actions_by_type": {
+        "wait_for": 5,
+        "click": 2
+      },
+      "completed_step_names": [
+        "scenario_start",
+        "native-saved-page-load",
+        "native-saved-toggle-initial-visible",
+        "native-saved-click-authored",
+        "native-saved-set-text",
+        "native-saved-toggle-hidden",
+        "native-saved-second-click",
+        "native-saved-toggle-visible-again"
+      ],
+      "browser": {
+        "product": "Chromium",
+        "version": "154.0.4258.53",
+        "headless": true
+      },
+      "complete": true,
+      "events_dropped": 0,
+      "page_errors": 0,
+      "console_messages": 0,
+      "network": {
+        "loopback_document_requests": 1,
+        "response_statuses": [
+          200
+        ],
+        "external_requests": 0
+      }
+    },
+    {
+      "id": "authored-example-final",
+      "scope": "Ordinary project event authoring example: page-load initialization, ordered two-action click, repeated visibility toggles, forward and return navigation.",
+      "evidence_id": "ev_1a0a7462ca950b461c109fc9a73383438311d87e162a4a71ce112d978cf12c77",
+      "passed": true,
+      "declared_actions": 15,
+      "steps_including_initial_navigation": 16,
+      "actions_by_type": {
+        "wait_for": 10,
+        "click": 5
+      },
+      "completed_step_names": [
+        "scenario_start",
+        "authored-page-load-text",
+        "authored-details-initial-hidden",
+        "authored-button-first",
+        "authored-chain-toggle-shown",
+        "authored-chain-set-text",
+        "authored-button-second",
+        "authored-chain-toggle-hidden",
+        "authored-button-third",
+        "authored-chain-toggle-shown-again",
+        "authored-navigate-second",
+        "authored-second-title",
+        "authored-second-content",
+        "authored-return-first",
+        "authored-first-title",
+        "authored-reload-text"
+      ],
+      "browser": {
+        "product": "Chromium",
+        "version": "154.0.4258.53",
+        "headless": true
+      },
+      "complete": true,
+      "events_dropped": 0,
+      "page_errors": 0,
+      "console_messages": 0,
+      "network": {
+        "loopback_document_requests": 1,
+        "response_statuses": [
+          200
+        ],
+        "external_requests": 0
+      }
+    },
+    {
+      "id": "checkbox-authored-final",
+      "scope": "Independent checkbox-label text activation: one visibility toggle per label-text click, with checked and unchecked assertions.",
+      "evidence_id": "ev_e157ed4d5992b0d68d741fdd9fdbb3bd60ad51fc833a72ca7fbb9fafde7b38a1",
+      "passed": true,
+      "declared_actions": 9,
+      "steps_including_initial_navigation": 10,
+      "actions_by_type": {
+        "wait_for": 7,
+        "click": 2
+      },
+      "completed_step_names": [
+        "scenario_start",
+        "checkbox-initial-load",
+        "checkbox-target-initial-hidden",
+        "checkbox-click-text-first",
+        "checkbox-target-shown-once",
+        "checkbox-first-checked",
+        "checkbox-second-action-text",
+        "checkbox-click-text-second",
+        "checkbox-target-hidden-once",
+        "checkbox-second-unchecked"
+      ],
+      "browser": {
+        "product": "Chromium",
+        "version": "154.0.4258.53",
+        "headless": true
+      },
+      "complete": true,
+      "events_dropped": 0,
+      "page_errors": 0,
+      "console_messages": 0,
+      "network": {
+        "loopback_document_requests": 1,
+        "response_statuses": [
+          200
+        ],
+        "external_requests": 0
+      }
+    },
+    {
+      "id": "native-navigation-final",
+      "scope": "Reopened native project: page-load navigation reaches the destination title and body, then destination authored load and click actions remain usable.",
+      "evidence_id": "ev_8fdef3157c818dd15c951ee7562a2dfc01373900ad964c30b87d09a7ce8cb81a",
+      "passed": true,
+      "declared_actions": 8,
+      "steps_including_initial_navigation": 9,
+      "actions_by_type": {
+        "wait_for": 6,
+        "click": 2
+      },
+      "completed_step_names": [
+        "scenario_start",
+        "native-page-load-navigated-beta",
+        "native-saved-page-load",
+        "native-saved-toggle-initial-visible",
+        "native-saved-click-authored",
+        "native-saved-set-text",
+        "native-saved-toggle-hidden",
+        "native-saved-second-click",
+        "native-saved-toggle-visible-again"
+      ],
+      "browser": {
+        "product": "Chromium",
+        "version": "154.0.4258.53",
+        "headless": true
+      },
+      "complete": true,
+      "events_dropped": 0,
+      "page_errors": 0,
+      "console_messages": 0,
+      "network": {
+        "loopback_document_requests": 1,
+        "response_statuses": [
+          200
+        ],
+        "external_requests": 0
+      }
+    },
+    {
+      "id": "native-loop-final",
+      "scope": "Independent reciprocal page-load navigation fixture: loop budget stops navigation, the notice dismisses, and page-tree and hotspot controls remain responsive.",
+      "evidence_id": "ev_6c6746363e5ee6c4e2296562e79eaf0329b97813abb8cadf9609a6292161279b",
+      "passed": true,
+      "declared_actions": 9,
+      "steps_including_initial_navigation": 10,
+      "actions_by_type": {
+        "wait_for": 5,
+        "click": 4
+      },
+      "completed_step_names": [
+        "scenario_start",
+        "load-loop-budget-stopped",
+        "load-loop-dismiss-notice",
+        "load-loop-notice-hidden",
+        "load-loop-page-picker-responsive",
+        "load-loop-page-tree-visible",
+        "load-loop-close-picker",
+        "load-loop-page-tree-hidden",
+        "load-loop-hotspot-control-responsive",
+        "load-loop-hotspot-active"
+      ],
+      "browser": {
+        "product": "Chromium",
+        "version": "154.0.4258.53",
+        "headless": true
+      },
+      "complete": true,
+      "events_dropped": 0,
+      "page_errors": 0,
+      "console_messages": 0,
+      "network": {
+        "loopback_document_requests": 1,
+        "response_statuses": [
+          200
+        ],
+        "external_requests": 0
+      }
+    }
+  ],
+  "totals": {
+    "browser_scenarios": 6,
+    "declared_actions": 63,
+    "steps_including_initial_navigation": 69,
+    "page_errors": 0,
+    "console_messages": 0,
+    "external_requests": 0
+  },
+  "pointer_gestures": {
+    "tool": "Existing Playwright runtime controlling headless Edge",
+    "scope": "Real automated mouse down/move/up; no synthetic DOM swipe events or direct state mutation. This is not manual or physical touch-device testing.",
+    "native_text_in_frame": true,
+    "setup_clicks": 2,
+    "cases": [
+      {
+        "name": "left-over-30-under-one-second",
+        "horizontal_delta_pixels": -120,
+        "hold_ms": 0,
+        "active_transition_animations": 2,
+        "passed": true
+      },
+      {
+        "name": "right-over-30-under-one-second",
+        "horizontal_delta_pixels": 120,
+        "hold_ms": 0,
+        "active_transition_animations": 2,
+        "passed": true
+      },
+      {
+        "name": "below-thirty-pixels-no-change",
+        "horizontal_delta_pixels": 20,
+        "hold_ms": 0,
+        "active_transition_animations": 0,
+        "passed": true
+      },
+      {
+        "name": "over-one-second-no-change",
+        "horizontal_delta_pixels": 80,
+        "hold_ms": 1100,
+        "active_transition_animations": 0,
+        "passed": true
+      }
+    ],
+    "loopback_document_requests": 1,
+    "page_errors": 0,
+    "console_messages": 0,
+    "external_requests": 0
+  },
+  "owned_inputs": {
+    "native_fixture": {
+      "bytes": 14342,
+      "sha256": "c6bd2647dc88d48da666e9256811df90ece71215c5edef9afb394056a7b6260b"
+    },
+    "saved_authored_native_fixture": {
+      "bytes": 12376,
+      "sha256": "92ad4a7c4cd27ec826e9fbae6f482bc5341c24cbdaf7647bac4806ff3d1d8bb6"
+    },
+    "ordinary_authored_example": {
+      "bytes": 6523,
+      "sha256": "b188d25e126c6bdee3256fe3875453a124b7165647de460286196218d2911ca4"
+    },
+    "checkbox_fixture": {
+      "bytes": 6814,
+      "sha256": "84a940aad733e82ab3db51da3b5366f53f2549fc5b78fce35e00b3d44710d410"
+    },
+    "native_navigation_fixture": {
+      "bytes": 8030,
+      "sha256": "f040aee9ff93687a15d49b9468dedb05d510eb9144c7084c7734e4bfdc5dc607"
+    },
+    "native_loop_fixture": {
+      "bytes": 8401,
+      "sha256": "03977123e5061eda89973b1685e0276b3a76f135cfebad8d42e78a558a6ed050"
+    }
+  },
+  "screenshot": {
+    "path": "screenshots/native-preview.png",
+    "bytes": 14091,
+    "sha256": "f719c79ded3ae20d1e91df2d3f071894b2fa070638ae3af0948eacaa504ddf0f",
+    "content": "Independent native fixture after frame text update and a real left pointer swipe."
+  },
+  "limitations": [
+    "The report covers the named flows, not complete native-format or visual compatibility.",
+    "Local addresses, random session tokens, raw source graphs, business project identifiers, script bodies and screenshot base64 are excluded."
+  ]
+}
