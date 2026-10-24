@@ -3509,29 +3509,23 @@ fn apply_drag(
 
 fn setup_style(ctx: &egui::Context) {
     let mut fonts = egui::FontDefinitions::default();
-    for path in [
-        "C:/Windows/Fonts/msyh.ttc",
-        "/System/Library/Fonts/PingFang.ttc",
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-    ] {
-        if let Ok(bytes) = std::fs::read(path) {
-            fonts.font_data.insert(
-                "cjk".into(),
-                std::sync::Arc::new(egui::FontData::from_owned(bytes)),
-            );
-            fonts
-                .families
-                .entry(egui::FontFamily::Proportional)
-                .or_default()
-                .insert(0, "cjk".into());
-            fonts
-                .families
-                .entry(egui::FontFamily::Monospace)
-                .or_default()
-                .push("cjk".into());
-            break;
-        }
-    }
+    let cjk_font = "noto-cjk-sc";
+    fonts.font_data.insert(
+        cjk_font.into(),
+        std::sync::Arc::new(egui::FontData::from_static(include_bytes!(
+            "../assets/fonts/NotoSansCJKsc-Regular.otf"
+        ))),
+    );
+    fonts
+        .families
+        .entry(egui::FontFamily::Proportional)
+        .or_default()
+        .insert(0, cjk_font.into());
+    fonts
+        .families
+        .entry(egui::FontFamily::Monospace)
+        .or_default()
+        .insert(0, cjk_font.into());
     let mut bold_names = Vec::new();
     for (name, path) in [
         ("canvas-arial-bold", "C:/Windows/Fonts/arialbd.ttf"),
