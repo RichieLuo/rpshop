@@ -96,6 +96,108 @@ fn expanding_and_scrolling_pages_never_moves_other_sidebar_sections() {
 }
 
 #[test]
+fn clicking_visible_pages_keeps_the_scrolled_list_in_place() {
+    let mut app = populated_sidebar();
+    let ctx = egui::Context::default();
+    let initial = frame(&mut app, &ctx, vec![]);
+    click(&mut app, &ctx, text_center(&initial, "sidebar-folder"));
+    for _ in 0..60 {
+        frame(&mut app, &ctx, vec![]);
+    }
+    let pane = rects(&app, &ctx).panes[0];
+    let pointer = pane.center() + vec2(0.0, 40.0);
+    let mut output = frame(
+        &mut app,
+        &ctx,
+        vec![
+            egui::Event::PointerMoved(pointer),
+            egui::Event::MouseWheel {
+                unit: egui::MouseWheelUnit::Point,
+                delta: vec2(0.0, -190.0),
+                modifiers: egui::Modifiers::NONE,
+            },
+        ],
+    );
+    for _ in 0..60 {
+        output = frame(&mut app, &ctx, vec![]);
+    }
+    let pages: Vec<_> = (1..app.project.pages.len())
+        .filter_map(|index| {
+            let name = format!("sidebar-page-{index}");
+            let position = text_center(&output, &name);
+            let fully_visible = output.shapes.iter().any(|shape| {
+                matches!(
+                    &shape.shape,
+                    egui::epaint::Shape::Text(text) if text.galley.text() == name
+                ) && shape
+                    .clip_rect
+                    .contains_rect(Rect::from_center_size(position, vec2(1.0, 27.0)))
+            });
+            (fully_visible && (position.y - pane.center().y).abs() > 25.0)
+                .then_some((index, name, position))
+        })
+        .take(2)
+        .collect();
+    assert_eq!(
+        pages.len(),
+        2,
+        "two off-center page rows must be fully visible"
+    );
+    for (index, name, position) in pages {
+        // Move before pressing so a single input frame cannot look like a scroll drag.
+        frame(&mut app, &ctx, vec![egui::Event::PointerMoved(position)]);
+        click(&mut app, &ctx, position);
+        assert_eq!(app.page, index, "clicking {name} must activate it");
+        // Cover both the selection update and the full scroll animation duration.
+        for _ in 0..60 {
+            output = frame(&mut app, &ctx, vec![]);
+            assert!(
+                (text_center(&output, &name).y - position.y).abs() < 0.1,
+                "clicking {name} must preserve its list position: expected {}, actual {}",
+                position.y,
+                text_center(&output, &name).y
+            );
+        }
+    }
+}
+
+#[test]
+fn external_page_navigation_expands_ancestors_and_reveals_the_page() {
+    let mut app = populated_sidebar();
+    let ctx = egui::Context::default();
+    let initial = frame(&mut app, &ctx, vec![]);
+    click(&mut app, &ctx, text_center(&initial, "sidebar-root"));
+    let collapsed = frame(&mut app, &ctx, vec![]);
+    assert!(!collapsed.shapes.iter().any(|shape| {
+        matches!(
+            &shape.shape,
+            egui::epaint::Shape::Text(text) if text.galley.text() == "sidebar-folder"
+        )
+    }));
+    app.page = 34;
+    let mut output = frame(&mut app, &ctx, vec![]);
+    for _ in 0..60 {
+        output = frame(&mut app, &ctx, vec![]);
+    }
+    let position = text_center(&output, "sidebar-page-34");
+    assert!(rects(&app, &ctx).panes[0].contains(position));
+    assert!(
+        output.shapes.iter().any(|shape| {
+            if let egui::epaint::Shape::Text(text) = &shape.shape {
+                text.galley.text() == "sidebar-page-34"
+                    && shape.clip_rect.height() >= 26.5
+                    && shape
+                        .clip_rect
+                        .contains_rect(Rect::from_min_size(text.pos, text.galley.size()))
+            } else {
+                false
+            }
+        }),
+        "external navigation must reveal the complete selected row"
+    );
+}
+
+#[test]
 fn splitters_resize_adjacent_panes_and_remember_view_preferences_only() {
     let mut app = populated_sidebar();
     let project = app.project.clone();
@@ -250,19 +352,35 @@ fn library_drag_keeps_the_selected_preset_and_composites_insert_as_one_group() {
     app.library_query = "star".into();
     let output = frame(&mut app, &ctx, vec![]);
     let star = text_center(&output, "星形");
-    frame(&mut app,&ctx,vec![egui::Event::PointerMoved(star),pointer(star,true)]);
-    frame(&mut app,&ctx,vec![egui::Event::PointerMoved(star+vec2(15.0,0.0))]);
+    frame(
+        &mut app,
+        &ctx,
+        vec![egui::Event::PointerMoved(star), pointer(star, true)],
+    );
+    frame(
+        &mut app,
+        &ctx,
+        vec![egui::Event::PointerMoved(star + vec2(15.0, 0.0))],
+    );
     assert_eq!(app.pending_widget.unwrap().id, "star");
-    let canvas=Pos2::new(650.0,400.0);
-    frame(&mut app,&ctx,vec![egui::Event::PointerMoved(canvas),pointer(canvas,false)]);
+    let canvas = Pos2::new(650.0, 400.0);
+    frame(
+        &mut app,
+        &ctx,
+        vec![egui::Event::PointerMoved(canvas), pointer(canvas, false)],
+    );
     assert!(app.pending_widget.is_none());
     assert!(app.project.pages[0].widgets[0].vector_points.is_some());
     app.library_query = "table grid".into();
-    let output = frame(&mut app,&ctx,vec![]);
-    click(&mut app,&ctx,text_center(&output,"表格"));
-    assert_eq!(app.selected.len(),12);
-    let group=app.project.pages[0].widgets[1].groups[0];
-    assert!(app.project.pages[0].widgets[1..].iter().all(|w|w.groups==[group]));
+    let output = frame(&mut app, &ctx, vec![]);
+    click(&mut app, &ctx, text_center(&output, "表格"));
+    assert_eq!(app.selected.len(), 12);
+    let group = app.project.pages[0].widgets[1].groups[0];
+    assert!(
+        app.project.pages[0].widgets[1..]
+            .iter()
+            .all(|w| w.groups == [group])
+    );
     app.undo();
-    assert_eq!(app.project.pages[0].widgets.len(),1);
+    assert_eq!(app.project.pages[0].widgets.len(), 1);
 }

@@ -151,8 +151,25 @@ fn layer_icons_toggle_visibility_and_lock_without_selecting_the_row() {
     let ctx = egui::Context::default();
     let output = frame(&mut app, &ctx, Vec::new());
     let row_y = text_center(&output, "T layer").y;
-    let visible = Pos2::new(text_center(&output, "显示").x, row_y);
-    let locked = Pos2::new(text_center(&output, "锁定").x, row_y);
+    // The library also contains a Flow item named 显示. Only the visible layer
+    // header supplies the column coordinate; offscreen library rows do not.
+    let header_x = |label: &str| {
+        output
+            .shapes
+            .iter()
+            .find_map(|clipped| {
+                if let egui::epaint::Shape::Text(shape) = &clipped.shape {
+                    let center = shape.pos + shape.galley.size() / 2.0;
+                    (shape.galley.text() == label && clipped.clip_rect.contains(center))
+                        .then_some(center.x)
+                } else {
+                    None
+                }
+            })
+            .unwrap()
+    };
+    let visible = Pos2::new(header_x("显示"), row_y);
+    let locked = Pos2::new(header_x("锁定"), row_y);
 
     let _ = click(&mut app, &ctx, visible);
     assert!(app.project.pages[0].widgets[0].hidden);

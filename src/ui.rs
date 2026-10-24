@@ -315,7 +315,7 @@ impl App {
                     None
                 }
             });
-        let mut startup_status = "准备就绪 · 所有数据保存在本机".to_owned();
+        let mut startup_status = "准备就绪".to_owned();
         let mut native = None;
         if let Some(path) = &path
             && is_native_path(path)
@@ -1416,7 +1416,7 @@ impl App {
                     });
                     ui.add_space(24.0);
                     ui.label(
-                        RichText::new("● 本地工作空间")
+                        RichText::new("● 工作空间")
                             .color(Color32::from_rgb(71, 153, 130))
                             .size(12.0),
                     );
@@ -1441,7 +1441,7 @@ impl App {
                             RichText::new(if self.project != self.saved {
                                 "● 未保存"
                             } else if self.path.is_some() {
-                                "已保存到本地"
+                                "已保存"
                             } else {
                                 "未保存为文件"
                             })
@@ -1692,7 +1692,11 @@ impl App {
         ui.add_space(8.0);
         ui.horizontal(|ui| {
             ui.label(RichText::new("组件库").strong().size(14.0));
-            ui.label(RichText::new(widget_library::ITEMS.len().to_string()).small().color(MUTED));
+            ui.label(
+                RichText::new(widget_library::ITEMS.len().to_string())
+                    .small()
+                    .color(MUTED),
+            );
         });
         ui.label(
             RichText::new("点击添加，或拖入画布")
@@ -1700,15 +1704,23 @@ impl App {
                 .color(MUTED),
         );
         ui.add_space(4.0);
-        ui.add(egui::TextEdit::singleline(&mut self.library_query)
-            .id_salt("library-search").hint_text("搜索元件…").desired_width(f32::INFINITY));
+        ui.add(
+            egui::TextEdit::singleline(&mut self.library_query)
+                .id_salt("library-search")
+                .hint_text("搜索元件…")
+                .desired_width(f32::INFINITY),
+        );
         egui::ComboBox::from_id_salt("library-category")
             .selected_text(self.library_category.map_or("全部元件", Category::label))
             .width(ui.available_width() - 8.0)
             .show_ui(ui, |ui| {
                 ui.selectable_value(&mut self.library_category, None, "全部元件");
                 for category in Category::ALL {
-                    ui.selectable_value(&mut self.library_category, Some(category), category.label());
+                    ui.selectable_value(
+                        &mut self.library_category,
+                        Some(category),
+                        category.label(),
+                    );
                 }
             });
         ui.add_space(4.0);
@@ -1722,37 +1734,56 @@ impl App {
                     .clamp(1.0, 3.0) as usize;
                 let mut found = false;
                 for category in Category::ALL {
-                    if self.library_category.is_some_and(|selected| selected != category) { continue; }
-                    let items: Vec<_> = widget_library::ITEMS.iter().copied()
-                        .filter(|item| item.category == category && item.matches(&self.library_query)).collect();
-                    if items.is_empty() { continue; }
+                    if self
+                        .library_category
+                        .is_some_and(|selected| selected != category)
+                    {
+                        continue;
+                    }
+                    let items: Vec<_> = widget_library::ITEMS
+                        .iter()
+                        .copied()
+                        .filter(|item| {
+                            item.category == category && item.matches(&self.library_query)
+                        })
+                        .collect();
+                    if items.is_empty() {
+                        continue;
+                    }
                     found = true;
-                    ui.label(RichText::new(format!("{}  {}", category.label(), items.len())).size(11.0).color(MUTED));
+                    ui.label(
+                        RichText::new(format!("{}  {}", category.label(), items.len()))
+                            .size(11.0)
+                            .color(MUTED),
+                    );
                     egui::Grid::new(("library", category.label()))
                         .num_columns(columns)
                         .spacing([5.0, 6.0])
                         .show(ui, |ui| {
-                        for (i, item) in items.into_iter().enumerate() {
-                            let r = library_button(ui, item);
-                            if r.clicked() {
-                                self.add_library_item(
-                                    item,
-                                    64.0 + (self.project.pages[self.page].widgets.len() % 6) as f32
-                                        * 16.0,
-                                    80.0,
-                                );
+                            for (i, item) in items.into_iter().enumerate() {
+                                let r = library_button(ui, item);
+                                if r.clicked() {
+                                    self.add_library_item(
+                                        item,
+                                        64.0 + (self.project.pages[self.page].widgets.len() % 6)
+                                            as f32
+                                            * 16.0,
+                                        80.0,
+                                    );
+                                }
+                                if r.drag_started() {
+                                    self.pending_widget = Some(item);
+                                }
+                                if i % columns == columns - 1 {
+                                    ui.end_row();
+                                }
                             }
-                            if r.drag_started() {
-                                self.pending_widget = Some(item);
-                            }
-                            if i % columns == columns - 1 {
-                                ui.end_row();
-                            }
-                        }
-                    });
+                        });
                     ui.add_space(8.0);
                 }
-                if !found { ui.label(RichText::new("没有匹配的元件").color(MUTED)); }
+                if !found {
+                    ui.label(RichText::new("没有匹配的元件").color(MUTED));
+                }
             });
     }
 
@@ -2870,7 +2901,7 @@ impl App {
                 .show(ctx, |ui| {
                     ui.heading("把想法，变成可以点击的原型。");
                     ui.add_space(10.0);
-                    ui.label("Rust 原生桌面 · 离线使用 · 无需登录");
+                    ui.label("原型设计 · 交互预览 · HTML/SVG 导出");
                     ui.separator();
                     for (key, usage) in [
                         ("Ctrl+N / O / S", "新建 / 打开 / 保存"),
@@ -2975,7 +3006,6 @@ impl eframe::App for App {
                         },
                     );
                     ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                        ui.label(RichText::new("无需账号 · 离线可用").size(11.0).color(MUTED));
                         ui.label(
                             RichText::new(format!(
                                 "{} 个页面  ·  {} 个组件",
@@ -3159,37 +3189,107 @@ fn layer_control(ui: &mut egui::Ui, control: LayerControl, name: &str) -> egui::
 
 fn library_button(ui: &mut egui::Ui, item: LibraryItem) -> egui::Response {
     let (rect, response) = ui.allocate_exact_size(vec2(59.0, 56.0), Sense::click_and_drag());
+    if !ui.is_rect_visible(rect) {
+        return response;
+    }
     let p = ui.painter();
-    p.rect(rect, 4.0, if response.hovered() { Color32::from_rgb(240, 235, 255) }
-        else { Color32::from_rgb(248, 248, 252) }, Stroke::new(1.0, BORDER), StrokeKind::Inside);
+    p.rect(
+        rect,
+        4.0,
+        if response.hovered() {
+            Color32::from_rgb(240, 235, 255)
+        } else {
+            Color32::from_rgb(248, 248, 252)
+        },
+        Stroke::new(1.0, BORDER),
+        StrokeKind::Inside,
+    );
     let icon = Rect::from_center_size(rect.center_top() + vec2(0.0, 19.0), vec2(25.0, 20.0));
     if matches!(item.kind(), WidgetKind::Text) {
-        let symbol = match item.id { "heading1" => "H1", "heading2" => "H2", "heading3" => "H3", "paragraph" => "¶", "link" => "↗", _ => "T" };
-        p.text(icon.center(), Align2::CENTER_CENTER, symbol, FontId::proportional(18.0), INK);
-    } else if matches!(item.id, "table" | "horizontal-menu" | "vertical-menu" | "tree") {
+        let symbol = match item.id {
+            "heading1" => "H1",
+            "heading2" => "H2",
+            "heading3" => "H3",
+            "paragraph" => "¶",
+            "link" => "↗",
+            _ => "T",
+        };
+        p.text(
+            icon.center(),
+            Align2::CENTER_CENTER,
+            symbol,
+            FontId::proportional(18.0),
+            INK,
+        );
+    } else if matches!(
+        item.id,
+        "table" | "horizontal-menu" | "vertical-menu" | "tree"
+    ) {
         p.rect_stroke(icon, 1.0, Stroke::new(1.2, INK), StrokeKind::Inside);
         for i in 1..3 {
-            let fraction=i as f32 / 3.0;
-            p.line_segment([icon.min+vec2(0.0,icon.height()*fraction),icon.min+vec2(icon.width(),icon.height()*fraction)],Stroke::new(1.0,INK));
-            if item.id=="table" || item.id=="horizontal-menu" {
-                p.line_segment([icon.min+vec2(icon.width()*fraction,0.0),icon.min+vec2(icon.width()*fraction,icon.height())],Stroke::new(1.0,INK));
+            let fraction = i as f32 / 3.0;
+            p.line_segment(
+                [
+                    icon.min + vec2(0.0, icon.height() * fraction),
+                    icon.min + vec2(icon.width(), icon.height() * fraction),
+                ],
+                Stroke::new(1.0, INK),
+            );
+            if item.id == "table" || item.id == "horizontal-menu" {
+                p.line_segment(
+                    [
+                        icon.min + vec2(icon.width() * fraction, 0.0),
+                        icon.min + vec2(icon.width() * fraction, icon.height()),
+                    ],
+                    Stroke::new(1.0, INK),
+                );
             }
         }
     } else {
-        let mut project=Project::blank();
-        let mut preview=item.create(&mut project,0.0,0.0).remove(0);
-        let scale=(icon.width()/preview.width).min(icon.height()/preview.height);
-        let size=vec2(preview.width,preview.height)*scale;
+        let mut project = Project::blank();
+        let mut preview = item.create(&mut project, 0.0, 0.0).remove(0);
+        let scale = (icon.width() / preview.width).min(icon.height() / preview.height);
+        let size = if matches!(preview.kind, WidgetKind::Checkbox | WidgetKind::Radio) {
+            vec2(18.0, 18.0)
+        } else {
+            vec2(preview.width, preview.height) * scale
+        };
+        preview.width = size.x;
+        preview.height = size.y;
+        preview.radius *= scale;
         preview.text.clear();
-        preview.fill=if item.id=="button" {"#E9E2FD"} else {"#FFFFFF00"}.into();
-        preview.stroke="#292B3A".into();
-        // Keep small control marks legible at thumbnail scale.
-        if matches!(preview.kind, WidgetKind::Checkbox|WidgetKind::Radio) { preview.width=20.0;preview.height=20.0; }
-        draw_widget(p,&preview,icon.center()-size/2.0,scale.max(0.1),None);
+        preview.fill = if item.id == "button" {
+            "#E9E2FD"
+        } else {
+            "#FFFFFF00"
+        }
+        .into();
+        preview.stroke = "#292B3A".into();
+        if preview.kind == WidgetKind::Line {
+            let points = rpshop::vector_edit::line_endpoints(&preview)
+                .map(|point| icon.center() - size / 2.0 + vec2(point[0], point[1]));
+            p.line_segment(points, Stroke::new(1.3, INK));
+        } else {
+            draw_widget(p, &preview, icon.center() - size / 2.0, 1.0, None);
+        }
     }
-    let label_font=if item.label.chars().count()>5 {10.0}else{12.0};
-    p.text(rect.center_bottom()-vec2(0.0,12.0),Align2::CENTER_CENTER,item.label,FontId::proportional(label_font),INK);
-    response.on_hover_text(format!("{} · {}\n点击添加，或拖入画布", item.label, item.category.label()))
+    let label_font = if item.label.chars().count() > 5 {
+        10.0
+    } else {
+        12.0
+    };
+    p.text(
+        rect.center_bottom() - vec2(0.0, 12.0),
+        Align2::CENTER_CENTER,
+        item.label,
+        FontId::proportional(label_font),
+        INK,
+    );
+    response.on_hover_text(format!(
+        "{} · {}\n点击添加，或拖入画布",
+        item.label,
+        item.category.label()
+    ))
 }
 
 fn action_label(action: Action) -> &'static str {

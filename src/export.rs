@@ -208,7 +208,7 @@ fn write_html_widget(output: &mut String, widget: &Widget, scope: &str) -> Resul
         None => widget.name.clone(),
     };
     let vector = (widget.kind == WidgetKind::Rectangle)
-        .then(|| crate::shape_geometry::svg_path(widget))
+        .then(|| crate::shape_geometry::svg_paths(widget))
         .flatten();
     let radius = if vector.is_some() {
         "0px".to_owned()
@@ -266,16 +266,22 @@ fn write_html_widget(output: &mut String, widget: &Widget, scope: &str) -> Resul
             ""
         }
     )?;
-    if let Some(path) = vector {
+    if let Some(paths) = vector {
         write!(
             output,
-            "<svg class=\"vector-shape\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 {} {}\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path d=\"{}\" fill=\"{}\" fill-rule=\"evenodd\" stroke=\"{}\"/></svg>",
-            widget.width,
-            widget.height,
-            escape_html(&path),
-            widget.fill,
-            widget.stroke
+            "<svg class=\"vector-shape\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 {} {}\" preserveAspectRatio=\"none\" aria-hidden=\"true\">",
+            widget.width, widget.height
         )?;
+        for path in paths {
+            write!(
+                output,
+                "<path d=\"{}\" fill=\"{}\" fill-rule=\"evenodd\" stroke=\"{}\"/>",
+                escape_html(&path),
+                widget.fill,
+                widget.stroke
+            )?;
+        }
+        output.push_str("</svg>");
     }
     match widget.kind {
         WidgetKind::Input => write!(
@@ -411,18 +417,22 @@ pub fn svg(page: &Page) -> Result<String> {
             escape_html(&widget.name)
         )?;
         let vector = (widget.kind == WidgetKind::Rectangle)
-            .then(|| crate::shape_geometry::svg_path(widget))
+            .then(|| crate::shape_geometry::svg_paths(widget))
             .flatten();
         match widget.kind {
-            WidgetKind::Rectangle if vector.is_some() => write!(
-                output,
-                "<path transform=\"translate({} {})\" d=\"{}\" fill=\"{}\" fill-rule=\"evenodd\" stroke=\"{}\"/>",
-                widget.x,
-                widget.y,
-                escape_html(vector.as_deref().unwrap()),
-                widget.fill,
-                widget.stroke
-            )?,
+            WidgetKind::Rectangle if vector.is_some() => {
+                for path in vector.as_ref().unwrap() {
+                    write!(
+                        output,
+                        "<path transform=\"translate({} {})\" d=\"{}\" fill=\"{}\" fill-rule=\"evenodd\" stroke=\"{}\"/>",
+                        widget.x,
+                        widget.y,
+                        escape_html(path),
+                        widget.fill,
+                        widget.stroke
+                    )?;
+                }
+            }
             WidgetKind::Ellipse => write!(
                 output,
                 "<ellipse cx=\"{}\" cy=\"{}\" rx=\"{}\" ry=\"{}\" fill=\"{}\" stroke=\"{}\"/>",
@@ -743,6 +753,44 @@ mod tests {
         output.clear();
         write_html_widget(&mut output, &widget, "page-1").unwrap();
         assert!(output.contains("name=\"page-1:widget-17\""));
+    }
+
+    #[test]
+    fn overlapping_library_contours_fill_independently_in_both_exports() {
+        for (id, count) in [
+            ("flow-database", 2),
+            ("flow-file", 2),
+            ("flow-stack-file", 3),
+        ] {
+            let mut project = Project::blank();
+            project.pages[0].background = "#17293A".into();
+            let item = crate::widget_library::ITEMS
+                .iter()
+                .find(|item| item.id == id)
+                .unwrap();
+            let mut widget = item.create(&mut project, 30.0, 40.0).remove(0);
+            widget.fill = "#8A61D1".into();
+            widget.opacity = 0.5;
+            let paths = crate::shape_geometry::svg_paths(&widget).unwrap();
+            assert_eq!(paths.len(), count, "{id}");
+            project.pages[0].widgets.push(widget);
+            let html = html(&project).unwrap();
+            let svg = svg(&project.pages[0]).unwrap();
+            for (output, prefix) in [
+                (&html, "<path d=\""),
+                (&svg, "<path transform=\"translate(30 40)\" d=\""),
+            ] {
+                assert_eq!(output.matches(prefix).count(), count, "{id}");
+                assert_eq!(output.matches("fill=\"#8A61D1\"").count(), count, "{id}");
+                for path in &paths {
+                    assert!(
+                        output
+                            .contains(&format!("{prefix}{}\" fill=\"#8A61D1\"", escape_html(path))),
+                        "{id}"
+                    );
+                }
+            }
+        }
     }
 
     #[test]

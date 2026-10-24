@@ -226,7 +226,8 @@ impl TreeRenderer<'_> {
                 }
             }
             if self.changed && selected {
-                response.scroll_to_me(Some(egui::Align::Center));
+                // Reveal offscreen selections without moving rows already in view.
+                response.scroll_to_me(None);
             }
             response.clone().on_hover_text(name);
             if let Some(index) = page_index {

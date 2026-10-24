@@ -28,16 +28,34 @@ pub(super) fn draw_widget(
     match widget.kind {
         WidgetKind::Rectangle if widget.vector_points.is_some() => {
             for (points, closed) in rpshop::shape_geometry::contours(widget) {
-                let positions: Vec<_> = points.iter().map(|point| rotation.point(rect.min + vec2(point[0] * rect.width(), point[1] * rect.height()))).collect();
-                if closed && fill.a() != 0 {
+                let positions: Vec<_> = points
+                    .iter()
+                    .map(|point| {
+                        rotation.point(
+                            rect.min + vec2(point[0] * rect.width(), point[1] * rect.height()),
+                        )
+                    })
+                    .collect();
+                if positions.len() > 2 && fill.a() != 0 {
                     let mut mesh = egui::Mesh::default();
-                    for pos in &positions { mesh.colored_vertex(*pos, fill); }
+                    for pos in &positions {
+                        mesh.colored_vertex(*pos, fill);
+                    }
                     for triangle in rpshop::shape_geometry::triangles(&points) {
-                        mesh.add_triangle(triangle[0] as u32, triangle[1] as u32, triangle[2] as u32);
+                        mesh.add_triangle(
+                            triangle[0] as u32,
+                            triangle[1] as u32,
+                            triangle[2] as u32,
+                        );
                     }
                     painter.add(egui::Shape::mesh(mesh));
                 }
-                painter.add(egui::epaint::PathShape { points: positions, closed, fill: Color32::TRANSPARENT, stroke: stroke.into() });
+                painter.add(egui::epaint::PathShape {
+                    points: positions,
+                    closed,
+                    fill: Color32::TRANSPARENT,
+                    stroke: stroke.into(),
+                });
             }
         }
         WidgetKind::Ellipse => {
@@ -114,14 +132,44 @@ pub(super) fn draw_widget(
                 rect.left_center() - vec2(0.0, 8.0 * zoom),
                 vec2(16.0, 16.0) * zoom,
             );
-            rounded_rect(painter, checkbox, if widget.kind == WidgetKind::Radio {8.0 * zoom} else {2.0}, fill, Stroke::new(zoom.max(0.7), fade(&widget.text_color)), rotation);
+            rounded_rect(
+                painter,
+                checkbox,
+                if widget.kind == WidgetKind::Radio {
+                    8.0 * zoom
+                } else {
+                    2.0
+                },
+                fill,
+                Stroke::new(zoom.max(0.7), fade(&widget.text_color)),
+                rotation,
+            );
         }
         WidgetKind::Droplist | WidgetKind::ListBox | WidgetKind::TextArea => {
-            rounded_rect(painter, rect, (widget.radius * zoom).min(255.0), fill, stroke, rotation);
+            rounded_rect(
+                painter,
+                rect,
+                (widget.radius * zoom).min(255.0),
+                fill,
+                stroke,
+                rotation,
+            );
             if widget.kind == WidgetKind::Droplist {
                 let center = rect.right_center() - vec2(14.0 * zoom, 0.0);
-                painter.line_segment([rotation.point(center - vec2(4.0 * zoom, 2.0 * zoom)), rotation.point(center + vec2(0.0, 2.0 * zoom))], Stroke::new(zoom.max(0.7), fade(&widget.text_color)));
-                painter.line_segment([rotation.point(center + vec2(0.0, 2.0 * zoom)), rotation.point(center + vec2(4.0 * zoom, -2.0 * zoom))], Stroke::new(zoom.max(0.7), fade(&widget.text_color)));
+                painter.line_segment(
+                    [
+                        rotation.point(center - vec2(4.0 * zoom, 2.0 * zoom)),
+                        rotation.point(center + vec2(0.0, 2.0 * zoom)),
+                    ],
+                    Stroke::new(zoom.max(0.7), fade(&widget.text_color)),
+                );
+                painter.line_segment(
+                    [
+                        rotation.point(center + vec2(0.0, 2.0 * zoom)),
+                        rotation.point(center + vec2(4.0 * zoom, -2.0 * zoom)),
+                    ],
+                    Stroke::new(zoom.max(0.7), fade(&widget.text_color)),
+                );
             }
         }
         _ => rounded_rect(
@@ -134,13 +182,43 @@ pub(super) fn draw_widget(
         ),
     }
     if !matches!(widget.kind, WidgetKind::Line | WidgetKind::Image) && !widget.text.is_empty() {
-        if matches!(widget.kind, WidgetKind::Droplist | WidgetKind::ListBox | WidgetKind::TextArea) {
-            let text = if widget.kind == WidgetKind::Droplist { widget.text.lines().next().unwrap_or("").to_owned() } else { widget.text.clone() };
+        if matches!(
+            widget.kind,
+            WidgetKind::Droplist | WidgetKind::ListBox | WidgetKind::TextArea
+        ) {
+            let text = if widget.kind == WidgetKind::Droplist {
+                widget.text.lines().next().unwrap_or("").to_owned()
+            } else {
+                widget.text.clone()
+            };
             let inset = 8.0 * zoom;
-            let width = (rect.width() - inset * 2.0 - if widget.kind == WidgetKind::Droplist { 20.0 * zoom } else { 0.0 }).max(1.0);
-            let galley = painter.layout(text, FontId::proportional((widget.font_size * zoom).max(1.0)), fade(&widget.text_color), width);
-            let y = if widget.kind == WidgetKind::Droplist {rect.center().y-galley.size().y/2.0}else{rect.top()+inset};
-            paint_text(painter,Pos2::new(rect.left()+inset,y),galley,fade(&widget.text_color),rotation,Some(rect));
+            let width = (rect.width()
+                - inset * 2.0
+                - if widget.kind == WidgetKind::Droplist {
+                    20.0 * zoom
+                } else {
+                    0.0
+                })
+            .max(1.0);
+            let galley = painter.layout(
+                text,
+                FontId::proportional((widget.font_size * zoom).max(1.0)),
+                fade(&widget.text_color),
+                width,
+            );
+            let y = if widget.kind == WidgetKind::Droplist {
+                rect.center().y - galley.size().y / 2.0
+            } else {
+                rect.top() + inset
+            };
+            paint_text(
+                painter,
+                Pos2::new(rect.left() + inset, y),
+                galley,
+                fade(&widget.text_color),
+                rotation,
+                Some(rect),
+            );
             return;
         }
         if let Some(layout) = &widget.text_layout {

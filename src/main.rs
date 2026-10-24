@@ -100,7 +100,7 @@ fn main() -> eframe::Result {
         .find(|w| w[0] == "--screenshot")
         .map(|w| std::path::PathBuf::from(&w[1]));
     let mut viewport = eframe::egui::ViewportBuilder::default()
-        .with_title("RPShop · 离线原型工作室")
+        .with_title("RPShop · 原型工作室")
         .with_inner_size([1500.0, 950.0])
         .with_min_inner_size([1100.0, 720.0]);
     if let Ok(img) = image::load_from_memory(include_bytes!("../assets/branding/rpshop-logo.png")) {

@@ -2364,7 +2364,13 @@ mod compatibility_tests {
                 .flat_map(|page| &page.widgets)
                 .find(|widget| widget.kind == kind)
                 .unwrap();
-            assert_eq!(widget.name, format!("RPShop {}", kind.label()));
+            assert!(
+                widget
+                    .name
+                    .ends_with(&format!(" / RPShop {}", kind.label())),
+                "library gallery names retain their component prefix: {}",
+                widget.name
+            );
             assert_eq!(
                 widget.text,
                 if kind.is_option_list() {

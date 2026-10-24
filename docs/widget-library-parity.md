@@ -24,13 +24,15 @@
 
 ## Default 的 40 项逐项对照
 
-下表把本轮实现方向与仍需补齐的语义分开。视觉预设复用 RPShop 的基础类型；单选、文本域、下拉和列表使用各自的真实控件类型。组合预设可解组编辑，不具备原厂专用对象的数据模型。最终可运行范围以对应源码和验证结果为准。
+RPShop 的目录分为基本元件、表单与菜单、标注、流程图、常用图标五组，支持中英文关键词搜索和分类筛选。当前目录包含 87 个可添加条目，底层 `WidgetKind` 为 13 种；库条目包括同类型的样式预设、矢量造型和多组件组合，不能把 87 当作专用组件类型数。
+
+下表依据 `src/widget_library.rs` 的当前目录核对。标题、段落、便签等视觉预设复用基础类型；单选、文本域、下拉和列表使用各自的真实控件类型。组合预设可解组编辑，不具备原厂专用对象的数据模型。这里记录实现范围，运行与回归验证结果另见项目验证记录。
 
 | 分类 | Axure 库项 | RPShop 对应与边界 |
 | --- | --- | --- |
 | Common | Box 1 | 矩形；可编辑填充、边框、文字 |
-| Common | Box 2 | 矩形/圆角矩形样式预设；不要求复制原厂样式值 |
-| Common | Box 3 | 矩形样式预设；不要求复制原厂样式值 |
+| Common | Box 2 | “矩形 2”样式预设，使用独立设计的填充和边框 |
+| Common | Box 3 | “矩形 3”样式预设，使用独立设计的填充和边框 |
 | Common | Image | 图片组件，读取用户选取的本地图片 |
 | Common | Placeholder | 带对角线的矢量占位符 |
 | Common | Button | 次要按钮样式预设，可添加点击动作 |
@@ -42,26 +44,26 @@
 | Common | Label | 单行文本预设 |
 | Common | Paragraph | 可换行段落预设 |
 | Common | Horizontal line | 水平直线 |
-| Common | Vertical line | 垂直直线预设/旋转线段；沿用同一线段几何 |
+| Common | Vertical line | “垂直线”预设，以实际竖向路径表示线段 |
 | Common | Ellipse | 椭圆 |
 | Forms | Text field | 单行输入框 |
 | Forms | Text area | 真实多行文本域；与单行输入区分 |
 | Forms | Droplist | 真实下拉选择；选项逐行编辑 |
 | Forms | List box | 真实列表选择；选项逐行编辑 |
 | Forms | Checkbox | 真实复选框；预览可勾选 |
-| Forms | Radio button | 真实单选控件；需要明确互斥组语义 |
+| Forms | Radio button | 真实单选控件；属性可指定互斥组，默认按组件名称分组，显式空组表示各自独立 |
 | Menus and table | Classic table | 可解组的表格单元格组合；没有专用插入行列、合并单元格模型 |
 | Menus and table | Classic menu - horizontal | 横向菜单组合；子菜单展开和键盘导航未对齐 |
 | Menus and table | Classic menu - vertical | 纵向菜单组合；子菜单展开和键盘导航未对齐 |
 | Menus and table | Tree | 文本节点组合；尚非可折叠、可编辑层级的数据控件 |
-| Markup | Sticky 1 | 便签样式预设方向；是否已提供独立入口以最终目录为准 |
-| Markup | Sticky 2 | 便签样式预设方向；是否已提供独立入口以最终目录为准 |
-| Markup | Sticky 3 | 便签样式预设方向；是否已提供独立入口以最终目录为准 |
-| Markup | Sticky 4 | 便签样式预设方向；是否已提供独立入口以最终目录为准 |
-| Markup | Circle marker | 圆形编号标记预设方向；可用椭圆和文字组成 |
-| Markup | Drop marker | 水滴编号标记尚需独立预设 |
+| Markup | Sticky 1 | “便签 1”黄色矩形文本预设；不绑定原生说明数据 |
+| Markup | Sticky 2 | “便签 2”绿色矩形文本预设；不绑定原生说明数据 |
+| Markup | Sticky 3 | “便签 3”蓝色矩形文本预设；不绑定原生说明数据 |
+| Markup | Sticky 4 | “便签 4”粉色矩形文本预设；不绑定原生说明数据 |
+| Markup | Circle marker | “圆形标记”预设，椭圆和编号文本 |
+| Markup | Drop marker | “水滴标记”预设，独立矢量轮廓和编号文本；轮廓为多边形近似 |
 | Markup | Horizontal arrow | 矢量箭头；可缩放、旋转和导出 |
-| Markup | Vertical arrow | 垂直箭头预设/旋转矢量箭头；沿用同一路径 |
+| Markup | Vertical arrow | “垂直箭头”预设，使用竖向矢量轮廓 |
 | Dynamic | Dynamic panel | 现有基础容器不等价；原生导入预览保留多状态，新建与编辑状态仍缺失 |
 | Dynamic | Hot spot | 透明点击区域预设；沿用已有点击事件，不等于完整 ImageMapRegion 编辑器 |
 | Dynamic | Inline frame | 已导入原生框架的预览有部分支持；新建、框架属性编辑尚缺 |
@@ -73,12 +75,37 @@
 
 实际名称为：Actor、Beveled rectangle、Bracket、Collate、Database、Delay、Diamond、Display、Document、Ellipse、File、Hexagon、Image、Internal storage (RAM)、Keying、Logical or、Magnetic tape、Manual input、Multi-document、Off page connector、Offline storage、Parallelogram、Punched card、Punched tape、Rectangle、Rounded rectangle、Semicircle、Snapshot、Sort、Stacked file、Stacked rectangle、Stacked rounded、Stored data、Subroutine/Predefined process、Summing junction、Trapezoid、Triangle。
 
-本轮以独立矢量路径补常用流程、判断、开始/结束、数据、文档、数据库、子流程、手动输入、准备和连接点；其中矩形、菱形、圆角、平行四边形、数据库、文档、六边形等与 Flow 项目的主要视觉用途对应。Actor、Bracket、多页文档、磁带、打孔带等其他图形，以及能吸附并跟随对象的连接器仍需补齐。绘制一个箭头形状不代表具备连接器行为。
+本轮提供其中除 Snapshot 之外各项的静态造型对应；图片、三角形等条目与基本元件组共用，不为每个原厂库名新增底层类型。各造型都是独立绘制的示意路径，尚未验证与原厂图形逐像素一致。
+
+| Axure Flow 项目 | RPShop 对应静态预设 |
+| --- | --- |
+| Rectangle、Rounded rectangle、Ellipse、Hexagon、Triangle、Image | 基本元件中的矩形、圆角矩形、椭圆、六边形、三角形和图片；流程组另有流程、开始/结束、连接点、准备等常见用途入口 |
+| Diamond、Parallelogram、Document、Database | 判断、数据、文档、数据库 |
+| Actor、Beveled rectangle、Bracket、Collate | 人物、斜角矩形、括号、校对 |
+| Delay、Display、File、Internal storage (RAM) | 延迟、显示、文件、内部存储 |
+| Keying、Logical or、Magnetic tape、Manual input | 键控、逻辑或、磁带、手动输入 |
+| Multi-document、Off page connector、Offline storage | 多文档、离页连接、离线存储 |
+| Punched card、Punched tape、Semicircle、Sort | 穿孔卡、穿孔带、半圆、排序 |
+| Stacked file、Stacked rectangle、Stacked rounded | 堆叠文件、堆叠矩形、堆叠圆角 |
+| Stored data、Subroutine/Predefined process、Summing junction、Trapezoid | 存储数据、子流程、求和连接、梯形 |
+| Snapshot | 关联快照尚未实现；普通图片不代替其引用与刷新模型 |
+
+延迟、显示、半圆、数据库、磁带、人物头部等弧线使用采样后的折线；文档和穿孔带的波边也由折线近似，堆叠圆角的转角采用斜切近似。它们支持静态布局和导出，没有流程执行、数据存储或延迟动作语义。“连接点”“离页连接”和箭头也不会自动连接、吸附或跟随其他对象。
+
+## 编辑、预览与原生保存边界
+
+新表单保留真实类型；HTML 中分别使用文本输入、`textarea`、复选/单选输入和 `select`，SVG 仅导出其静态外观。下拉/列表的 `text` 逐行表示选项，当前为单选列表；单选互斥组在页面内生效，显式空组各自独立。原生文件保留其 `radio-group` 名称。
+
+自有导出 HTML 在本机 Edge 无头浏览器中通过 13 项检查，覆盖多行输入、单选互斥与跨页隔离、下拉/列表选择、设置文本动作、文本转义及重叠矢量填充像素。记录见 [library-browser-qa.json](library-browser-qa.json)，复查脚本为 [verify-library.mjs](../scripts/verify-library.mjs)。这是 RPShop 自有播放器的运行验证，没有执行 Axure，也不证明全部原生保存和编辑行为已对齐。
+
+原生导入区分 `RadioButton`、`TextArea`、`ComboBox` 与 `ListBox`，没有再统一降级成复选框或单行输入。在 `.rp` 工程中新增这四类表单时，当前文件需已有同类原生对象供模板复制；无模板会拒绝保存。`.rplib` 仍不支持新增库条目，已有表单可编辑并保存。独立 `.rpshop` 工程无此模板限制。现有基础容器不能新增写回成动态面板。表格、菜单和树组合写回也不会变成原厂的专用复合对象。
+
+新建动态面板及状态编辑、中继器数据行为、内联框架编辑和关联快照仍缺失；已有原生预览子集不代表这些新建编辑能力已经具备。8 个原创常用线图标也没有覆盖原厂 920 项图标库。
 
 ## 后续对齐重点
 
 1. 目录与查找：用分类、搜索和稳定的预设 ID 承载组件，不把每种标题或颜色都扩成底层类型；保留窄侧栏、拖入和独立滚动。
-2. 编辑与保存：每种真正新控件必须贯通默认值、画布、属性、复制粘贴、撤销、独立工程、HTML/SVG 和原生文件读写。不能只增加组件库按钮。
+2. 编辑与保存：持续核对默认值、画布、属性、复制粘贴、撤销、独立工程、HTML/SVG 和原生文件读写的一致性；补足新表单的原生模板限制和专用对象转换。
 3. 真实语义：表格、树、菜单从可编辑组合升级为专用模型；动态面板、中继器、框架和快照按各自的数据/状态模型实现。
 4. 图标与扩展库：920 项原厂图标清单只用于了解范围；当前原创常用图标集不宣称与其数量、形状或许可相同。用户库导入、实例复用和外部库管理仍是单独能力。
 

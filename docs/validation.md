@@ -1,3 +1,16 @@
+# 0.6.0 组件库验证记录
+
+日期：2026-10-24。Windows x64，Rust/Cargo 1.95.0，VS 2022 BuildTools。
+
+- 内置库从原来的 9 个入口扩为 5 组、87 个可添加条目，底层共 13 种组件类型。覆盖分类/搜索、窄栏独立滚动、点击/拖入、预设几何、组合插入与撤销、复制及 JSON 往返；保留全部双精度矢量坐标的 JSON 解析，避免保存重开改变控制点。
+- 最终 `cargo fmt --all --check`、`cargo test --locked --quiet`、`cargo clippy --locked --all-targets -- -D warnings` 和 release 构建通过。133 项库测试和 68 项桌面测试全部通过，共 **201 项**；3 项专项测试按原配置忽略。保存重开专项实际读取安装的 Default.rplib 与 Quick Win.rp，验证四类表单编辑和新增 Radio，只写临时副本并核对原文件字节。
+- 发布程序在本机 Edge 中通过 **13 项**检查：输入/多行、单选互斥和跨页隔离、下拉/列表选择、设置文本、转义，以及数据库/反向重叠轮廓的实际填充像素。记录见 [library-browser-qa.json](library-browser-qa.json)。静态 HTML/SVG 按轮廓分别绘制，和画布覆盖填充一致。
+- 已启动发布程序核对[组件库界面](screenshots/library.png)，生成 `examples/library.rpshop`、单文件 HTML 与五个分类 SVG。对应关系、REA 证据及未实现能力见[组件库对照](widget-library-parity.md)。未宣称完整对齐动态面板、中继器、框架、关联快照、专用表格/树/菜单或 920 项原厂图标。
+
+发布 EXE：14,796,288 字节，SHA-256 `f9fd3ae673f73db1993dfa69b24be727f60a036f328aa57eb19544bdaeab2aad`。版本目录为 `dist/RPShop-0.6.0-windows-x64/rpshop.exe`；`dist/rpshop.exe` 已同步且哈希相同。
+
+便携 ZIP：9,043,674 字节，SHA-256 `a0e34c053b6acabdf494944d7e2433260b44c17a3fb1651678ba59e794f4af4b`。全部 18 个文件逐一核对与发布目录一致，包含程序、说明、许可、原创品牌文件、自有示例与对照报告，不含原厂图形或用户工程内容。机器可读校验记录见 [library-release.json](library-release.json)。
+
 # 0.5.0 验证记录
 
 日期：2026-10-23。Windows x64，Rust/Cargo 1.95.0，VS 2022 BuildTools。

@@ -1,0 +1,60 @@
+{
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0",
+  "checks": [
+    {
+      "name": "textarea preserves leading newline and escaped multiline text",
+      "passed": true
+    },
+    {
+      "name": "escaped document content does not execute",
+      "passed": true
+    },
+    {
+      "name": "same-page radio buttons are mutually exclusive",
+      "passed": true
+    },
+    {
+      "name": "radio groups are isolated between pages",
+      "passed": true
+    },
+    {
+      "name": "text field accepts editable values",
+      "passed": true
+    },
+    {
+      "name": "textarea accepts multiple lines",
+      "passed": true
+    },
+    {
+      "name": "dropdown options preserve escaped values",
+      "passed": true
+    },
+    {
+      "name": "listbox permits selection",
+      "passed": true
+    },
+    {
+      "name": "SetText changes text input",
+      "passed": true
+    },
+    {
+      "name": "SetText changes multiline input",
+      "passed": true
+    },
+    {
+      "name": "SetText selects dropdown and listbox values",
+      "passed": true
+    },
+    {
+      "name": "database overlapping contours retain their fill pixels",
+      "passed": true
+    },
+    {
+      "name": "opposite-direction overlapping contours remain filled",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "date": "2026-10-24T02:48:52.727Z",
+  "scope": "Independent exported HTML controls and vector fill pixels in installed Edge headless; local fixture only. No Axure execution or full native/editor parity claim."
+}

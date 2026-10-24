@@ -40,7 +40,7 @@ fn embed_windows_icon() {
     winres::WindowsResource::new()
         .set_icon(icon_path.to_str().expect("UTF-8 application icon path"))
         .set("ProductName", "RPShop")
-        .set("FileDescription", "RPShop — Offline Prototyping Studio")
+        .set("FileDescription", "RPShop — Prototyping Studio")
         .set("OriginalFilename", "rpshop.exe")
         .compile()
         .expect("embed the RPShop application icon in the executable");

@@ -7,5 +7,5 @@ pub mod preview;
 pub mod rp_format;
 pub mod selection;
 pub mod shape_geometry;
-pub mod widget_library;
 pub mod vector_edit;
+pub mod widget_library;

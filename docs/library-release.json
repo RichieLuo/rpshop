@@ -1,0 +1,12 @@
+{
+  "version": "0.6.0",
+  "files": 18,
+  "exe_bytes": 14796288,
+  "exe_sha256": "f9fd3ae673f73db1993dfa69b24be727f60a036f328aa57eb19544bdaeab2aad",
+  "zip_bytes": 9043674,
+  "zip_sha256": "a0e34c053b6acabdf494944d7e2433260b44c17a3fb1651678ba59e794f4af4b",
+  "alias_matches": true,
+  "tests_passed": 201,
+  "tests_ignored": 3,
+  "browser_checks": 13
+}
