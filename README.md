@@ -10,7 +10,7 @@
 
 ## 启动
 
-当前便携程序位于 `dist/RPShop-0.6.0-windows-x64/rpshop.exe`，整包为 `dist/RPShop-0.6.0-windows-x64.zip`。请使用该版本目录中的程序，或同根目录的 `dist/rpshop.exe`。
+便携程序统一位于 `dist/RPShop-<version>-windows-x64/rpshop.exe`，整包为同名 ZIP；请从对应版本目录启动。构建与打包命令见下文。
 
 Windows 构建需要 Rust 1.89 或更新版本、MSVC C++ 构建工具与 Windows SDK。在项目根目录运行：
 
@@ -151,12 +151,12 @@ cargo run --locked -- --import .\my-project.rp .\my-project.rpshop
 ## 构建与示例
 
 ```powershell
-cargo build --locked --release
-New-Item -ItemType Directory -Force .\dist | Out-Null
-Copy-Item .\target\release\rpshop.exe .\dist\rpshop.exe
+powershell -ExecutionPolicy Bypass -File .\scripts\package.ps1
 ```
 
-本次已验证的发布程序位于 `dist/RPShop-0.6.0-windows-x64/rpshop.exe`，便携包为同名 ZIP；[验证记录](docs/validation.md)包含版本及哈希。Logo 会嵌入 Windows 可执行文件；品牌文件在 [assets/branding](assets/branding/README.md)。
+打包需要 Python 3.9+，输出带 Cargo 版本号的目录、ZIP 和 `.sha256`，包内包含使用说明、`package.json` 和第三方许可。macOS / Linux 使用 `python3 scripts/package.py`，生成 tar.gz。已有同名包拒绝覆盖，可用 `-OutputDirectory` 指定新目录；`dev.ps1 release` 只编译。Windows 发布包使用静态 MSVC CRT，Logo 嵌入可执行文件。统一约定见 [架构与打包说明](docs/architecture.md)，品牌文件在 [assets/branding](assets/branding/README.md)。
+
+本地与 CI 共用打包脚本；仅推送与 Cargo 版本一致的 `v<version>` tag 时发布。包未签名，macOS 未公证，Linux 需要系统动态库。历史版本的验证记录见 [验证记录](docs/validation.md)；本轮跨平台状态以实际 CI 为准。
 
 生成可重新编辑的示例工程、交互 HTML 和首张页面 SVG：
 
@@ -192,6 +192,6 @@ cargo clippy --locked --all-targets -- -D warnings
 
 ## 项目结构与许可
 
-`src/model.rs` 定义本地工程与校验，`src/ui.rs` 与 `src/ui_*.rs` 实现桌面编辑器、分区和元件绘制，`src/rp_format` 读取和写回 RP 原生文件，`src/preview.rs` 提供本机内存预览，`src/export.rs`、`src/player.*` 与 `src/prototype.js` 生成 HTML 播放器、原生交互运行时及 SVG，`docs` 保留调查、路线图与截图。项目目录、文件名及主界面使用 RPShop 或中性格式命名。运行不依赖原厂编辑器安装目录，工程与播放器实现独立编写，品牌资产为原创。
+`src/model.rs` 定义本地工程与校验，`src/main.rs` 调用 `src/app.rs` 启动窗口，`src/cli.rs` 承接原有命令行功能，`src/lib.rs` 暴露业务模块；`src/ui/mod.rs` 与 `src/ui/*.rs` 实现桌面编辑器、分区和元件绘制，界面测试集中在 `src/ui/tests/`，`src/rp_format` 读取和写回 RP 原生文件，`src/preview.rs` 提供本机内存预览，`src/export.rs`、`src/player.*` 与 `src/prototype.js` 生成 HTML 播放器、原生交互运行时及 SVG，`docs` 保留调查、路线图与截图。项目目录、文件名及主界面使用 RPShop 或中性格式命名。运行不依赖原厂编辑器安装目录，工程与播放器实现独立编写，品牌资产为原创。
 
 代码使用 [MIT License](LICENSE)。

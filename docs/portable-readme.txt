@@ -1,6 +1,4 @@
-RPShop 0.6.0 · Windows x64
-
-双击 rpshop.exe 启动。
+完整解压后运行 rpshop.exe（Windows）或 rpshop（macOS / Linux）。
 按 F5 可在默认浏览器中预览当前页。
 
 第一次启动会显示可编辑的欢迎示例。通过“文件”菜单新建、打开和保存工程。
@@ -98,4 +96,7 @@ SVG 文字保留显式换行，按宽度自动换行尚未完整实现。
 母版实例缩放后重开的自然尺寸/缩放语义及全量原厂互操作仍需验证。
 原生保存成功后会重新读取文件并重置当前撤销历史；原生页面/文件夹增删、目录结构调整、组件库结构等暂不支持。
 未将本机真实工程的文件名或业务内容加入发布包。
-代码采用 MIT 许可，见 LICENSE。logo.png 和 logo.svg 为 RPShop 原创品牌资产。
+代码采用 MIT 许可，见 LICENSE。品牌图像为 RPShop 原创资产。
+
+程序版本、target 和 SHA-256 见 package.json；第三方组件及内嵌资产许可见 THIRD-PARTY-NOTICES.tsv 和 licenses。
+此包未签名，macOS 未公证；Linux 需具备相应图形和系统动态库。

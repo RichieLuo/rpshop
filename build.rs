@@ -1,7 +1,11 @@
+#[cfg(target_os = "windows")]
+#[path = "src/branding_icon.rs"]
+mod branding_icon;
+
 fn main() {
     println!("cargo:rerun-if-changed=build.rs");
-    println!("cargo:rerun-if-changed=assets/branding/rpshop-logo.png");
-
+    println!("cargo:rerun-if-changed=src/branding_icon.rs");
+    println!("cargo:rerun-if-changed=assets/branding");
     #[cfg(target_os = "windows")]
     if std::env::var("CARGO_CFG_TARGET_OS").as_deref() == Ok("windows") {
         embed_windows_icon();
@@ -12,36 +16,35 @@ fn main() {
 fn embed_windows_icon() {
     use image::codecs::ico::{IcoEncoder, IcoFrame};
 
-    let source = image::open("assets/branding/rpshop-logo.png")
-        .expect("read the RPShop application logo")
-        .into_rgba8();
+    let icon = branding_icon::icon_image();
     let frames: Vec<_> = [16, 24, 32, 48, 64, 128, 256]
         .into_iter()
         .map(|size| {
             let resized =
-                image::imageops::resize(&source, size, size, image::imageops::FilterType::Lanczos3);
+                image::imageops::resize(&icon, size, size, image::imageops::FilterType::Lanczos3);
             IcoFrame::as_png(
                 resized.as_raw(),
                 size,
                 size,
                 image::ExtendedColorType::Rgba8,
             )
-            .expect("encode an RPShop Windows icon frame")
+            .expect("encode a Windows application icon frame")
         })
         .collect();
-    let icon_path =
+    let name = env!("CARGO_PKG_NAME");
+    let path =
         std::path::PathBuf::from(std::env::var_os("OUT_DIR").expect("Cargo output directory"))
-            .join("rpshop.ico");
-    let file = std::fs::File::create(&icon_path).expect("create the RPShop Windows icon");
+            .join(format!("{name}.ico"));
+    let file = std::fs::File::create(&path).expect("create the Windows application icon");
     IcoEncoder::new(file)
         .encode_images(&frames)
-        .expect("write the RPShop Windows icon");
+        .expect("write the Windows application icon");
 
     winres::WindowsResource::new()
-        .set_icon(icon_path.to_str().expect("UTF-8 application icon path"))
+        .set_icon(path.to_str().expect("UTF-8 application icon path"))
         .set("ProductName", "RPShop")
-        .set("FileDescription", "RPShop — Prototyping Studio")
-        .set("OriginalFilename", "rpshop.exe")
+        .set("FileDescription", env!("CARGO_PKG_DESCRIPTION"))
+        .set("OriginalFilename", &format!("{name}.exe"))
         .compile()
-        .expect("embed the RPShop application icon in the executable");
+        .expect("embed Windows application resources");
 }

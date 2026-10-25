@@ -1,3 +1,5 @@
+//! RPShop business modules. Desktop startup and presentation live in the binary.
+
 pub mod bitmap;
 pub mod export;
 pub mod grouping;

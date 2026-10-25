@@ -6,6 +6,9 @@ rust-version = "1.89"
 description = "A Rust desktop prototyping studio"
 license = "MIT"
 
+[package.metadata.shop]
+product-name = "RPShop"
+
 [dependencies]
 anyhow = "1"
 base64 = "0.22"
