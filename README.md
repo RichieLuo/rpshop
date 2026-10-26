@@ -139,7 +139,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\package.ps1 -Install -OutputD
 已有完整解压包也可安装：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -PackageDirectory 'D:\Packages\RPShop-0.6.0-windows-x64'
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -PackageDirectory 'D:\Packages\RPShop-1.0.0-windows-x64'
 ```
 
 ### 后续更新
