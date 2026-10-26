@@ -2,6 +2,8 @@ use super::*;
 
 impl App {
     pub fn new(cc: &eframe::CreationContext<'_>, screenshot: Option<PathBuf>) -> Self {
+        #[cfg(target_os = "windows")]
+        window_chrome::configure_window(cc);
         setup_style(&cc.egui_ctx);
         let restored: Option<Session> = if screenshot.is_none() {
             cc.storage
@@ -30,17 +32,20 @@ impl App {
             |s| (s.project, s.saved, s.path, s.import_warnings),
         );
         let args: Vec<String> = std::env::args().collect();
-        let startup_file = args
-            .windows(2)
-            .find(|w| w[0] == "--open")
-            .map(|w| w[1].clone())
-            .or_else(|| {
-                if screenshot.is_none() {
-                    args.get(1).filter(|a| !a.starts_with('-')).cloned()
-                } else {
-                    None
-                }
-            });
+        // Screenshot QA is isolated. Normal shell paths go through the inbox
+        // after restoration, so a recovered dirty draft receives confirmation.
+        let startup_file = screenshot.as_ref().and_then(|_| {
+            args.windows(2)
+                .find(|w| w[0] == "--open")
+                .map(|w| w[1].clone())
+                .or_else(|| {
+                    if screenshot.is_none() {
+                        args.get(1).filter(|a| !a.starts_with('-')).cloned()
+                    } else {
+                        None
+                    }
+                })
+        });
         let mut startup_status = "准备就绪".to_owned();
         let mut native = None;
         if let Some(path) = &path
@@ -123,6 +128,9 @@ impl App {
                 _ => None,
             })
             .unwrap_or(if interaction_example { 1 } else { 0 });
+        #[cfg(target_os = "windows")]
+        let logo = Some(crate::branding::title_texture(&cc.egui_ctx));
+        #[cfg(not(target_os = "windows"))]
         let logo = image::load_from_memory(include_bytes!("../../assets/branding/rpshop-icon.png"))
             .ok()
             .map(|img| {

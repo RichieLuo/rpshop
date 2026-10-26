@@ -2,6 +2,9 @@ use super::*;
 
 impl App {
     pub(super) fn header(&mut self, ctx: &egui::Context) {
+        #[cfg(target_os = "windows")]
+        self.windows_title_bar(ctx);
+        #[cfg(not(target_os = "windows"))]
         egui::TopBottomPanel::top("header")
             .frame(
                 egui::Frame::new()

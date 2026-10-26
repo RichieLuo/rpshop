@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/branding/rpshop-logo.png" alt="RPShop Logo" width="200">
+  <img src="assets/branding/rpshop-owl-logo.png" alt="RPShop · 猫头鹰 Logo" width="560">
 </p>
 
 # RPShop

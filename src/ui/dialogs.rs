@@ -82,7 +82,7 @@ impl App {
                             }
                         }
                         if ui.button("取消").clicked() {
-                            self.confirm = None;
+                            self.cancel_replace();
                         }
                     });
                 });

@@ -3,11 +3,16 @@ mod canvas;
 mod dialogs;
 mod document;
 mod editing;
+mod file_open;
 mod keyboard;
 mod preview;
 mod shell;
 mod startup;
 mod theme;
+#[cfg(target_os = "windows")]
+mod title_bar;
+#[cfg(target_os = "windows")]
+mod window_chrome;
 use theme::setup_style;
 
 use base64::Engine;
@@ -281,6 +286,7 @@ pub struct App {
 
 impl eframe::App for App {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        self.poll_shell_open(ctx);
         ctx.options_mut(|options| options.zoom_with_keyboard = false);
         self.frames += 1;
         for event in ctx.input(|i| i.events.clone()) {
@@ -366,6 +372,8 @@ impl eframe::App for App {
         self.load_textures(ctx);
         self.canvas(ctx);
         self.dialogs(ctx);
+        #[cfg(target_os = "windows")]
+        window_chrome::paint_border(ctx);
         if !dragging && self.drag.is_none() && !self.history_changed {
             self.remember(before);
         }

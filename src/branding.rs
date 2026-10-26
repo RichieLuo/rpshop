@@ -1,13 +1,32 @@
 use eframe::egui::IconData;
 
+#[path = "branding_icon.rs"]
+mod branding_icon;
+
 pub fn icon_data() -> IconData {
-    let image = image::load_from_memory(include_bytes!("../assets/branding/rpshop-logo.png"))
-        .expect("the embedded RPShop application icon must be a valid PNG")
-        .resize(256, 256, image::imageops::FilterType::Lanczos3)
-        .into_rgba8();
+    let image = image::imageops::resize(
+        &branding_icon::icon_image(),
+        256,
+        256,
+        image::imageops::FilterType::Lanczos3,
+    );
     IconData {
         width: image.width(),
         height: image.height(),
         rgba: image.into_raw(),
     }
+}
+
+#[cfg(target_os = "windows")]
+pub fn title_texture(ctx: &eframe::egui::Context) -> eframe::egui::TextureHandle {
+    let icon = icon_data();
+    let image = eframe::egui::ColorImage::from_rgba_unmultiplied(
+        [icon.width as usize, icon.height as usize],
+        &icon.rgba,
+    );
+    ctx.load_texture(
+        "rpshop-title-icon",
+        image,
+        eframe::egui::TextureOptions::LINEAR,
+    )
 }

@@ -2038,9 +2038,11 @@ dependencies = [
  "flate2",
  "image",
  "lz4_flex",
+ "raw-window-handle",
  "rfd",
  "serde",
  "serde_json",
+ "windows-sys 0.61.2",
  "winres",
  "zip",
 ]
