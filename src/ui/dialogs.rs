@@ -4,7 +4,8 @@ impl App {
     pub(super) fn dialogs(&mut self, ctx: &egui::Context) {
         if !self.import_warnings.is_empty() && !self.screenshot_mode {
             let mut open = true;
-            egui::Window::new("原生文件打开结果")
+            egui::Window::new(RichText::new("原生文件打开结果").size(20.).strong())
+                .frame(dialog_style::frame(ctx))
                 .id(egui::Id::new("import-report"))
                 .open(&mut open)
                 .default_width(520.0)
@@ -20,9 +21,11 @@ impl App {
                         });
                     ui.separator();
                     ui.label("直接编辑，Ctrl+S 保存原格式；尚不支持编辑的数据会保留。");
-                    if ui.button("知道了").clicked() {
-                        self.import_warnings.clear();
-                    }
+                    dialog_style::actions(ui, |ui| {
+                        if ui.add(dialog_style::primary("知道了", PURPLE)).clicked() {
+                            self.import_warnings.clear();
+                        }
+                    });
                 });
             if !open {
                 self.import_warnings.clear();
@@ -30,7 +33,8 @@ impl App {
         }
         if let Some(id) = self.editing {
             let mut open = true;
-            egui::Window::new("编辑文本")
+            egui::Window::new(RichText::new("编辑文本").size(20.).strong())
+                .frame(dialog_style::frame(ctx))
                 .id(egui::Id::new("text-editor"))
                 .open(&mut open)
                 .collapsible(false)
@@ -47,48 +51,53 @@ impl App {
                                 .desired_rows(5),
                         );
                     }
-                    if ui.button("完成").clicked() {
-                        self.editing = None;
-                    }
+                    dialog_style::actions(ui, |ui| {
+                        if ui.add(dialog_style::primary("完成", PURPLE)).clicked() {
+                            self.editing = None;
+                        }
+                    });
                 });
             if !open {
                 self.editing = None;
             }
         }
         if let Some(action) = self.confirm.clone() {
-            egui::Window::new("工程尚未保存")
-                .collapsible(false)
-                .resizable(false)
-                .anchor(Align2::CENTER_CENTER, Vec2::ZERO)
-                .show(ctx, |ui| {
-                    ui.label("是否先保存当前修改？");
-                    ui.add_space(10.0);
-                    ui.horizontal(|ui| {
-                        if ui.button("保存并继续").clicked() && self.save_project(false) {
-                            self.confirm = None;
-                            if action == "close" {
-                                ctx.send_viewport_cmd(egui::ViewportCommand::Close);
-                            } else {
-                                self.replace(&action);
-                            }
+            dialog_style::modal(ctx, "unsaved-project").show(ctx, |ui| {
+                ui.set_width(440.0);
+                dialog_style::title(ui, "保存当前修改？");
+                ui.label("工程包含尚未保存的修改。保存后再继续操作。");
+                ui.add_space(10.0);
+                dialog_style::actions(ui, |ui| {
+                    if ui
+                        .add(dialog_style::primary("保存并继续", PURPLE))
+                        .clicked()
+                        && self.save_project(false)
+                    {
+                        self.confirm = None;
+                        if action == "close" {
+                            ctx.send_viewport_cmd(egui::ViewportCommand::Close);
+                        } else {
+                            self.replace(&action);
                         }
-                        if ui.button("放弃修改").clicked() {
-                            self.confirm = None;
-                            if action == "close" {
-                                self.saved = self.project.clone();
-                                ctx.send_viewport_cmd(egui::ViewportCommand::Close);
-                            } else {
-                                self.replace(&action);
-                            }
+                    }
+                    if ui.button("放弃修改").clicked() {
+                        self.confirm = None;
+                        if action == "close" {
+                            self.saved = self.project.clone();
+                            ctx.send_viewport_cmd(egui::ViewportCommand::Close);
+                        } else {
+                            self.replace(&action);
                         }
-                        if ui.button("取消").clicked() {
-                            self.cancel_replace();
-                        }
-                    });
+                    }
+                    if ui.button("取消").clicked() {
+                        self.cancel_replace();
+                    }
                 });
+            });
         }
         if self.help {
-            egui::Window::new("关于 RPShop")
+            egui::Window::new(RichText::new("关于 RPShop").size(20.).strong())
+                .frame(dialog_style::frame(ctx))
                 .open(&mut self.help)
                 .resizable(false)
                 .show(ctx, |ui| {

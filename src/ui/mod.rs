@@ -1,5 +1,6 @@
 mod arrange;
 mod canvas;
+mod dialog_style;
 mod dialogs;
 mod document;
 mod editing;
